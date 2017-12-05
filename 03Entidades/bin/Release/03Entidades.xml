@@ -1,0 +1,208 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+03Entidades
+</name>
+</assembly>
+<members>
+<member name="T:_03Entidades.My.Resources.Resources">
+<summary>
+  A strongly-typed resource class, for looking up localized strings, etc.
+</summary>
+</member>
+<member name="P:_03Entidades.My.Resources.Resources.ResourceManager">
+<summary>
+  Returns the cached ResourceManager instance used by this class.
+</summary>
+</member>
+<member name="P:_03Entidades.My.Resources.Resources.Culture">
+<summary>
+  Overrides the current thread's CurrentUICulture property for all
+  resource lookups using this strongly typed resource class.
+</summary>
+</member>
+<member name="M:_03Entidades.ConductoresEN.#ctor(System.String,System.String,System.String,System.String,System.DateTime,System.String,System.String,System.String,System.Boolean)">
+ <summary>
+ Constructor que recibe todos los datos de la clase
+ </summary>
+ <param name="pCedula">Cedula del conductor</param>
+ <param name="pNombreCompleto">Nombre del conductor</param>
+ <param name="pTel_Celular">Telefono celular del conductor</param>
+ <param name="pTel_Casa">Telefono de la casa del conductor</param>
+ <param name="pFecha_Nacimiento">Fecha de nacimiento del conductor</param>
+ <param name="pE_Mail">Correo electronico del conductor</param>
+ <param name="pDir_Completa">Direccion completa del conductor</param>
+ <param name="pObservaciones">Observaciones adicionales</param>
+ <param name="pInd_Activo">Indica si esta activo el conductor o no</param>
+</member>
+<member name="P:_03Entidades.ConductoresEN.Cedula">
+ <summary>
+ Cedula del conductor
+ </summary>
+ <returns>Cedula del conductor</returns>
+</member>
+<member name="P:_03Entidades.ConductoresEN.NombreCompleto">
+ <summary>
+ Nombre del conductor
+ </summary>
+ <returns>Nombre del conductor</returns>
+</member>
+<member name="P:_03Entidades.ConductoresEN.Tel_Celular">
+ <summary>
+ Telefono celular del conductor
+ </summary>
+ <returns>Telefono celular del conductor</returns>
+</member>
+<member name="P:_03Entidades.ConductoresEN.Fecha_Nacimiento">
+ <summary>
+ Fecha de nacimiento del conductor
+ </summary>
+ <returns>Fecha de nacimiento del conductor</returns>
+</member>
+<member name="P:_03Entidades.ConductoresEN.E_Mail">
+ <summary>
+ Correo electronico del conductor
+ </summary>
+ <returns>Correo electronico del conductor</returns>
+</member>
+<member name="P:_03Entidades.ConductoresEN.Dir_Completa">
+ <summary>
+ Direccion completa del conductor
+ </summary>
+ <returns>Direccion completa del conductor</returns>
+</member>
+<member name="P:_03Entidades.ConductoresEN.Observaciones">
+ <summary>
+ Observaciones adicionales
+ </summary>
+ <returns>Observaciones adicionales</returns>
+</member>
+<member name="P:_03Entidades.ConductoresEN.Ind_Activo">
+ <summary>
+ Indica si esta activo el conductor o no
+ </summary>
+ <returns>Indica si esta activo el conductor o no</returns>
+</member>
+<member name="M:_03Entidades.LicenciasEN.#ctor(System.String,System.String,System.String,System.String,System.DateTime,System.String)">
+ <summary>
+ Constructor que recibe todos los datos de la clase
+ </summary>
+ <param name="pCod_Lic">Codigo de la licencia</param>
+ <param name="pCedula">Cedula del conductor</param>
+ <param name="pPuntos">Puntos de la licencia</param>
+ <param name="pFec_Emision">Fecha de emision de la licencia</param>
+ <param name="pFec_Vencimiento">Fecha de vencimiento de la licencia</param>
+ <param name="pCod_Tipo_Lic">Codigo del tipo de licencia</param>
+</member>
+<member name="P:_03Entidades.LicenciasEN.Cod_Licencia">
+ <summary>
+ Codigo de la licencia
+ </summary>
+ <returns>Codigo de la licencia</returns>
+</member>
+<member name="P:_03Entidades.LicenciasEN.Cedula">
+ <summary>
+ Cedula del conductor
+ </summary>
+ <returns>Cedula del conductor</returns>
+</member>
+<member name="P:_03Entidades.LicenciasEN.Puntos">
+ <summary>
+ Puntos de la licencia
+ </summary>
+ <returns>Puntos de la licencia</returns>
+</member>
+<member name="P:_03Entidades.LicenciasEN.Fec_Emision">
+ <summary>
+ Fecha de emision de la licencia
+ </summary>
+ <returns>Fecha de emision de la licencia</returns>
+</member>
+<member name="P:_03Entidades.LicenciasEN.Fec_Vencimiento">
+ <summary>
+ Fecha de vencimiento de la licencia
+ </summary>
+ <returns>Fecha de vencimiento de la licencia</returns>
+</member>
+<member name="P:_03Entidades.LicenciasEN.Codigo_Tipo_Licencia">
+ <summary>
+ Codigo del tipo de licencia
+ </summary>
+ <returns>Codigo del tipo de licencia</returns>
+</member>
+<member name="M:_03Entidades.MultasEN.#ctor(System.String,System.DateTime,System.String,System.String,System.Int32,System.String)">
+ <summary>
+ Constructor que recibe todos los datos de la clase
+ </summary>
+ <param name="pCod_Multa">Codigo de la multa</param>
+ <param name="pFec_Multa">Fecha que se registro la multa</param>
+ <param name="pNombreTrafico">Nombre del trafico que realizo la multa</param>
+ <param name="pMonto_Multa">Monto de la multa realizada</param>
+ <param name="pInd_Pagada">Indica si la multa esta paga o no</param>
+ <param name="pCedula">Cedula del conductor multado</param>
+</member>
+<member name="P:_03Entidades.MultasEN.Codigo_Multa">
+ <summary>
+ Codigo de la multa
+ </summary>
+ <returns>Codigo de la multa</returns>
+</member>
+<member name="P:_03Entidades.MultasEN.Fecha_Multa">
+ <summary>
+ Fecha que se registro la multa
+ </summary>
+ <returns>Fecha que se registro la multa</returns>
+</member>
+<member name="P:_03Entidades.MultasEN.Nombre_Trafico">
+ <summary>
+ Nombre del trafico que realizo la multa
+ </summary>
+ <returns>Nombre del trafico que realizo la multa</returns>
+</member>
+<member name="P:_03Entidades.MultasEN.Monto_Multa">
+ <summary>
+ Monto de la multa realizada
+ </summary>
+ <returns>Monto de la multa realizada</returns>
+</member>
+<member name="P:_03Entidades.MultasEN.Ind_Pagada">
+ <summary>
+ Indica si la multa esta paga o no
+ </summary>
+ <returns>Indica si la multa esta paga o no</returns>
+</member>
+<member name="P:_03Entidades.MultasEN.Cedula">
+ <summary>
+ Cedula del conductor multado
+ </summary>
+ <returns>Cedula del conductor multado</returns>
+</member>
+<member name="M:_03Entidades.Tipos_LicenciasEN.#ctor(System.String,System.String,System.String)">
+ <summary>
+ Constructor que recibe todos los datos de la clase
+ </summary>
+ <param name="pCod_Tipo_Lic">Codigo del tipo de la licencia</param>
+ <param name="pNomb_Tipo">Nombre del tipo de la licencia</param>
+ <param name="pObservaciones">Observaciones adicionales</param>
+</member>
+<member name="P:_03Entidades.Tipos_LicenciasEN.Codigo_Tipo_Licencia">
+ <summary>
+ Codigo del tipo de la licencia
+ </summary>
+ <returns>Codigo del tipo de la licencia</returns>
+</member>
+<member name="P:_03Entidades.Tipos_LicenciasEN.Nombre_Tipo">
+ <summary>
+ Nombre del tipo de la licencia
+ </summary>
+ <returns>Nombre del tipo de la licencia</returns>
+</member>
+<member name="P:_03Entidades.Tipos_LicenciasEN.Observaciones">
+ <summary>
+ Observaciones adicionales
+ </summary>
+ <returns>Observaciones adicionales</returns>
+</member>
+</members>
+</doc>

@@ -1,0 +1,13 @@
+C:\Users\Cristopher M.R\Desktop\ProyectoLicencias\01AccesoDatos\bin\Debug\01AccesoDatos.dll
+C:\Users\Cristopher M.R\Desktop\ProyectoLicencias\01AccesoDatos\bin\Debug\01AccesoDatos.pdb
+C:\Users\Cristopher M.R\Desktop\ProyectoLicencias\01AccesoDatos\bin\Debug\01AccesoDatos.xml
+C:\Users\Cristopher M.R\Desktop\ProyectoLicencias\01AccesoDatos\bin\Debug\03Entidades.dll
+C:\Users\Cristopher M.R\Desktop\ProyectoLicencias\01AccesoDatos\bin\Debug\03Entidades.pdb
+C:\Users\Cristopher M.R\Desktop\ProyectoLicencias\01AccesoDatos\bin\Debug\03Entidades.xml
+C:\Users\Cristopher M.R\Desktop\ProyectoLicencias\01AccesoDatos\obj\Debug\01AccesoDatos.vbprojResolveAssemblyReference.cache
+C:\Users\Cristopher M.R\Desktop\ProyectoLicencias\01AccesoDatos\obj\Debug\_01AccesoDatos.Resources.resources
+C:\Users\Cristopher M.R\Desktop\ProyectoLicencias\01AccesoDatos\obj\Debug\01AccesoDatos.vbproj.GenerateResource.Cache
+C:\Users\Cristopher M.R\Desktop\ProyectoLicencias\01AccesoDatos\obj\Debug\01AccesoDatos.vbproj.CoreCompileInputs.cache
+C:\Users\Cristopher M.R\Desktop\ProyectoLicencias\01AccesoDatos\obj\Debug\01AccesoDatos.dll
+C:\Users\Cristopher M.R\Desktop\ProyectoLicencias\01AccesoDatos\obj\Debug\01AccesoDatos.xml
+C:\Users\Cristopher M.R\Desktop\ProyectoLicencias\01AccesoDatos\obj\Debug\01AccesoDatos.pdb

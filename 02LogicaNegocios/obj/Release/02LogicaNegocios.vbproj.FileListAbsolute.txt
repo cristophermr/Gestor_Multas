@@ -1,0 +1,16 @@
+C:\Users\Cristopher M.R\Desktop\ProyectoLicencias\02LogicaNegocios\bin\Release\02LogicaNegocios.dll
+C:\Users\Cristopher M.R\Desktop\ProyectoLicencias\02LogicaNegocios\bin\Release\02LogicaNegocios.pdb
+C:\Users\Cristopher M.R\Desktop\ProyectoLicencias\02LogicaNegocios\bin\Release\02LogicaNegocios.xml
+C:\Users\Cristopher M.R\Desktop\ProyectoLicencias\02LogicaNegocios\bin\Release\01AccesoDatos.dll
+C:\Users\Cristopher M.R\Desktop\ProyectoLicencias\02LogicaNegocios\bin\Release\03Entidades.dll
+C:\Users\Cristopher M.R\Desktop\ProyectoLicencias\02LogicaNegocios\bin\Release\01AccesoDatos.pdb
+C:\Users\Cristopher M.R\Desktop\ProyectoLicencias\02LogicaNegocios\bin\Release\01AccesoDatos.xml
+C:\Users\Cristopher M.R\Desktop\ProyectoLicencias\02LogicaNegocios\bin\Release\03Entidades.pdb
+C:\Users\Cristopher M.R\Desktop\ProyectoLicencias\02LogicaNegocios\bin\Release\03Entidades.xml
+C:\Users\Cristopher M.R\Desktop\ProyectoLicencias\02LogicaNegocios\obj\Release\02LogicaNegocios.vbprojResolveAssemblyReference.cache
+C:\Users\Cristopher M.R\Desktop\ProyectoLicencias\02LogicaNegocios\obj\Release\_02LogicaNegocios.Resources.resources
+C:\Users\Cristopher M.R\Desktop\ProyectoLicencias\02LogicaNegocios\obj\Release\02LogicaNegocios.vbproj.GenerateResource.Cache
+C:\Users\Cristopher M.R\Desktop\ProyectoLicencias\02LogicaNegocios\obj\Release\02LogicaNegocios.vbproj.CoreCompileInputs.cache
+C:\Users\Cristopher M.R\Desktop\ProyectoLicencias\02LogicaNegocios\obj\Release\02LogicaNegocios.dll
+C:\Users\Cristopher M.R\Desktop\ProyectoLicencias\02LogicaNegocios\obj\Release\02LogicaNegocios.xml
+C:\Users\Cristopher M.R\Desktop\ProyectoLicencias\02LogicaNegocios\obj\Release\02LogicaNegocios.pdb
