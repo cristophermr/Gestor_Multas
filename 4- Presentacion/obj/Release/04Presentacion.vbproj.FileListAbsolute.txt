@@ -13,3 +13,18 @@ C:\Users\Cristopher M.R\Desktop\ProyectoLicencias\4- Presentacion\obj\Release\04
 C:\Users\Cristopher M.R\Desktop\ProyectoLicencias\4- Presentacion\obj\Release\04Presentacion.pdb
 C:\Users\Cristopher M.R\Desktop\ProyectoLicencias\4- Presentacion\obj\Release\04Presentacion.vbprojResolveAssemblyReference.cache
 C:\Users\Cristopher M.R\Desktop\ProyectoLicencias\4- Presentacion\obj\Release\_04Presentacion.Inicio.resources
+D:\ProyectoLicencias\4- Presentacion\obj\Release\04Presentacion.vbprojResolveAssemblyReference.cache
+D:\ProyectoLicencias\4- Presentacion\obj\Release\_04Presentacion.Example.resources
+D:\ProyectoLicencias\4- Presentacion\obj\Release\_04Presentacion.Login.resources
+D:\ProyectoLicencias\4- Presentacion\obj\Release\_04Presentacion.Master.resources
+D:\ProyectoLicencias\4- Presentacion\obj\Release\_04Presentacion.Resources.resources
+D:\ProyectoLicencias\4- Presentacion\obj\Release\04Presentacion.vbproj.GenerateResource.Cache
+D:\ProyectoLicencias\4- Presentacion\obj\Release\04Presentacion.vbproj.CoreCompileInputs.cache
+D:\ProyectoLicencias\4- Presentacion\obj\Release\04Presentacion.exe
+D:\ProyectoLicencias\4- Presentacion\obj\Release\04Presentacion.xml
+D:\ProyectoLicencias\4- Presentacion\obj\Release\04Presentacion.pdb
+D:\ProyectoLicencias\4- Presentacion\bin\Release\04Presentacion.exe.config
+D:\ProyectoLicencias\4- Presentacion\bin\Release\04Presentacion.exe
+D:\ProyectoLicencias\4- Presentacion\bin\Release\04Presentacion.pdb
+D:\ProyectoLicencias\4- Presentacion\bin\Release\04Presentacion.xml
+D:\ProyectoLicencias\4- Presentacion\bin\Release\Bunifu_UI_v1.5.3.dll

@@ -1,9 +1,9 @@
-﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
+﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()>
 Partial Class Login
     Inherits System.Windows.Forms.Form
 
     'Form reemplaza a Dispose para limpiar la lista de componentes.
-    <System.Diagnostics.DebuggerNonUserCode()> _
+    <System.Diagnostics.DebuggerNonUserCode()>
     Protected Overrides Sub Dispose(ByVal disposing As Boolean)
         Try
             If disposing AndAlso components IsNot Nothing Then
@@ -20,20 +20,22 @@ Partial Class Login
     'NOTA: el Diseñador de Windows Forms necesita el siguiente procedimiento
     'Se puede modificar usando el Diseñador de Windows Forms.  
     'No lo modifique con el editor de código.
-    <System.Diagnostics.DebuggerStepThrough()> _
+    <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Login))
         Me.BunifuElipse1 = New Bunifu.Framework.UI.BunifuElipse(Me.components)
         Me.BunifuDragControl1 = New Bunifu.Framework.UI.BunifuDragControl(Me.components)
-        Me.Panel1 = New System.Windows.Forms.Panel()
+        Me.header = New System.Windows.Forms.Panel()
         Me.PictureBox2 = New System.Windows.Forms.PictureBox()
         Me.BunifuCustomLabel1 = New Bunifu.Framework.UI.BunifuCustomLabel()
-        Me.BunifuCustomTextbox1 = New WindowsFormsControlLibrary1.BunifuCustomTextbox()
-        Me.BunifuCustomTextbox2 = New WindowsFormsControlLibrary1.BunifuCustomTextbox()
         Me.BunifuFlatButton1 = New Bunifu.Framework.UI.BunifuFlatButton()
-        Me.Panel1.SuspendLayout()
+        Me.BunifuImageButton1 = New Bunifu.Framework.UI.BunifuImageButton()
+        Me.BunifuTextbox1 = New Bunifu.Framework.UI.BunifuTextbox()
+        Me.BunifuTextbox2 = New Bunifu.Framework.UI.BunifuTextbox()
+        Me.header.SuspendLayout()
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.BunifuImageButton1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'BunifuElipse1
@@ -45,19 +47,20 @@ Partial Class Login
         '
         Me.BunifuDragControl1.Fixed = True
         Me.BunifuDragControl1.Horizontal = True
-        Me.BunifuDragControl1.TargetControl = Nothing
+        Me.BunifuDragControl1.TargetControl = Me.header
         Me.BunifuDragControl1.Vertical = True
         '
-        'Panel1
+        'header
         '
-        Me.Panel1.BackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(102, Byte), Integer), CType(CType(204, Byte), Integer))
-        Me.Panel1.Controls.Add(Me.PictureBox2)
-        Me.Panel1.Controls.Add(Me.BunifuCustomLabel1)
-        Me.Panel1.Dock = System.Windows.Forms.DockStyle.Top
-        Me.Panel1.Location = New System.Drawing.Point(0, 0)
-        Me.Panel1.Name = "Panel1"
-        Me.Panel1.Size = New System.Drawing.Size(664, 43)
-        Me.Panel1.TabIndex = 0
+        Me.header.BackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(102, Byte), Integer), CType(CType(204, Byte), Integer))
+        Me.header.Controls.Add(Me.BunifuImageButton1)
+        Me.header.Controls.Add(Me.PictureBox2)
+        Me.header.Controls.Add(Me.BunifuCustomLabel1)
+        Me.header.Dock = System.Windows.Forms.DockStyle.Top
+        Me.header.Location = New System.Drawing.Point(0, 0)
+        Me.header.Name = "header"
+        Me.header.Size = New System.Drawing.Size(664, 43)
+        Me.header.TabIndex = 0
         '
         'PictureBox2
         '
@@ -80,26 +83,10 @@ Partial Class Login
         Me.BunifuCustomLabel1.TabIndex = 2
         Me.BunifuCustomLabel1.Text = "Iniciar Sesión"
         '
-        'BunifuCustomTextbox1
-        '
-        Me.BunifuCustomTextbox1.BorderColor = System.Drawing.Color.SeaGreen
-        Me.BunifuCustomTextbox1.Location = New System.Drawing.Point(244, 134)
-        Me.BunifuCustomTextbox1.Name = "BunifuCustomTextbox1"
-        Me.BunifuCustomTextbox1.Size = New System.Drawing.Size(199, 20)
-        Me.BunifuCustomTextbox1.TabIndex = 3
-        '
-        'BunifuCustomTextbox2
-        '
-        Me.BunifuCustomTextbox2.BorderColor = System.Drawing.Color.SeaGreen
-        Me.BunifuCustomTextbox2.Location = New System.Drawing.Point(244, 178)
-        Me.BunifuCustomTextbox2.Name = "BunifuCustomTextbox2"
-        Me.BunifuCustomTextbox2.Size = New System.Drawing.Size(199, 20)
-        Me.BunifuCustomTextbox2.TabIndex = 4
-        '
         'BunifuFlatButton1
         '
-        Me.BunifuFlatButton1.Activecolor = System.Drawing.Color.FromArgb(CType(CType(46, Byte), Integer), CType(CType(139, Byte), Integer), CType(CType(87, Byte), Integer))
-        Me.BunifuFlatButton1.BackColor = System.Drawing.Color.FromArgb(CType(CType(46, Byte), Integer), CType(CType(139, Byte), Integer), CType(CType(87, Byte), Integer))
+        Me.BunifuFlatButton1.Activecolor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(102, Byte), Integer), CType(CType(204, Byte), Integer))
+        Me.BunifuFlatButton1.BackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(102, Byte), Integer), CType(CType(204, Byte), Integer))
         Me.BunifuFlatButton1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.BunifuFlatButton1.BorderRadius = 0
         Me.BunifuFlatButton1.ButtonText = "BunifuFlatButton1"
@@ -117,18 +104,58 @@ Partial Class Login
         Me.BunifuFlatButton1.IconVisible = True
         Me.BunifuFlatButton1.IconZoom = 90.0R
         Me.BunifuFlatButton1.IsTab = False
-        Me.BunifuFlatButton1.Location = New System.Drawing.Point(213, 242)
+        Me.BunifuFlatButton1.Location = New System.Drawing.Point(252, 233)
         Me.BunifuFlatButton1.Name = "BunifuFlatButton1"
-        Me.BunifuFlatButton1.Normalcolor = System.Drawing.Color.FromArgb(CType(CType(46, Byte), Integer), CType(CType(139, Byte), Integer), CType(CType(87, Byte), Integer))
-        Me.BunifuFlatButton1.OnHovercolor = System.Drawing.Color.FromArgb(CType(CType(36, Byte), Integer), CType(CType(129, Byte), Integer), CType(CType(77, Byte), Integer))
+        Me.BunifuFlatButton1.Normalcolor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(102, Byte), Integer), CType(CType(204, Byte), Integer))
+        Me.BunifuFlatButton1.OnHovercolor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(102, Byte), Integer), CType(CType(180, Byte), Integer))
         Me.BunifuFlatButton1.OnHoverTextColor = System.Drawing.Color.White
         Me.BunifuFlatButton1.selected = False
-        Me.BunifuFlatButton1.Size = New System.Drawing.Size(241, 48)
+        Me.BunifuFlatButton1.Size = New System.Drawing.Size(173, 48)
         Me.BunifuFlatButton1.TabIndex = 5
         Me.BunifuFlatButton1.Text = "BunifuFlatButton1"
         Me.BunifuFlatButton1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
         Me.BunifuFlatButton1.Textcolor = System.Drawing.Color.White
         Me.BunifuFlatButton1.TextFont = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        '
+        'BunifuImageButton1
+        '
+        Me.BunifuImageButton1.BackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(102, Byte), Integer), CType(CType(204, Byte), Integer))
+        Me.BunifuImageButton1.Image = CType(resources.GetObject("BunifuImageButton1.Image"), System.Drawing.Image)
+        Me.BunifuImageButton1.ImageActive = Nothing
+        Me.BunifuImageButton1.Location = New System.Drawing.Point(623, 9)
+        Me.BunifuImageButton1.Name = "BunifuImageButton1"
+        Me.BunifuImageButton1.Size = New System.Drawing.Size(29, 23)
+        Me.BunifuImageButton1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
+        Me.BunifuImageButton1.TabIndex = 4
+        Me.BunifuImageButton1.TabStop = False
+        Me.BunifuImageButton1.Zoom = 10
+        '
+        'BunifuTextbox1
+        '
+        Me.BunifuTextbox1.BackColor = System.Drawing.Color.Silver
+        Me.BunifuTextbox1.BackgroundImage = CType(resources.GetObject("BunifuTextbox1.BackgroundImage"), System.Drawing.Image)
+        Me.BunifuTextbox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.BunifuTextbox1.ForeColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(102, Byte), Integer), CType(CType(204, Byte), Integer))
+        Me.BunifuTextbox1.Icon = CType(resources.GetObject("BunifuTextbox1.Icon"), System.Drawing.Image)
+        Me.BunifuTextbox1.Location = New System.Drawing.Point(180, 129)
+        Me.BunifuTextbox1.Name = "BunifuTextbox1"
+        Me.BunifuTextbox1.Size = New System.Drawing.Size(307, 36)
+        Me.BunifuTextbox1.TabIndex = 8
+        Me.BunifuTextbox1.text = ""
+        '
+        'BunifuTextbox2
+        '
+        Me.BunifuTextbox2.BackColor = System.Drawing.Color.Silver
+        Me.BunifuTextbox2.BackgroundImage = CType(resources.GetObject("BunifuTextbox2.BackgroundImage"), System.Drawing.Image)
+        Me.BunifuTextbox2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.BunifuTextbox2.ForeColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(102, Byte), Integer), CType(CType(204, Byte), Integer))
+        Me.BunifuTextbox2.Icon = CType(resources.GetObject("BunifuTextbox2.Icon"), System.Drawing.Image)
+        Me.BunifuTextbox2.Location = New System.Drawing.Point(180, 171)
+        Me.BunifuTextbox2.Name = "BunifuTextbox2"
+        Me.BunifuTextbox2.Size = New System.Drawing.Size(307, 36)
+        Me.BunifuTextbox2.TabIndex = 9
+        Me.BunifuTextbox2.Tag = ""
+        Me.BunifuTextbox2.text = ""
         '
         'Login
         '
@@ -136,28 +163,30 @@ Partial Class Login
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(37, Byte), Integer), CType(CType(46, Byte), Integer), CType(CType(59, Byte), Integer))
         Me.ClientSize = New System.Drawing.Size(664, 321)
+        Me.Controls.Add(Me.BunifuTextbox2)
+        Me.Controls.Add(Me.BunifuTextbox1)
         Me.Controls.Add(Me.BunifuFlatButton1)
-        Me.Controls.Add(Me.BunifuCustomTextbox2)
-        Me.Controls.Add(Me.BunifuCustomTextbox1)
-        Me.Controls.Add(Me.Panel1)
+        Me.Controls.Add(Me.header)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
+        Me.ImeMode = System.Windows.Forms.ImeMode.Off
         Me.Name = "Login"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
-        Me.Panel1.ResumeLayout(False)
-        Me.Panel1.PerformLayout()
+        Me.header.ResumeLayout(False)
+        Me.header.PerformLayout()
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.BunifuImageButton1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
-        Me.PerformLayout()
 
     End Sub
 
     Friend WithEvents BunifuElipse1 As Bunifu.Framework.UI.BunifuElipse
     Friend WithEvents BunifuDragControl1 As Bunifu.Framework.UI.BunifuDragControl
-    Friend WithEvents Panel1 As Panel
+    Friend WithEvents header As Panel
     Friend WithEvents PictureBox2 As PictureBox
     Friend WithEvents BunifuCustomLabel1 As Bunifu.Framework.UI.BunifuCustomLabel
     Friend WithEvents BunifuFlatButton1 As Bunifu.Framework.UI.BunifuFlatButton
-    Friend WithEvents BunifuCustomTextbox2 As WindowsFormsControlLibrary1.BunifuCustomTextbox
-    Friend WithEvents BunifuCustomTextbox1 As WindowsFormsControlLibrary1.BunifuCustomTextbox
+    Friend WithEvents BunifuImageButton1 As Bunifu.Framework.UI.BunifuImageButton
+    Friend WithEvents BunifuTextbox2 As Bunifu.Framework.UI.BunifuTextbox
+    Friend WithEvents BunifuTextbox1 As Bunifu.Framework.UI.BunifuTextbox
 End Class

@@ -26,7 +26,7 @@
     End Sub
 
     Private Sub Master_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-        Inicio1.Hide()
+
     End Sub
 
     Private Sub BunifuDropdown1_onItemSelected(sender As Object, e As EventArgs)
@@ -43,8 +43,7 @@
 
     Private Sub BunifuFlatButton1_Click(sender As Object, e As EventArgs) Handles BunifuFlatButton1.Click
         If BunifuFlatButton1.selected Then
-            Inicio1.BringToFront()
-            Inicio1.Show()
+
         End If
     End Sub
 
@@ -86,7 +85,5 @@
 
     End Sub
 
-    Private Sub Inicio1_Load(sender As Object, e As EventArgs) Handles Inicio1.Load
 
-    End Sub
 End Class

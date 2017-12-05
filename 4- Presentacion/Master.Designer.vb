@@ -477,5 +477,4 @@ Partial Class Master
     Friend WithEvents LogoAnimation As BunifuAnimatorNS.BunifuTransition
     Friend WithEvents PanelAnimation As BunifuAnimatorNS.BunifuTransition
     Friend WithEvents Logo As PictureBox
-    Friend WithEvents Inicio1 As Home
 End Class
