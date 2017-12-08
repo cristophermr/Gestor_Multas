@@ -247,13 +247,13 @@ Partial Class Master
         Me.BunifuFlatButton5.IconVisible = True
         Me.BunifuFlatButton5.IconZoom = 45.0R
         Me.BunifuFlatButton5.IsTab = True
-        Me.BunifuFlatButton5.Location = New System.Drawing.Point(6, 227)
+        Me.BunifuFlatButton5.Location = New System.Drawing.Point(6, 307)
         Me.BunifuFlatButton5.Name = "BunifuFlatButton5"
         Me.BunifuFlatButton5.Normalcolor = System.Drawing.Color.FromArgb(CType(CType(26, Byte), Integer), CType(CType(32, Byte), Integer), CType(CType(40, Byte), Integer))
         Me.BunifuFlatButton5.OnHovercolor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(102, Byte), Integer), CType(CType(204, Byte), Integer))
         Me.BunifuFlatButton5.OnHoverTextColor = System.Drawing.Color.White
         Me.BunifuFlatButton5.selected = False
-        Me.BunifuFlatButton5.Size = New System.Drawing.Size(282, 42)
+        Me.BunifuFlatButton5.Size = New System.Drawing.Size(242, 42)
         Me.BunifuFlatButton5.TabIndex = 13
         Me.BunifuFlatButton5.Text = " &Salir"
         Me.BunifuFlatButton5.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
@@ -284,7 +284,7 @@ Partial Class Master
         Me.BunifuFlatButton4.IconVisible = True
         Me.BunifuFlatButton4.IconZoom = 40.0R
         Me.BunifuFlatButton4.IsTab = True
-        Me.BunifuFlatButton4.Location = New System.Drawing.Point(6, 179)
+        Me.BunifuFlatButton4.Location = New System.Drawing.Point(6, 259)
         Me.BunifuFlatButton4.Name = "BunifuFlatButton4"
         Me.BunifuFlatButton4.Normalcolor = System.Drawing.Color.FromArgb(CType(CType(26, Byte), Integer), CType(CType(32, Byte), Integer), CType(CType(40, Byte), Integer))
         Me.BunifuFlatButton4.OnHovercolor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(102, Byte), Integer), CType(CType(204, Byte), Integer))
@@ -321,7 +321,7 @@ Partial Class Master
         Me.BunifuFlatButton2.IconVisible = True
         Me.BunifuFlatButton2.IconZoom = 50.0R
         Me.BunifuFlatButton2.IsTab = True
-        Me.BunifuFlatButton2.Location = New System.Drawing.Point(6, 131)
+        Me.BunifuFlatButton2.Location = New System.Drawing.Point(6, 211)
         Me.BunifuFlatButton2.Name = "BunifuFlatButton2"
         Me.BunifuFlatButton2.Normalcolor = System.Drawing.Color.FromArgb(CType(CType(26, Byte), Integer), CType(CType(32, Byte), Integer), CType(CType(40, Byte), Integer))
         Me.BunifuFlatButton2.OnHovercolor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(102, Byte), Integer), CType(CType(204, Byte), Integer))
@@ -373,7 +373,6 @@ Partial Class Master
         '
         'Panel2
         '
-
         Me.Panel2.Controls.Add(Me.SlideMenu)
         Me.PanelAnimation.SetDecoration(Me.Panel2, BunifuAnimatorNS.DecorationType.None)
         Me.LogoAnimation.SetDecoration(Me.Panel2, BunifuAnimatorNS.DecorationType.None)
@@ -424,7 +423,6 @@ Partial Class Master
         Animation2.TimeCoeff = 0!
         Animation2.TransparencyCoeff = 0!
         Me.PanelAnimation.DefaultAnimation = Animation2
-
         '
         'Master
         '
