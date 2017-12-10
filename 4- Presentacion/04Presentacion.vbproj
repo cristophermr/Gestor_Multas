@@ -120,6 +120,36 @@
     <Compile Include="Segmentos\About.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="Segmentos\Conductores.Designer.vb">
+      <DependentUpon>Conductores.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Segmentos\Conductores.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Segmentos\Licencias.Designer.vb">
+      <DependentUpon>Licencias.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Segmentos\Licencias.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Segmentos\Multas.Designer.vb">
+      <DependentUpon>Multas.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Segmentos\Multas.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Segmentos\Tipos_Licencias.Designer.vb">
+      <DependentUpon>Tipos_Licencias.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Segmentos\Tipos_Licencias.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Segmentos\Usuarios.Designer.vb">
+      <DependentUpon>Usuarios.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Segmentos\Usuarios.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Example.resx">
