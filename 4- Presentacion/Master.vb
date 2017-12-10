@@ -27,7 +27,10 @@
 
     Private Sub Master_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         pnlCatalogos.Hide()
+        pnlProcesos.Hide()
         bntProcesos.Location = New Point(3, 130)
+        btnReportes.Location = New Point(3, 179)
+        btnSalir.Location = New Point(0, 227)
     End Sub
 
     Private Sub BunifuDropdown1_onItemSelected(sender As Object, e As EventArgs)
@@ -46,10 +49,15 @@
         If pnlCatalogos.Visible = True Then
             pnlCatalogos.Visible = False
             bntProcesos.Location = New Point(3, 130)
+            btnReportes.Location = New Point(3, 179)
+            btnSalir.Location = New Point(0, 227)
+
             SubMenus.HideSync(pnlCatalogos)
         Else
             pnlCatalogos.Visible = True
-            bntProcesos.Location = New Point(1, 302)
+            bntProcesos.Location = New Point(1, 257)
+            btnReportes.Location = New Point(1, 350)
+            btnSalir.Location = New Point(1, 398)
             SubMenus.ShowSync(pnlCatalogos)
 
         End If
@@ -96,5 +104,21 @@
     Private Sub BunifuImageButton3_Click(sender As Object, e As EventArgs) Handles BunifuImageButton3.Click
         Dim Acerca As New About
         DialogResult = Acerca.ShowDialog
+    End Sub
+
+    Private Sub bntProcesos_Click(sender As Object, e As EventArgs) Handles bntProcesos.Click
+        If pnlProcesos.Visible = True Then
+            pnlProcesos.Visible = False
+            btnReportes.Location = New Point(3, 179)
+            btnSalir.Location = New Point(0, 227)
+
+            SubMenus.HideSync(pnlProcesos)
+        Else
+            pnlProcesos.Visible = True
+            btnReportes.Location = New Point(1, 257)
+            btnSalir.Location = New Point(-2, 305)
+            SubMenus.ShowSync(pnlProcesos)
+
+        End If
     End Sub
 End Class
