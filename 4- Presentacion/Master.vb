@@ -26,7 +26,8 @@
     End Sub
 
     Private Sub Master_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-
+        pnlCatalogos.Hide()
+        bntProcesos.Location = New Point(3, 130)
     End Sub
 
     Private Sub BunifuDropdown1_onItemSelected(sender As Object, e As EventArgs)
@@ -41,13 +42,20 @@
 
     End Sub
 
-    Private Sub BunifuFlatButton1_Click(sender As Object, e As EventArgs) Handles BunifuFlatButton1.Click
-        If BunifuFlatButton1.selected Then
+    Private Sub BunifuFlatButton1_Click(sender As Object, e As EventArgs) Handles bntCatalogos.Click
+        If pnlCatalogos.Visible = True Then
+            pnlCatalogos.Visible = False
+            bntProcesos.Location = New Point(3, 130)
+            SubMenus.HideSync(pnlCatalogos)
+        Else
+            pnlCatalogos.Visible = True
+            bntProcesos.Location = New Point(1, 302)
+            SubMenus.ShowSync(pnlCatalogos)
 
         End If
     End Sub
 
-    Private Sub BunifuFlatButton5_Click(sender As Object, e As EventArgs) Handles BunifuFlatButton5.Click
+    Private Sub BunifuFlatButton5_Click(sender As Object, e As EventArgs) Handles btnSalir.Click
         Environment.Exit(0)
     End Sub
 
