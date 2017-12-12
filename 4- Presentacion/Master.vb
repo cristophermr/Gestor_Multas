@@ -28,6 +28,7 @@
     Private Sub Master_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         pnlCatalogos.Hide()
         pnlProcesos.Hide()
+        Dim Conductores As Conductores
         bntProcesos.Location = New Point(3, 130)
         btnReportes.Location = New Point(3, 179)
         btnSalir.Location = New Point(0, 227)
@@ -120,5 +121,9 @@
             SubMenus.ShowSync(pnlProcesos)
 
         End If
+    End Sub
+
+    Private Sub BunifuFlatButton3_Click_1(sender As Object, e As EventArgs) Handles btnConductores.Click
+
     End Sub
 End Class

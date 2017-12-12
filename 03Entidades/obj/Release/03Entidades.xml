@@ -204,5 +204,45 @@
  </summary>
  <returns>Observaciones adicionales</returns>
 </member>
+<member name="M:_03Entidades.UsuariosEN.#ctor(System.String,System.String,System.Double,System.Boolean,System.Boolean)">
+ <summary>
+ Constructor que recibe todos los datos de la clase
+ </summary>
+ <param name="pLogin">Usuario de inicio de sesion</param>
+ <param name="pNom_Comp">Nombre completo del usuario</param>
+ <param name="pContraseña">Contraseña para iniciar sesion</param>
+ <param name="pInd_Admin">Indica si es administrador</param>
+ <param name="pInd_Digita">Indica si es digitador</param>
+</member>
+<member name="P:_03Entidades.UsuariosEN.Login">
+ <summary>
+ Usuario de inicio de sesion
+ </summary>
+ <returns>Usuario de inicio de sesion</returns>
+</member>
+<member name="P:_03Entidades.UsuariosEN.Nom_Completo">
+ <summary>
+ Nombre completo del usuario
+ </summary>
+ <returns>Nombre completo del usuario</returns>
+</member>
+<member name="P:_03Entidades.UsuariosEN.Contraseña">
+ <summary>
+ Contraseña para iniciar sesion
+ </summary>
+ <returns>Contraseña para iniciar sesion</returns>
+</member>
+<member name="P:_03Entidades.UsuariosEN.Ind_Admin">
+ <summary>
+ Indica si es administrador
+ </summary>
+ <returns>Indica si es administrador</returns>
+</member>
+<member name="P:_03Entidades.UsuariosEN.Ind_Digita">
+ <summary>
+ Indica si es digitador
+ </summary>
+ <returns>Indica si es digitador</returns>
+</member>
 </members>
 </doc>

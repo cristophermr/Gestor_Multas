@@ -22,8 +22,16 @@ Partial Class Tipos_Licencias
     'No lo modifique con el editor de código.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        components = New System.ComponentModel.Container()
+        Me.SuspendLayout()
+        '
+        'Tipos_Licencias
+        '
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
+        Me.Name = "Tipos_Licencias"
+        Me.Size = New System.Drawing.Size(810, 518)
+        Me.ResumeLayout(False)
+
     End Sub
 
 End Class

@@ -14,3 +14,19 @@ C:\Users\Cristopher M.R\Desktop\ProyectoLicencias\02LogicaNegocios\obj\Release\0
 C:\Users\Cristopher M.R\Desktop\ProyectoLicencias\02LogicaNegocios\obj\Release\02LogicaNegocios.dll
 C:\Users\Cristopher M.R\Desktop\ProyectoLicencias\02LogicaNegocios\obj\Release\02LogicaNegocios.xml
 C:\Users\Cristopher M.R\Desktop\ProyectoLicencias\02LogicaNegocios\obj\Release\02LogicaNegocios.pdb
+D:\ProyectoLicencias\02LogicaNegocios\bin\Release\02LogicaNegocios.dll
+D:\ProyectoLicencias\02LogicaNegocios\bin\Release\02LogicaNegocios.pdb
+D:\ProyectoLicencias\02LogicaNegocios\bin\Release\02LogicaNegocios.xml
+D:\ProyectoLicencias\02LogicaNegocios\bin\Release\01AccesoDatos.dll
+D:\ProyectoLicencias\02LogicaNegocios\bin\Release\03Entidades.dll
+D:\ProyectoLicencias\02LogicaNegocios\bin\Release\01AccesoDatos.pdb
+D:\ProyectoLicencias\02LogicaNegocios\bin\Release\01AccesoDatos.xml
+D:\ProyectoLicencias\02LogicaNegocios\bin\Release\03Entidades.pdb
+D:\ProyectoLicencias\02LogicaNegocios\bin\Release\03Entidades.xml
+D:\ProyectoLicencias\02LogicaNegocios\obj\Release\02LogicaNegocios.vbprojResolveAssemblyReference.cache
+D:\ProyectoLicencias\02LogicaNegocios\obj\Release\_02LogicaNegocios.Resources.resources
+D:\ProyectoLicencias\02LogicaNegocios\obj\Release\02LogicaNegocios.vbproj.GenerateResource.Cache
+D:\ProyectoLicencias\02LogicaNegocios\obj\Release\02LogicaNegocios.vbproj.CoreCompileInputs.cache
+D:\ProyectoLicencias\02LogicaNegocios\obj\Release\02LogicaNegocios.dll
+D:\ProyectoLicencias\02LogicaNegocios\obj\Release\02LogicaNegocios.xml
+D:\ProyectoLicencias\02LogicaNegocios\obj\Release\02LogicaNegocios.pdb

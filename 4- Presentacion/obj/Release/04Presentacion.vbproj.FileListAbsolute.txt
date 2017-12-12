@@ -29,3 +29,17 @@ D:\ProyectoLicencias\4- Presentacion\bin\Release\04Presentacion.pdb
 D:\ProyectoLicencias\4- Presentacion\bin\Release\04Presentacion.xml
 D:\ProyectoLicencias\4- Presentacion\bin\Release\Bunifu_UI_v1.5.3.dll
 D:\ProyectoLicencias\4- Presentacion\obj\Release\_04Presentacion.About.resources
+D:\ProyectoLicencias\4- Presentacion\bin\Release\03Entidades.dll
+D:\ProyectoLicencias\4- Presentacion\bin\Release\03Entidades.pdb
+D:\ProyectoLicencias\4- Presentacion\bin\Release\03Entidades.xml
+D:\ProyectoLicencias\4- Presentacion\obj\Release\_04Presentacion.Conductores.resources
+D:\ProyectoLicencias\4- Presentacion\obj\Release\_04Presentacion.Licencias.resources
+D:\ProyectoLicencias\4- Presentacion\obj\Release\_04Presentacion.Multas.resources
+D:\ProyectoLicencias\4- Presentacion\obj\Release\_04Presentacion.Tipos_Licencias.resources
+D:\ProyectoLicencias\4- Presentacion\obj\Release\_04Presentacion.Usuarios.resources
+D:\ProyectoLicencias\4- Presentacion\bin\Release\02LogicaNegocios.dll
+D:\ProyectoLicencias\4- Presentacion\bin\Release\01AccesoDatos.dll
+D:\ProyectoLicencias\4- Presentacion\bin\Release\02LogicaNegocios.pdb
+D:\ProyectoLicencias\4- Presentacion\bin\Release\02LogicaNegocios.xml
+D:\ProyectoLicencias\4- Presentacion\bin\Release\01AccesoDatos.pdb
+D:\ProyectoLicencias\4- Presentacion\bin\Release\01AccesoDatos.xml

@@ -170,12 +170,30 @@
     <EmbeddedResource Include="Segmentos\About.resx">
       <DependentUpon>About.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Segmentos\Conductores.resx">
+      <DependentUpon>Conductores.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Segmentos\Licencias.resx">
+      <DependentUpon>Licencias.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Segmentos\Multas.resx">
+      <DependentUpon>Multas.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Segmentos\Tipos_Licencias.resx">
+      <DependentUpon>Tipos_Licencias.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Segmentos\Usuarios.resx">
+      <DependentUpon>Usuarios.vb</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
     <None Include="My Project\Application.myapp">
       <Generator>MyApplicationCodeGenerator</Generator>
       <LastGenOutput>Application.Designer.vb</LastGenOutput>
     </None>
+    <None Include="My Project\DataSources\Conductores.datasource" />
+    <None Include="My Project\DataSources\_02LogicaNegocios.ConductoresLN.datasource" />
+    <None Include="My Project\DataSources\_03Entidades.ConductoresEN.datasource" />
     <None Include="My Project\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <CustomToolNamespace>My</CustomToolNamespace>
@@ -183,6 +201,15 @@
     </None>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <ProjectReference Include="..\02LogicaNegocios\02LogicaNegocios.vbproj">
+      <Project>{d23773a4-585d-414c-918c-aab67445b308}</Project>
+      <Name>02LogicaNegocios</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\03Entidades\03Entidades.vbproj">
+      <Project>{93f016df-09a2-4b27-8eb8-e884bcffd4b2}</Project>
+      <Name>03Entidades</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
 </Project>
