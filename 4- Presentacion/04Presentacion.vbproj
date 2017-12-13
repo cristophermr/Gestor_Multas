@@ -192,6 +192,7 @@
       <LastGenOutput>Application.Designer.vb</LastGenOutput>
     </None>
     <None Include="My Project\DataSources\Conductores.datasource" />
+    <None Include="My Project\DataSources\_01AccesoDatos.ConductoresAD.datasource" />
     <None Include="My Project\DataSources\_02LogicaNegocios.ConductoresLN.datasource" />
     <None Include="My Project\DataSources\_03Entidades.ConductoresEN.datasource" />
     <None Include="My Project\Settings.settings">
@@ -202,6 +203,10 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\01AccesoDatos\01AccesoDatos.vbproj">
+      <Project>{be7581c9-bcea-4c48-b9c5-6484b177da11}</Project>
+      <Name>01AccesoDatos</Name>
+    </ProjectReference>
     <ProjectReference Include="..\02LogicaNegocios\02LogicaNegocios.vbproj">
       <Project>{d23773a4-585d-414c-918c-aab67445b308}</Project>
       <Name>02LogicaNegocios</Name>

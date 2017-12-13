@@ -23,10 +23,10 @@ Partial Class Master
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
-        Dim Animation16 As BunifuAnimatorNS.Animation = New BunifuAnimatorNS.Animation()
+        Dim Animation3 As BunifuAnimatorNS.Animation = New BunifuAnimatorNS.Animation()
+        Dim Animation2 As BunifuAnimatorNS.Animation = New BunifuAnimatorNS.Animation()
+        Dim Animation1 As BunifuAnimatorNS.Animation = New BunifuAnimatorNS.Animation()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Master))
-        Dim Animation17 As BunifuAnimatorNS.Animation = New BunifuAnimatorNS.Animation()
-        Dim Animation18 As BunifuAnimatorNS.Animation = New BunifuAnimatorNS.Animation()
         Me.BunifuElipse1 = New Bunifu.Framework.UI.BunifuElipse(Me.components)
         Me.header = New System.Windows.Forms.Panel()
         Me.BunifuImageButton5 = New Bunifu.Framework.UI.BunifuImageButton()
@@ -39,6 +39,10 @@ Partial Class Master
         Me.BunifuImageButton3 = New Bunifu.Framework.UI.BunifuImageButton()
         Me.SlideMenu = New System.Windows.Forms.Panel()
         Me.lblEstado = New Bunifu.Framework.UI.BunifuCustomLabel()
+        Me.pnlProcesos = New System.Windows.Forms.Panel()
+        Me.btnMultas = New Bunifu.Framework.UI.BunifuFlatButton()
+        Me.BunifuFlatButton4 = New Bunifu.Framework.UI.BunifuFlatButton()
+        Me.btnLic = New Bunifu.Framework.UI.BunifuFlatButton()
         Me.bntProcesos = New Bunifu.Framework.UI.BunifuFlatButton()
         Me.pnlCatalogos = New System.Windows.Forms.Panel()
         Me.bntUsuarios = New Bunifu.Framework.UI.BunifuFlatButton()
@@ -53,10 +57,6 @@ Partial Class Master
         Me.LogoAnimation = New BunifuAnimatorNS.BunifuTransition(Me.components)
         Me.PanelAnimation = New BunifuAnimatorNS.BunifuTransition(Me.components)
         Me.SubMenus = New BunifuAnimatorNS.BunifuTransition(Me.components)
-        Me.btnLic = New Bunifu.Framework.UI.BunifuFlatButton()
-        Me.BunifuFlatButton4 = New Bunifu.Framework.UI.BunifuFlatButton()
-        Me.btnMultas = New Bunifu.Framework.UI.BunifuFlatButton()
-        Me.pnlProcesos = New System.Windows.Forms.Panel()
         Me.Conductores1 = New _04Presentacion.Conductores()
         Me.header.SuspendLayout()
         CType(Me.BunifuImageButton5, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -66,10 +66,10 @@ Partial Class Master
         CType(Me.bntMenu, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.BunifuImageButton3, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SlideMenu.SuspendLayout()
+        Me.pnlProcesos.SuspendLayout()
         Me.pnlCatalogos.SuspendLayout()
         CType(Me.Logo, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Panel2.SuspendLayout()
-        Me.pnlProcesos.SuspendLayout()
         Me.SuspendLayout()
         '
         'BunifuElipse1
@@ -248,6 +248,131 @@ Partial Class Master
         Me.lblEstado.Name = "lblEstado"
         Me.lblEstado.Size = New System.Drawing.Size(0, 13)
         Me.lblEstado.TabIndex = 1
+        '
+        'pnlProcesos
+        '
+        Me.pnlProcesos.BackColor = System.Drawing.Color.FromArgb(CType(CType(26, Byte), Integer), CType(CType(32, Byte), Integer), CType(CType(40, Byte), Integer))
+        Me.pnlProcesos.Controls.Add(Me.btnMultas)
+        Me.pnlProcesos.Controls.Add(Me.BunifuFlatButton4)
+        Me.pnlProcesos.Controls.Add(Me.btnLic)
+        Me.LogoAnimation.SetDecoration(Me.pnlProcesos, BunifuAnimatorNS.DecorationType.None)
+        Me.PanelAnimation.SetDecoration(Me.pnlProcesos, BunifuAnimatorNS.DecorationType.None)
+        Me.SubMenus.SetDecoration(Me.pnlProcesos, BunifuAnimatorNS.DecorationType.None)
+        Me.pnlProcesos.Location = New System.Drawing.Point(12, 282)
+        Me.pnlProcesos.Name = "pnlProcesos"
+        Me.pnlProcesos.Size = New System.Drawing.Size(243, 77)
+        Me.pnlProcesos.TabIndex = 18
+        '
+        'btnMultas
+        '
+        Me.btnMultas.Activecolor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(102, Byte), Integer), CType(CType(204, Byte), Integer))
+        Me.btnMultas.BackColor = System.Drawing.Color.FromArgb(CType(CType(26, Byte), Integer), CType(CType(32, Byte), Integer), CType(CType(40, Byte), Integer))
+        Me.btnMultas.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.btnMultas.BorderRadius = 0
+        Me.btnMultas.ButtonText = "  &Multas"
+        Me.btnMultas.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.SubMenus.SetDecoration(Me.btnMultas, BunifuAnimatorNS.DecorationType.None)
+        Me.PanelAnimation.SetDecoration(Me.btnMultas, BunifuAnimatorNS.DecorationType.None)
+        Me.LogoAnimation.SetDecoration(Me.btnMultas, BunifuAnimatorNS.DecorationType.None)
+        Me.btnMultas.DisabledColor = System.Drawing.Color.Gray
+        Me.btnMultas.Iconcolor = System.Drawing.Color.Transparent
+        Me.btnMultas.Iconimage = CType(resources.GetObject("btnMultas.Iconimage"), System.Drawing.Image)
+        Me.btnMultas.Iconimage_right = Nothing
+        Me.btnMultas.Iconimage_right_Selected = Nothing
+        Me.btnMultas.Iconimage_Selected = Nothing
+        Me.btnMultas.IconMarginLeft = 0
+        Me.btnMultas.IconMarginRight = 0
+        Me.btnMultas.IconRightVisible = True
+        Me.btnMultas.IconRightZoom = 0R
+        Me.btnMultas.IconVisible = True
+        Me.btnMultas.IconZoom = 45.0R
+        Me.btnMultas.IsTab = False
+        Me.btnMultas.Location = New System.Drawing.Point(3, 41)
+        Me.btnMultas.Name = "btnMultas"
+        Me.btnMultas.Normalcolor = System.Drawing.Color.FromArgb(CType(CType(26, Byte), Integer), CType(CType(32, Byte), Integer), CType(CType(40, Byte), Integer))
+        Me.btnMultas.OnHovercolor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(102, Byte), Integer), CType(CType(204, Byte), Integer))
+        Me.btnMultas.OnHoverTextColor = System.Drawing.Color.White
+        Me.btnMultas.selected = False
+        Me.btnMultas.Size = New System.Drawing.Size(186, 40)
+        Me.btnMultas.TabIndex = 15
+        Me.btnMultas.Text = "  &Multas"
+        Me.btnMultas.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.btnMultas.Textcolor = System.Drawing.Color.White
+        Me.btnMultas.TextFont = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        '
+        'BunifuFlatButton4
+        '
+        Me.BunifuFlatButton4.Activecolor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(102, Byte), Integer), CType(CType(204, Byte), Integer))
+        Me.BunifuFlatButton4.BackColor = System.Drawing.Color.FromArgb(CType(CType(26, Byte), Integer), CType(CType(32, Byte), Integer), CType(CType(40, Byte), Integer))
+        Me.BunifuFlatButton4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.BunifuFlatButton4.BorderRadius = 0
+        Me.BunifuFlatButton4.ButtonText = "  C&onductores"
+        Me.BunifuFlatButton4.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.SubMenus.SetDecoration(Me.BunifuFlatButton4, BunifuAnimatorNS.DecorationType.None)
+        Me.PanelAnimation.SetDecoration(Me.BunifuFlatButton4, BunifuAnimatorNS.DecorationType.None)
+        Me.LogoAnimation.SetDecoration(Me.BunifuFlatButton4, BunifuAnimatorNS.DecorationType.None)
+        Me.BunifuFlatButton4.DisabledColor = System.Drawing.Color.Gray
+        Me.BunifuFlatButton4.Iconcolor = System.Drawing.Color.Transparent
+        Me.BunifuFlatButton4.Iconimage = CType(resources.GetObject("BunifuFlatButton4.Iconimage"), System.Drawing.Image)
+        Me.BunifuFlatButton4.Iconimage_right = Nothing
+        Me.BunifuFlatButton4.Iconimage_right_Selected = Nothing
+        Me.BunifuFlatButton4.Iconimage_Selected = Nothing
+        Me.BunifuFlatButton4.IconMarginLeft = 0
+        Me.BunifuFlatButton4.IconMarginRight = 0
+        Me.BunifuFlatButton4.IconRightVisible = True
+        Me.BunifuFlatButton4.IconRightZoom = 0R
+        Me.BunifuFlatButton4.IconVisible = True
+        Me.BunifuFlatButton4.IconZoom = 45.0R
+        Me.BunifuFlatButton4.IsTab = False
+        Me.BunifuFlatButton4.Location = New System.Drawing.Point(3, 46)
+        Me.BunifuFlatButton4.Name = "BunifuFlatButton4"
+        Me.BunifuFlatButton4.Normalcolor = System.Drawing.Color.FromArgb(CType(CType(26, Byte), Integer), CType(CType(32, Byte), Integer), CType(CType(40, Byte), Integer))
+        Me.BunifuFlatButton4.OnHovercolor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(102, Byte), Integer), CType(CType(204, Byte), Integer))
+        Me.BunifuFlatButton4.OnHoverTextColor = System.Drawing.Color.White
+        Me.BunifuFlatButton4.selected = False
+        Me.BunifuFlatButton4.Size = New System.Drawing.Size(186, 40)
+        Me.BunifuFlatButton4.TabIndex = 16
+        Me.BunifuFlatButton4.Text = "  C&onductores"
+        Me.BunifuFlatButton4.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.BunifuFlatButton4.Textcolor = System.Drawing.Color.White
+        Me.BunifuFlatButton4.TextFont = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        '
+        'btnLic
+        '
+        Me.btnLic.Activecolor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(102, Byte), Integer), CType(CType(204, Byte), Integer))
+        Me.btnLic.BackColor = System.Drawing.Color.FromArgb(CType(CType(26, Byte), Integer), CType(CType(32, Byte), Integer), CType(CType(40, Byte), Integer))
+        Me.btnLic.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.btnLic.BorderRadius = 0
+        Me.btnLic.ButtonText = "  &Licencias"
+        Me.btnLic.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.SubMenus.SetDecoration(Me.btnLic, BunifuAnimatorNS.DecorationType.None)
+        Me.PanelAnimation.SetDecoration(Me.btnLic, BunifuAnimatorNS.DecorationType.None)
+        Me.LogoAnimation.SetDecoration(Me.btnLic, BunifuAnimatorNS.DecorationType.None)
+        Me.btnLic.DisabledColor = System.Drawing.Color.Gray
+        Me.btnLic.Iconcolor = System.Drawing.Color.Transparent
+        Me.btnLic.Iconimage = CType(resources.GetObject("btnLic.Iconimage"), System.Drawing.Image)
+        Me.btnLic.Iconimage_right = Nothing
+        Me.btnLic.Iconimage_right_Selected = Nothing
+        Me.btnLic.Iconimage_Selected = Nothing
+        Me.btnLic.IconMarginLeft = 0
+        Me.btnLic.IconMarginRight = 0
+        Me.btnLic.IconRightVisible = True
+        Me.btnLic.IconRightZoom = 0R
+        Me.btnLic.IconVisible = True
+        Me.btnLic.IconZoom = 45.0R
+        Me.btnLic.IsTab = False
+        Me.btnLic.Location = New System.Drawing.Point(3, 3)
+        Me.btnLic.Name = "btnLic"
+        Me.btnLic.Normalcolor = System.Drawing.Color.FromArgb(CType(CType(26, Byte), Integer), CType(CType(32, Byte), Integer), CType(CType(40, Byte), Integer))
+        Me.btnLic.OnHovercolor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(102, Byte), Integer), CType(CType(204, Byte), Integer))
+        Me.btnLic.OnHoverTextColor = System.Drawing.Color.White
+        Me.btnLic.selected = False
+        Me.btnLic.Size = New System.Drawing.Size(186, 40)
+        Me.btnLic.TabIndex = 15
+        Me.btnLic.Text = "  &Licencias"
+        Me.btnLic.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.btnLic.Textcolor = System.Drawing.Color.White
+        Me.btnLic.TextFont = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         '
         'bntProcesos
         '
@@ -594,189 +719,64 @@ Partial Class Master
         '
         Me.LogoAnimation.AnimationType = BunifuAnimatorNS.AnimationType.ScaleAndRotate
         Me.LogoAnimation.Cursor = Nothing
-        Animation16.AnimateOnlyDifferences = True
-        Animation16.BlindCoeff = CType(resources.GetObject("Animation16.BlindCoeff"), System.Drawing.PointF)
-        Animation16.LeafCoeff = 0!
-        Animation16.MaxTime = 1.0!
-        Animation16.MinTime = 0!
-        Animation16.MosaicCoeff = CType(resources.GetObject("Animation16.MosaicCoeff"), System.Drawing.PointF)
-        Animation16.MosaicShift = CType(resources.GetObject("Animation16.MosaicShift"), System.Drawing.PointF)
-        Animation16.MosaicSize = 0
-        Animation16.Padding = New System.Windows.Forms.Padding(30)
-        Animation16.RotateCoeff = 0.5!
-        Animation16.RotateLimit = 0.2!
-        Animation16.ScaleCoeff = CType(resources.GetObject("Animation16.ScaleCoeff"), System.Drawing.PointF)
-        Animation16.SlideCoeff = CType(resources.GetObject("Animation16.SlideCoeff"), System.Drawing.PointF)
-        Animation16.TimeCoeff = 0!
-        Animation16.TransparencyCoeff = 0!
-        Me.LogoAnimation.DefaultAnimation = Animation16
+        Animation3.AnimateOnlyDifferences = True
+        Animation3.BlindCoeff = CType(resources.GetObject("Animation3.BlindCoeff"), System.Drawing.PointF)
+        Animation3.LeafCoeff = 0!
+        Animation3.MaxTime = 1.0!
+        Animation3.MinTime = 0!
+        Animation3.MosaicCoeff = CType(resources.GetObject("Animation3.MosaicCoeff"), System.Drawing.PointF)
+        Animation3.MosaicShift = CType(resources.GetObject("Animation3.MosaicShift"), System.Drawing.PointF)
+        Animation3.MosaicSize = 0
+        Animation3.Padding = New System.Windows.Forms.Padding(30)
+        Animation3.RotateCoeff = 0.5!
+        Animation3.RotateLimit = 0.2!
+        Animation3.ScaleCoeff = CType(resources.GetObject("Animation3.ScaleCoeff"), System.Drawing.PointF)
+        Animation3.SlideCoeff = CType(resources.GetObject("Animation3.SlideCoeff"), System.Drawing.PointF)
+        Animation3.TimeCoeff = 0!
+        Animation3.TransparencyCoeff = 0!
+        Me.LogoAnimation.DefaultAnimation = Animation3
         '
         'PanelAnimation
         '
         Me.PanelAnimation.AnimationType = BunifuAnimatorNS.AnimationType.HorizSlide
         Me.PanelAnimation.Cursor = Nothing
-        Animation17.AnimateOnlyDifferences = True
-        Animation17.BlindCoeff = CType(resources.GetObject("Animation17.BlindCoeff"), System.Drawing.PointF)
-        Animation17.LeafCoeff = 0!
-        Animation17.MaxTime = 1.0!
-        Animation17.MinTime = 0!
-        Animation17.MosaicCoeff = CType(resources.GetObject("Animation17.MosaicCoeff"), System.Drawing.PointF)
-        Animation17.MosaicShift = CType(resources.GetObject("Animation17.MosaicShift"), System.Drawing.PointF)
-        Animation17.MosaicSize = 0
-        Animation17.Padding = New System.Windows.Forms.Padding(0)
-        Animation17.RotateCoeff = 0!
-        Animation17.RotateLimit = 0!
-        Animation17.ScaleCoeff = CType(resources.GetObject("Animation17.ScaleCoeff"), System.Drawing.PointF)
-        Animation17.SlideCoeff = CType(resources.GetObject("Animation17.SlideCoeff"), System.Drawing.PointF)
-        Animation17.TimeCoeff = 0!
-        Animation17.TransparencyCoeff = 0!
-        Me.PanelAnimation.DefaultAnimation = Animation17
+        Animation2.AnimateOnlyDifferences = True
+        Animation2.BlindCoeff = CType(resources.GetObject("Animation2.BlindCoeff"), System.Drawing.PointF)
+        Animation2.LeafCoeff = 0!
+        Animation2.MaxTime = 1.0!
+        Animation2.MinTime = 0!
+        Animation2.MosaicCoeff = CType(resources.GetObject("Animation2.MosaicCoeff"), System.Drawing.PointF)
+        Animation2.MosaicShift = CType(resources.GetObject("Animation2.MosaicShift"), System.Drawing.PointF)
+        Animation2.MosaicSize = 0
+        Animation2.Padding = New System.Windows.Forms.Padding(0)
+        Animation2.RotateCoeff = 0!
+        Animation2.RotateLimit = 0!
+        Animation2.ScaleCoeff = CType(resources.GetObject("Animation2.ScaleCoeff"), System.Drawing.PointF)
+        Animation2.SlideCoeff = CType(resources.GetObject("Animation2.SlideCoeff"), System.Drawing.PointF)
+        Animation2.TimeCoeff = 0!
+        Animation2.TransparencyCoeff = 0!
+        Me.PanelAnimation.DefaultAnimation = Animation2
         '
         'SubMenus
         '
         Me.SubMenus.AnimationType = BunifuAnimatorNS.AnimationType.HorizBlind
         Me.SubMenus.Cursor = Nothing
-        Animation18.AnimateOnlyDifferences = True
-        Animation18.BlindCoeff = CType(resources.GetObject("Animation18.BlindCoeff"), System.Drawing.PointF)
-        Animation18.LeafCoeff = 0!
-        Animation18.MaxTime = 1.0!
-        Animation18.MinTime = 0!
-        Animation18.MosaicCoeff = CType(resources.GetObject("Animation18.MosaicCoeff"), System.Drawing.PointF)
-        Animation18.MosaicShift = CType(resources.GetObject("Animation18.MosaicShift"), System.Drawing.PointF)
-        Animation18.MosaicSize = 0
-        Animation18.Padding = New System.Windows.Forms.Padding(0)
-        Animation18.RotateCoeff = 0!
-        Animation18.RotateLimit = 0!
-        Animation18.ScaleCoeff = CType(resources.GetObject("Animation18.ScaleCoeff"), System.Drawing.PointF)
-        Animation18.SlideCoeff = CType(resources.GetObject("Animation18.SlideCoeff"), System.Drawing.PointF)
-        Animation18.TimeCoeff = 0!
-        Animation18.TransparencyCoeff = 0!
-        Me.SubMenus.DefaultAnimation = Animation18
-        '
-        'btnLic
-        '
-        Me.btnLic.Activecolor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(102, Byte), Integer), CType(CType(204, Byte), Integer))
-        Me.btnLic.BackColor = System.Drawing.Color.FromArgb(CType(CType(26, Byte), Integer), CType(CType(32, Byte), Integer), CType(CType(40, Byte), Integer))
-        Me.btnLic.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.btnLic.BorderRadius = 0
-        Me.btnLic.ButtonText = "  &Licencias"
-        Me.btnLic.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.SubMenus.SetDecoration(Me.btnLic, BunifuAnimatorNS.DecorationType.None)
-        Me.PanelAnimation.SetDecoration(Me.btnLic, BunifuAnimatorNS.DecorationType.None)
-        Me.LogoAnimation.SetDecoration(Me.btnLic, BunifuAnimatorNS.DecorationType.None)
-        Me.btnLic.DisabledColor = System.Drawing.Color.Gray
-        Me.btnLic.Iconcolor = System.Drawing.Color.Transparent
-        Me.btnLic.Iconimage = CType(resources.GetObject("btnLic.Iconimage"), System.Drawing.Image)
-        Me.btnLic.Iconimage_right = Nothing
-        Me.btnLic.Iconimage_right_Selected = Nothing
-        Me.btnLic.Iconimage_Selected = Nothing
-        Me.btnLic.IconMarginLeft = 0
-        Me.btnLic.IconMarginRight = 0
-        Me.btnLic.IconRightVisible = True
-        Me.btnLic.IconRightZoom = 0R
-        Me.btnLic.IconVisible = True
-        Me.btnLic.IconZoom = 45.0R
-        Me.btnLic.IsTab = False
-        Me.btnLic.Location = New System.Drawing.Point(3, 3)
-        Me.btnLic.Name = "btnLic"
-        Me.btnLic.Normalcolor = System.Drawing.Color.FromArgb(CType(CType(26, Byte), Integer), CType(CType(32, Byte), Integer), CType(CType(40, Byte), Integer))
-        Me.btnLic.OnHovercolor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(102, Byte), Integer), CType(CType(204, Byte), Integer))
-        Me.btnLic.OnHoverTextColor = System.Drawing.Color.White
-        Me.btnLic.selected = False
-        Me.btnLic.Size = New System.Drawing.Size(186, 40)
-        Me.btnLic.TabIndex = 15
-        Me.btnLic.Text = "  &Licencias"
-        Me.btnLic.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.btnLic.Textcolor = System.Drawing.Color.White
-        Me.btnLic.TextFont = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        '
-        'BunifuFlatButton4
-        '
-        Me.BunifuFlatButton4.Activecolor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(102, Byte), Integer), CType(CType(204, Byte), Integer))
-        Me.BunifuFlatButton4.BackColor = System.Drawing.Color.FromArgb(CType(CType(26, Byte), Integer), CType(CType(32, Byte), Integer), CType(CType(40, Byte), Integer))
-        Me.BunifuFlatButton4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.BunifuFlatButton4.BorderRadius = 0
-        Me.BunifuFlatButton4.ButtonText = "  C&onductores"
-        Me.BunifuFlatButton4.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.SubMenus.SetDecoration(Me.BunifuFlatButton4, BunifuAnimatorNS.DecorationType.None)
-        Me.PanelAnimation.SetDecoration(Me.BunifuFlatButton4, BunifuAnimatorNS.DecorationType.None)
-        Me.LogoAnimation.SetDecoration(Me.BunifuFlatButton4, BunifuAnimatorNS.DecorationType.None)
-        Me.BunifuFlatButton4.DisabledColor = System.Drawing.Color.Gray
-        Me.BunifuFlatButton4.Iconcolor = System.Drawing.Color.Transparent
-        Me.BunifuFlatButton4.Iconimage = CType(resources.GetObject("BunifuFlatButton4.Iconimage"), System.Drawing.Image)
-        Me.BunifuFlatButton4.Iconimage_right = Nothing
-        Me.BunifuFlatButton4.Iconimage_right_Selected = Nothing
-        Me.BunifuFlatButton4.Iconimage_Selected = Nothing
-        Me.BunifuFlatButton4.IconMarginLeft = 0
-        Me.BunifuFlatButton4.IconMarginRight = 0
-        Me.BunifuFlatButton4.IconRightVisible = True
-        Me.BunifuFlatButton4.IconRightZoom = 0R
-        Me.BunifuFlatButton4.IconVisible = True
-        Me.BunifuFlatButton4.IconZoom = 45.0R
-        Me.BunifuFlatButton4.IsTab = False
-        Me.BunifuFlatButton4.Location = New System.Drawing.Point(3, 46)
-        Me.BunifuFlatButton4.Name = "BunifuFlatButton4"
-        Me.BunifuFlatButton4.Normalcolor = System.Drawing.Color.FromArgb(CType(CType(26, Byte), Integer), CType(CType(32, Byte), Integer), CType(CType(40, Byte), Integer))
-        Me.BunifuFlatButton4.OnHovercolor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(102, Byte), Integer), CType(CType(204, Byte), Integer))
-        Me.BunifuFlatButton4.OnHoverTextColor = System.Drawing.Color.White
-        Me.BunifuFlatButton4.selected = False
-        Me.BunifuFlatButton4.Size = New System.Drawing.Size(186, 40)
-        Me.BunifuFlatButton4.TabIndex = 16
-        Me.BunifuFlatButton4.Text = "  C&onductores"
-        Me.BunifuFlatButton4.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.BunifuFlatButton4.Textcolor = System.Drawing.Color.White
-        Me.BunifuFlatButton4.TextFont = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        '
-        'btnMultas
-        '
-        Me.btnMultas.Activecolor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(102, Byte), Integer), CType(CType(204, Byte), Integer))
-        Me.btnMultas.BackColor = System.Drawing.Color.FromArgb(CType(CType(26, Byte), Integer), CType(CType(32, Byte), Integer), CType(CType(40, Byte), Integer))
-        Me.btnMultas.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.btnMultas.BorderRadius = 0
-        Me.btnMultas.ButtonText = "  &Multas"
-        Me.btnMultas.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.SubMenus.SetDecoration(Me.btnMultas, BunifuAnimatorNS.DecorationType.None)
-        Me.PanelAnimation.SetDecoration(Me.btnMultas, BunifuAnimatorNS.DecorationType.None)
-        Me.LogoAnimation.SetDecoration(Me.btnMultas, BunifuAnimatorNS.DecorationType.None)
-        Me.btnMultas.DisabledColor = System.Drawing.Color.Gray
-        Me.btnMultas.Iconcolor = System.Drawing.Color.Transparent
-        Me.btnMultas.Iconimage = CType(resources.GetObject("btnMultas.Iconimage"), System.Drawing.Image)
-        Me.btnMultas.Iconimage_right = Nothing
-        Me.btnMultas.Iconimage_right_Selected = Nothing
-        Me.btnMultas.Iconimage_Selected = Nothing
-        Me.btnMultas.IconMarginLeft = 0
-        Me.btnMultas.IconMarginRight = 0
-        Me.btnMultas.IconRightVisible = True
-        Me.btnMultas.IconRightZoom = 0R
-        Me.btnMultas.IconVisible = True
-        Me.btnMultas.IconZoom = 45.0R
-        Me.btnMultas.IsTab = False
-        Me.btnMultas.Location = New System.Drawing.Point(3, 41)
-        Me.btnMultas.Name = "btnMultas"
-        Me.btnMultas.Normalcolor = System.Drawing.Color.FromArgb(CType(CType(26, Byte), Integer), CType(CType(32, Byte), Integer), CType(CType(40, Byte), Integer))
-        Me.btnMultas.OnHovercolor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(102, Byte), Integer), CType(CType(204, Byte), Integer))
-        Me.btnMultas.OnHoverTextColor = System.Drawing.Color.White
-        Me.btnMultas.selected = False
-        Me.btnMultas.Size = New System.Drawing.Size(186, 40)
-        Me.btnMultas.TabIndex = 15
-        Me.btnMultas.Text = "  &Multas"
-        Me.btnMultas.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.btnMultas.Textcolor = System.Drawing.Color.White
-        Me.btnMultas.TextFont = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        '
-        'pnlProcesos
-        '
-        Me.pnlProcesos.BackColor = System.Drawing.Color.FromArgb(CType(CType(26, Byte), Integer), CType(CType(32, Byte), Integer), CType(CType(40, Byte), Integer))
-        Me.pnlProcesos.Controls.Add(Me.btnMultas)
-        Me.pnlProcesos.Controls.Add(Me.BunifuFlatButton4)
-        Me.pnlProcesos.Controls.Add(Me.btnLic)
-        Me.LogoAnimation.SetDecoration(Me.pnlProcesos, BunifuAnimatorNS.DecorationType.None)
-        Me.PanelAnimation.SetDecoration(Me.pnlProcesos, BunifuAnimatorNS.DecorationType.None)
-        Me.SubMenus.SetDecoration(Me.pnlProcesos, BunifuAnimatorNS.DecorationType.None)
-        Me.pnlProcesos.Location = New System.Drawing.Point(12, 282)
-        Me.pnlProcesos.Name = "pnlProcesos"
-        Me.pnlProcesos.Size = New System.Drawing.Size(243, 77)
-        Me.pnlProcesos.TabIndex = 18
+        Animation1.AnimateOnlyDifferences = True
+        Animation1.BlindCoeff = CType(resources.GetObject("Animation1.BlindCoeff"), System.Drawing.PointF)
+        Animation1.LeafCoeff = 0!
+        Animation1.MaxTime = 1.0!
+        Animation1.MinTime = 0!
+        Animation1.MosaicCoeff = CType(resources.GetObject("Animation1.MosaicCoeff"), System.Drawing.PointF)
+        Animation1.MosaicShift = CType(resources.GetObject("Animation1.MosaicShift"), System.Drawing.PointF)
+        Animation1.MosaicSize = 0
+        Animation1.Padding = New System.Windows.Forms.Padding(0)
+        Animation1.RotateCoeff = 0!
+        Animation1.RotateLimit = 0!
+        Animation1.ScaleCoeff = CType(resources.GetObject("Animation1.ScaleCoeff"), System.Drawing.PointF)
+        Animation1.SlideCoeff = CType(resources.GetObject("Animation1.SlideCoeff"), System.Drawing.PointF)
+        Animation1.TimeCoeff = 0!
+        Animation1.TransparencyCoeff = 0!
+        Me.SubMenus.DefaultAnimation = Animation1
         '
         'Conductores1
         '
@@ -817,10 +817,10 @@ Partial Class Master
         CType(Me.BunifuImageButton3, System.ComponentModel.ISupportInitialize).EndInit()
         Me.SlideMenu.ResumeLayout(False)
         Me.SlideMenu.PerformLayout()
+        Me.pnlProcesos.ResumeLayout(False)
         Me.pnlCatalogos.ResumeLayout(False)
         CType(Me.Logo, System.ComponentModel.ISupportInitialize).EndInit()
         Me.Panel2.ResumeLayout(False)
-        Me.pnlProcesos.ResumeLayout(False)
         Me.ResumeLayout(False)
         Me.PerformLayout()
 

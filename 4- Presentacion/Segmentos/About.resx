@@ -123,12 +123,12 @@
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="BunifuFlatButton1.Iconimage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
-        iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
-        YQUAAADwSURBVFhH7Za9DgFBFEa3FwWJ2qOIN1ApRfwUIkg0NOKRVF5C4w30GgU148zut51idkdGZOck
-        p5i7+917bTZIIpG/wxgzwLaOYWHwDF94wZrKYWDgBi1PHKocBgau0H7y6g1fVnb44pfDxxruwxVPuMOW
-        WrtBYI3f5IF9tXeDwBTt47dsVXaGTAM7eLANwD7Rni67QWCCpZfIIZt/gd2wqbIbBL61xDFrYfYquUPI
-        vpReS5DrZnFzVqkYBL2WIFPPouauUnEIj9BniRQdy0F+jvaNLvxzzP0pOpaHHqX+kKTTQcfwaH5coMIL
-        RCKfSZI3pMP/Fb6NiB8AAAAASUVORK5CYII=
+        iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAABGdBTUEAALGPC/xhBQAAAPBJREFUWEft
+        lr0OAUEURrcXBYnao4g3UClF/BQiSDQ04pFUXkLjDfQaBTXjzO63nWJ2R0Zk5ySnmLv73XttNkgikb/D
+        GDPAto5hYfAMX3jBmsphYOAGLU8cqhwGBq7QfvLqDV9Wdvjil8PHGu7DFU+4w5Zau0Fgjd/kgX21d4PA
+        FO3jt2xVdoZMAzt4sA3APtGeLrtBYIKll8ghm3+B3bCpshsEvrXEMWth9iq5Q8i+lF5LkOtmcXNWqRgE
+        vZYgU8+i5q5ScQiP0GeJFB3LQX6O9o0u/HPM/Sk6locepf6QpNNBx/BoflygwgtEIp9Jkjekw/8Vvo2I
+        HwAAAABJRU5ErkJggg==
 </value>
   </data>
   <metadata name="BunifuDragControl1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">

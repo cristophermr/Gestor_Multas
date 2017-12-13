@@ -1,5 +1,7 @@
-﻿Public Class Master
-    
+﻿Imports _02LogicaNegocios
+
+Public Class Master
+
     Private Sub BunifuImageButton2_Click(sender As Object, e As EventArgs) Handles BunifuImageButton2.Click
         Close()
     End Sub
@@ -32,6 +34,8 @@
         bntProcesos.Location = New Point(3, 130)
         btnReportes.Location = New Point(3, 179)
         btnSalir.Location = New Point(0, 227)
+        ObtenerCondutoresData()
+
     End Sub
 
     Private Sub BunifuDropdown1_onItemSelected(sender As Object, e As EventArgs)
@@ -124,6 +128,10 @@
     End Sub
 
     Private Sub BunifuFlatButton3_Click_1(sender As Object, e As EventArgs) Handles btnConductores.Click
+
+    End Sub
+
+    Private Sub Conductores1_Load(sender As Object, e As EventArgs) Handles Conductores1.Load
 
     End Sub
 End Class
