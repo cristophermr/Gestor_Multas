@@ -1,9 +1,9 @@
-﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
+﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()>
 Partial Class Conductores
     Inherits System.Windows.Forms.UserControl
 
     'UserControl reemplaza a Dispose para limpiar la lista de componentes.
-    <System.Diagnostics.DebuggerNonUserCode()> _
+    <System.Diagnostics.DebuggerNonUserCode()>
     Protected Overrides Sub Dispose(ByVal disposing As Boolean)
         Try
             If disposing AndAlso components IsNot Nothing Then
@@ -20,17 +20,18 @@ Partial Class Conductores
     'NOTA: el Diseñador de Windows Forms necesita el siguiente procedimiento
     'Se puede modificar usando el Diseñador de Windows Forms.  
     'No lo modifique con el editor de código.
-    <System.Diagnostics.DebuggerStepThrough()> _
+    <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
-        Dim DataGridViewCellStyle1 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle2 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Conductores))
         Me.pnlAcciones = New System.Windows.Forms.Panel()
+        Me.BunifuImageButton3 = New Bunifu.Framework.UI.BunifuImageButton()
+        Me.BunifuImageButton2 = New Bunifu.Framework.UI.BunifuImageButton()
+        Me.BunifuImageButton1 = New Bunifu.Framework.UI.BunifuImageButton()
         Me.txtBuscar = New Bunifu.Framework.UI.BunifuMetroTextbox()
         Me.btnimgBuscar = New Bunifu.Framework.UI.BunifuImageButton()
         Me.pnlContenido = New System.Windows.Forms.Panel()
-        Me.BunifuCustomDataGrid1 = New Bunifu.Framework.UI.BunifuCustomDataGrid()
+        Me.dgvConductores = New System.Windows.Forms.DataGridView()
         Me.ConductoresENBindingSource = New System.Windows.Forms.BindingSource(Me.components)
         Me.CedulaDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.NombreCompletoDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
@@ -41,17 +42,14 @@ Partial Class Conductores
         Me.DirCompletaDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.ObservacionesDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.IndActivoDataGridViewCheckBoxColumn = New System.Windows.Forms.DataGridViewCheckBoxColumn()
-        Me.BunifuImageButton1 = New Bunifu.Framework.UI.BunifuImageButton()
-        Me.BunifuImageButton2 = New Bunifu.Framework.UI.BunifuImageButton()
-        Me.BunifuImageButton3 = New Bunifu.Framework.UI.BunifuImageButton()
         Me.pnlAcciones.SuspendLayout()
+        CType(Me.BunifuImageButton3, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.BunifuImageButton2, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.BunifuImageButton1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.btnimgBuscar, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.pnlContenido.SuspendLayout()
-        CType(Me.BunifuCustomDataGrid1, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.dgvConductores, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.ConductoresENBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.BunifuImageButton1, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.BunifuImageButton2, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.BunifuImageButton3, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'pnlAcciones
@@ -66,6 +64,48 @@ Partial Class Conductores
         Me.pnlAcciones.Name = "pnlAcciones"
         Me.pnlAcciones.Size = New System.Drawing.Size(810, 38)
         Me.pnlAcciones.TabIndex = 0
+        '
+        'BunifuImageButton3
+        '
+        Me.BunifuImageButton3.BackColor = System.Drawing.Color.FromArgb(CType(CType(37, Byte), Integer), CType(CType(46, Byte), Integer), CType(CType(59, Byte), Integer))
+        Me.BunifuImageButton3.Image = CType(resources.GetObject("BunifuImageButton3.Image"), System.Drawing.Image)
+        Me.BunifuImageButton3.ImageActive = Nothing
+        Me.BunifuImageButton3.InitialImage = CType(resources.GetObject("BunifuImageButton3.InitialImage"), System.Drawing.Image)
+        Me.BunifuImageButton3.Location = New System.Drawing.Point(701, 6)
+        Me.BunifuImageButton3.Name = "BunifuImageButton3"
+        Me.BunifuImageButton3.Size = New System.Drawing.Size(50, 29)
+        Me.BunifuImageButton3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
+        Me.BunifuImageButton3.TabIndex = 4
+        Me.BunifuImageButton3.TabStop = False
+        Me.BunifuImageButton3.Zoom = 10
+        '
+        'BunifuImageButton2
+        '
+        Me.BunifuImageButton2.BackColor = System.Drawing.Color.FromArgb(CType(CType(37, Byte), Integer), CType(CType(46, Byte), Integer), CType(CType(59, Byte), Integer))
+        Me.BunifuImageButton2.Image = CType(resources.GetObject("BunifuImageButton2.Image"), System.Drawing.Image)
+        Me.BunifuImageButton2.ImageActive = Nothing
+        Me.BunifuImageButton2.InitialImage = CType(resources.GetObject("BunifuImageButton2.InitialImage"), System.Drawing.Image)
+        Me.BunifuImageButton2.Location = New System.Drawing.Point(757, 6)
+        Me.BunifuImageButton2.Name = "BunifuImageButton2"
+        Me.BunifuImageButton2.Size = New System.Drawing.Size(50, 29)
+        Me.BunifuImageButton2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
+        Me.BunifuImageButton2.TabIndex = 3
+        Me.BunifuImageButton2.TabStop = False
+        Me.BunifuImageButton2.Zoom = 10
+        '
+        'BunifuImageButton1
+        '
+        Me.BunifuImageButton1.BackColor = System.Drawing.Color.FromArgb(CType(CType(37, Byte), Integer), CType(CType(46, Byte), Integer), CType(CType(59, Byte), Integer))
+        Me.BunifuImageButton1.Image = CType(resources.GetObject("BunifuImageButton1.Image"), System.Drawing.Image)
+        Me.BunifuImageButton1.ImageActive = Nothing
+        Me.BunifuImageButton1.InitialImage = CType(resources.GetObject("BunifuImageButton1.InitialImage"), System.Drawing.Image)
+        Me.BunifuImageButton1.Location = New System.Drawing.Point(645, 6)
+        Me.BunifuImageButton1.Name = "BunifuImageButton1"
+        Me.BunifuImageButton1.Size = New System.Drawing.Size(50, 29)
+        Me.BunifuImageButton1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
+        Me.BunifuImageButton1.TabIndex = 2
+        Me.BunifuImageButton1.TabStop = False
+        Me.BunifuImageButton1.Zoom = 10
         '
         'txtBuscar
         '
@@ -99,41 +139,24 @@ Partial Class Conductores
         '
         'pnlContenido
         '
-        Me.pnlContenido.Controls.Add(Me.BunifuCustomDataGrid1)
+        Me.pnlContenido.Controls.Add(Me.dgvConductores)
         Me.pnlContenido.Dock = System.Windows.Forms.DockStyle.Fill
         Me.pnlContenido.Location = New System.Drawing.Point(0, 38)
         Me.pnlContenido.Name = "pnlContenido"
         Me.pnlContenido.Size = New System.Drawing.Size(810, 480)
         Me.pnlContenido.TabIndex = 1
         '
-        'BunifuCustomDataGrid1
+        'dgvConductores
         '
-        DataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer))
-        Me.BunifuCustomDataGrid1.AlternatingRowsDefaultCellStyle = DataGridViewCellStyle1
-        Me.BunifuCustomDataGrid1.AutoGenerateColumns = False
-        Me.BunifuCustomDataGrid1.BackgroundColor = System.Drawing.Color.Gainsboro
-        Me.BunifuCustomDataGrid1.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.BunifuCustomDataGrid1.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None
-        DataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
-        DataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(CType(CType(26, Byte), Integer), CType(CType(32, Byte), Integer), CType(CType(40, Byte), Integer))
-        DataGridViewCellStyle2.Font = New System.Drawing.Font("Century Gothic", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        DataGridViewCellStyle2.ForeColor = System.Drawing.Color.White
-        DataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight
-        DataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText
-        DataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
-        Me.BunifuCustomDataGrid1.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle2
-        Me.BunifuCustomDataGrid1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.BunifuCustomDataGrid1.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.CedulaDataGridViewTextBoxColumn, Me.NombreCompletoDataGridViewTextBoxColumn, Me.TelCelularDataGridViewTextBoxColumn, Me.TelCasaDataGridViewTextBoxColumn, Me.FechaNacimientoDataGridViewTextBoxColumn, Me.EMailDataGridViewTextBoxColumn, Me.DirCompletaDataGridViewTextBoxColumn, Me.ObservacionesDataGridViewTextBoxColumn, Me.IndActivoDataGridViewCheckBoxColumn})
-        Me.BunifuCustomDataGrid1.DataSource = Me.ConductoresENBindingSource
-        Me.BunifuCustomDataGrid1.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.BunifuCustomDataGrid1.DoubleBuffered = True
-        Me.BunifuCustomDataGrid1.HeaderBgColor = System.Drawing.Color.FromArgb(CType(CType(26, Byte), Integer), CType(CType(32, Byte), Integer), CType(CType(40, Byte), Integer))
-        Me.BunifuCustomDataGrid1.HeaderForeColor = System.Drawing.Color.White
-        Me.BunifuCustomDataGrid1.Location = New System.Drawing.Point(0, 0)
-        Me.BunifuCustomDataGrid1.Name = "BunifuCustomDataGrid1"
-        Me.BunifuCustomDataGrid1.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None
-        Me.BunifuCustomDataGrid1.Size = New System.Drawing.Size(810, 480)
-        Me.BunifuCustomDataGrid1.TabIndex = 0
+        Me.dgvConductores.AutoGenerateColumns = False
+        Me.dgvConductores.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        Me.dgvConductores.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.CedulaDataGridViewTextBoxColumn, Me.NombreCompletoDataGridViewTextBoxColumn, Me.TelCelularDataGridViewTextBoxColumn, Me.TelCasaDataGridViewTextBoxColumn, Me.FechaNacimientoDataGridViewTextBoxColumn, Me.EMailDataGridViewTextBoxColumn, Me.DirCompletaDataGridViewTextBoxColumn, Me.ObservacionesDataGridViewTextBoxColumn, Me.IndActivoDataGridViewCheckBoxColumn})
+        Me.dgvConductores.DataSource = Me.ConductoresENBindingSource
+        Me.dgvConductores.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.dgvConductores.Location = New System.Drawing.Point(0, 0)
+        Me.dgvConductores.Name = "dgvConductores"
+        Me.dgvConductores.Size = New System.Drawing.Size(810, 480)
+        Me.dgvConductores.TabIndex = 0
         '
         'ConductoresENBindingSource
         '
@@ -148,37 +171,37 @@ Partial Class Conductores
         'NombreCompletoDataGridViewTextBoxColumn
         '
         Me.NombreCompletoDataGridViewTextBoxColumn.DataPropertyName = "NombreCompleto"
-        Me.NombreCompletoDataGridViewTextBoxColumn.HeaderText = "Nombre Completo"
+        Me.NombreCompletoDataGridViewTextBoxColumn.HeaderText = "NombreCompleto"
         Me.NombreCompletoDataGridViewTextBoxColumn.Name = "NombreCompletoDataGridViewTextBoxColumn"
         '
         'TelCelularDataGridViewTextBoxColumn
         '
         Me.TelCelularDataGridViewTextBoxColumn.DataPropertyName = "Tel_Celular"
-        Me.TelCelularDataGridViewTextBoxColumn.HeaderText = "Celular"
+        Me.TelCelularDataGridViewTextBoxColumn.HeaderText = "Tel_Celular"
         Me.TelCelularDataGridViewTextBoxColumn.Name = "TelCelularDataGridViewTextBoxColumn"
         '
         'TelCasaDataGridViewTextBoxColumn
         '
         Me.TelCasaDataGridViewTextBoxColumn.DataPropertyName = "Tel_Casa"
-        Me.TelCasaDataGridViewTextBoxColumn.HeaderText = "Tel Casa"
+        Me.TelCasaDataGridViewTextBoxColumn.HeaderText = "Tel_Casa"
         Me.TelCasaDataGridViewTextBoxColumn.Name = "TelCasaDataGridViewTextBoxColumn"
         '
         'FechaNacimientoDataGridViewTextBoxColumn
         '
         Me.FechaNacimientoDataGridViewTextBoxColumn.DataPropertyName = "Fecha_Nacimiento"
-        Me.FechaNacimientoDataGridViewTextBoxColumn.HeaderText = "Nacimiento"
+        Me.FechaNacimientoDataGridViewTextBoxColumn.HeaderText = "Fecha_Nacimiento"
         Me.FechaNacimientoDataGridViewTextBoxColumn.Name = "FechaNacimientoDataGridViewTextBoxColumn"
         '
         'EMailDataGridViewTextBoxColumn
         '
         Me.EMailDataGridViewTextBoxColumn.DataPropertyName = "E_Mail"
-        Me.EMailDataGridViewTextBoxColumn.HeaderText = "Correo"
+        Me.EMailDataGridViewTextBoxColumn.HeaderText = "E_Mail"
         Me.EMailDataGridViewTextBoxColumn.Name = "EMailDataGridViewTextBoxColumn"
         '
         'DirCompletaDataGridViewTextBoxColumn
         '
         Me.DirCompletaDataGridViewTextBoxColumn.DataPropertyName = "Dir_Completa"
-        Me.DirCompletaDataGridViewTextBoxColumn.HeaderText = "Dirección"
+        Me.DirCompletaDataGridViewTextBoxColumn.HeaderText = "Dir_Completa"
         Me.DirCompletaDataGridViewTextBoxColumn.Name = "DirCompletaDataGridViewTextBoxColumn"
         '
         'ObservacionesDataGridViewTextBoxColumn
@@ -190,50 +213,8 @@ Partial Class Conductores
         'IndActivoDataGridViewCheckBoxColumn
         '
         Me.IndActivoDataGridViewCheckBoxColumn.DataPropertyName = "Ind_Activo"
-        Me.IndActivoDataGridViewCheckBoxColumn.HeaderText = "Estado"
+        Me.IndActivoDataGridViewCheckBoxColumn.HeaderText = "Ind_Activo"
         Me.IndActivoDataGridViewCheckBoxColumn.Name = "IndActivoDataGridViewCheckBoxColumn"
-        '
-        'BunifuImageButton1
-        '
-        Me.BunifuImageButton1.BackColor = System.Drawing.Color.FromArgb(CType(CType(37, Byte), Integer), CType(CType(46, Byte), Integer), CType(CType(59, Byte), Integer))
-        Me.BunifuImageButton1.Image = CType(resources.GetObject("BunifuImageButton1.Image"), System.Drawing.Image)
-        Me.BunifuImageButton1.ImageActive = Nothing
-        Me.BunifuImageButton1.InitialImage = CType(resources.GetObject("BunifuImageButton1.InitialImage"), System.Drawing.Image)
-        Me.BunifuImageButton1.Location = New System.Drawing.Point(645, 6)
-        Me.BunifuImageButton1.Name = "BunifuImageButton1"
-        Me.BunifuImageButton1.Size = New System.Drawing.Size(50, 29)
-        Me.BunifuImageButton1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
-        Me.BunifuImageButton1.TabIndex = 2
-        Me.BunifuImageButton1.TabStop = False
-        Me.BunifuImageButton1.Zoom = 10
-        '
-        'BunifuImageButton2
-        '
-        Me.BunifuImageButton2.BackColor = System.Drawing.Color.FromArgb(CType(CType(37, Byte), Integer), CType(CType(46, Byte), Integer), CType(CType(59, Byte), Integer))
-        Me.BunifuImageButton2.Image = CType(resources.GetObject("BunifuImageButton2.Image"), System.Drawing.Image)
-        Me.BunifuImageButton2.ImageActive = Nothing
-        Me.BunifuImageButton2.InitialImage = CType(resources.GetObject("BunifuImageButton2.InitialImage"), System.Drawing.Image)
-        Me.BunifuImageButton2.Location = New System.Drawing.Point(757, 6)
-        Me.BunifuImageButton2.Name = "BunifuImageButton2"
-        Me.BunifuImageButton2.Size = New System.Drawing.Size(50, 29)
-        Me.BunifuImageButton2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
-        Me.BunifuImageButton2.TabIndex = 3
-        Me.BunifuImageButton2.TabStop = False
-        Me.BunifuImageButton2.Zoom = 10
-        '
-        'BunifuImageButton3
-        '
-        Me.BunifuImageButton3.BackColor = System.Drawing.Color.FromArgb(CType(CType(37, Byte), Integer), CType(CType(46, Byte), Integer), CType(CType(59, Byte), Integer))
-        Me.BunifuImageButton3.Image = CType(resources.GetObject("BunifuImageButton3.Image"), System.Drawing.Image)
-        Me.BunifuImageButton3.ImageActive = Nothing
-        Me.BunifuImageButton3.InitialImage = CType(resources.GetObject("BunifuImageButton3.InitialImage"), System.Drawing.Image)
-        Me.BunifuImageButton3.Location = New System.Drawing.Point(701, 6)
-        Me.BunifuImageButton3.Name = "BunifuImageButton3"
-        Me.BunifuImageButton3.Size = New System.Drawing.Size(50, 29)
-        Me.BunifuImageButton3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
-        Me.BunifuImageButton3.TabIndex = 4
-        Me.BunifuImageButton3.TabStop = False
-        Me.BunifuImageButton3.Zoom = 10
         '
         'Conductores
         '
@@ -245,13 +226,13 @@ Partial Class Conductores
         Me.Name = "Conductores"
         Me.Size = New System.Drawing.Size(810, 518)
         Me.pnlAcciones.ResumeLayout(False)
+        CType(Me.BunifuImageButton3, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.BunifuImageButton2, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.BunifuImageButton1, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.btnimgBuscar, System.ComponentModel.ISupportInitialize).EndInit()
         Me.pnlContenido.ResumeLayout(False)
-        CType(Me.BunifuCustomDataGrid1, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.dgvConductores, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.ConductoresENBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.BunifuImageButton1, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.BunifuImageButton2, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.BunifuImageButton3, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
 
     End Sub
@@ -259,8 +240,10 @@ Partial Class Conductores
     Friend WithEvents txtBuscar As Bunifu.Framework.UI.BunifuMetroTextbox
     Friend WithEvents btnimgBuscar As Bunifu.Framework.UI.BunifuImageButton
     Friend WithEvents pnlContenido As Panel
-    Friend WithEvents BunifuCustomDataGrid1 As Bunifu.Framework.UI.BunifuCustomDataGrid
-    Friend WithEvents ConductoresENBindingSource As BindingSource
+    Friend WithEvents BunifuImageButton3 As Bunifu.Framework.UI.BunifuImageButton
+    Friend WithEvents BunifuImageButton2 As Bunifu.Framework.UI.BunifuImageButton
+    Friend WithEvents BunifuImageButton1 As Bunifu.Framework.UI.BunifuImageButton
+    Friend WithEvents dgvConductores As DataGridView
     Friend WithEvents CedulaDataGridViewTextBoxColumn As DataGridViewTextBoxColumn
     Friend WithEvents NombreCompletoDataGridViewTextBoxColumn As DataGridViewTextBoxColumn
     Friend WithEvents TelCelularDataGridViewTextBoxColumn As DataGridViewTextBoxColumn
@@ -270,7 +253,5 @@ Partial Class Conductores
     Friend WithEvents DirCompletaDataGridViewTextBoxColumn As DataGridViewTextBoxColumn
     Friend WithEvents ObservacionesDataGridViewTextBoxColumn As DataGridViewTextBoxColumn
     Friend WithEvents IndActivoDataGridViewCheckBoxColumn As DataGridViewCheckBoxColumn
-    Friend WithEvents BunifuImageButton3 As Bunifu.Framework.UI.BunifuImageButton
-    Friend WithEvents BunifuImageButton2 As Bunifu.Framework.UI.BunifuImageButton
-    Friend WithEvents BunifuImageButton1 As Bunifu.Framework.UI.BunifuImageButton
+    Friend WithEvents ConductoresENBindingSource As BindingSource
 End Class

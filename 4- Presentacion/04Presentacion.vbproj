@@ -80,7 +80,7 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Complementos.vb" />
+    <Compile Include="Datos.vb" />
     <Compile Include="Example.Designer.vb">
       <DependentUpon>Example.vb</DependentUpon>
     </Compile>
@@ -194,7 +194,9 @@
     <None Include="My Project\DataSources\Conductores.datasource" />
     <None Include="My Project\DataSources\_01AccesoDatos.ConductoresAD.datasource" />
     <None Include="My Project\DataSources\_02LogicaNegocios.ConductoresLN.datasource" />
+    <None Include="My Project\DataSources\_02LogicaNegocios.MultasLN.datasource" />
     <None Include="My Project\DataSources\_03Entidades.ConductoresEN.datasource" />
+    <None Include="My Project\DataSources\_03Entidades.MultasEN.datasource" />
     <None Include="My Project\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <CustomToolNamespace>My</CustomToolNamespace>
@@ -203,10 +205,6 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\01AccesoDatos\01AccesoDatos.vbproj">
-      <Project>{be7581c9-bcea-4c48-b9c5-6484b177da11}</Project>
-      <Name>01AccesoDatos</Name>
-    </ProjectReference>
     <ProjectReference Include="..\02LogicaNegocios\02LogicaNegocios.vbproj">
       <Project>{d23773a4-585d-414c-918c-aab67445b308}</Project>
       <Name>02LogicaNegocios</Name>
@@ -215,6 +213,9 @@
       <Project>{93f016df-09a2-4b27-8eb8-e884bcffd4b2}</Project>
       <Name>03Entidades</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Connected Services\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
 </Project>

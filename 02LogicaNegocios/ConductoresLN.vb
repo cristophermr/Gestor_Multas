@@ -124,7 +124,9 @@ Public Class ConductoresLN
     Public Function ObtenerTodosConductores() As List(Of ConductoresEN)
         Try
             Dim ConductorAD As New ConductoresAD
-            Return ConductorAD.ObtenerTodosLosConductores()
+            Dim query = (From n In ConductorAD.ObtenerTodosLosConductores
+                         Select New ConductoresEN With {.Cedula = n.Cedula, .NombreCompleto = n.NombreCompleto, .Fecha_Nacimiento = n.Fecha_Nacimiento, .E_Mail = n.E_Mail, .Dir_Completa = n.Dir_Completa, .Tel_Celular = n.Tel_Celular, .Tel_Casa = n.Tel_Casa, .Observaciones = n.Observaciones, .Ind_Activo = n.Ind_Activo}).ToList
+            Return query
 
         Catch ex As Exception
             Throw New Exception(ex.Message)
