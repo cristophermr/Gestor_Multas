@@ -30,7 +30,7 @@ Partial Class Example
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(37, Byte), Integer), CType(CType(46, Byte), Integer), CType(CType(59, Byte), Integer))
         Me.Name = "Example"
-        Me.Size = New System.Drawing.Size(830, 631)
+        Me.Size = New System.Drawing.Size(810, 518)
         Me.ResumeLayout(False)
 
     End Sub

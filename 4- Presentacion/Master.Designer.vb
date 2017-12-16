@@ -57,6 +57,7 @@ Partial Class Master
         Me.LogoAnimation = New BunifuAnimatorNS.BunifuTransition(Me.components)
         Me.PanelAnimation = New BunifuAnimatorNS.BunifuTransition(Me.components)
         Me.SubMenus = New BunifuAnimatorNS.BunifuTransition(Me.components)
+        Me.Example1 = New _04Presentacion.Example()
         Me.Conductores1 = New _04Presentacion.Conductores()
         Me.header.SuspendLayout()
         CType(Me.BunifuImageButton5, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -704,6 +705,7 @@ Partial Class Master
         '
         'Panel2
         '
+        Me.Panel2.Controls.Add(Me.Example1)
         Me.Panel2.Controls.Add(Me.Conductores1)
         Me.Panel2.Controls.Add(Me.SlideMenu)
         Me.LogoAnimation.SetDecoration(Me.Panel2, BunifuAnimatorNS.DecorationType.None)
@@ -777,6 +779,18 @@ Partial Class Master
         Animation1.TimeCoeff = 0!
         Animation1.TransparencyCoeff = 0!
         Me.SubMenus.DefaultAnimation = Animation1
+        '
+        'Example1
+        '
+        Me.Example1.BackColor = System.Drawing.Color.FromArgb(CType(CType(37, Byte), Integer), CType(CType(46, Byte), Integer), CType(CType(59, Byte), Integer))
+        Me.SubMenus.SetDecoration(Me.Example1, BunifuAnimatorNS.DecorationType.None)
+        Me.PanelAnimation.SetDecoration(Me.Example1, BunifuAnimatorNS.DecorationType.None)
+        Me.LogoAnimation.SetDecoration(Me.Example1, BunifuAnimatorNS.DecorationType.None)
+        Me.Example1.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.Example1.Location = New System.Drawing.Point(258, 0)
+        Me.Example1.Name = "Example1"
+        Me.Example1.Size = New System.Drawing.Size(933, 629)
+        Me.Example1.TabIndex = 2
         '
         'Conductores1
         '
@@ -857,4 +871,5 @@ Partial Class Master
     Friend WithEvents BunifuFlatButton4 As Bunifu.Framework.UI.BunifuFlatButton
     Friend WithEvents btnLic As Bunifu.Framework.UI.BunifuFlatButton
     Friend WithEvents Conductores1 As Conductores
+    Friend WithEvents Example1 As Example
 End Class

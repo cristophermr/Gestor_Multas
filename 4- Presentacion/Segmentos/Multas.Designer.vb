@@ -24,40 +24,25 @@ Partial Class Multas
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Multas))
-        Me.pnlContenido = New System.Windows.Forms.Panel()
+        Me.MultasENBindingSource = New System.Windows.Forms.BindingSource(Me.components)
         Me.pnlAcciones = New System.Windows.Forms.Panel()
         Me.BunifuImageButton3 = New Bunifu.Framework.UI.BunifuImageButton()
         Me.BunifuImageButton2 = New Bunifu.Framework.UI.BunifuImageButton()
         Me.BunifuImageButton1 = New Bunifu.Framework.UI.BunifuImageButton()
         Me.txtBuscar = New Bunifu.Framework.UI.BunifuMetroTextbox()
         Me.btnimgBuscar = New Bunifu.Framework.UI.BunifuImageButton()
-        Me.DataGridView1 = New System.Windows.Forms.DataGridView()
-        Me.MultasENBindingSource = New System.Windows.Forms.BindingSource(Me.components)
-        Me.CodigoMultaDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.FechaMultaDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.NombreTraficoDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.MontoMultaDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.IndPagadaDataGridViewCheckBoxColumn = New System.Windows.Forms.DataGridViewCheckBoxColumn()
-        Me.CedulaDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.pnlContenido.SuspendLayout()
+        Me.pnlContenido = New System.Windows.Forms.Panel()
+        CType(Me.MultasENBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.pnlAcciones.SuspendLayout()
         CType(Me.BunifuImageButton3, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.BunifuImageButton2, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.BunifuImageButton1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.btnimgBuscar, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.MultasENBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
-        'pnlContenido
+        'MultasENBindingSource
         '
-        Me.pnlContenido.BackColor = System.Drawing.Color.FromArgb(CType(CType(37, Byte), Integer), CType(CType(46, Byte), Integer), CType(CType(59, Byte), Integer))
-        Me.pnlContenido.Controls.Add(Me.DataGridView1)
-        Me.pnlContenido.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.pnlContenido.Location = New System.Drawing.Point(0, 38)
-        Me.pnlContenido.Name = "pnlContenido"
-        Me.pnlContenido.Size = New System.Drawing.Size(810, 480)
-        Me.pnlContenido.TabIndex = 3
+        Me.MultasENBindingSource.DataSource = GetType(_03Entidades.MultasEN)
         '
         'pnlAcciones
         '
@@ -145,57 +130,14 @@ Partial Class Multas
         Me.btnimgBuscar.TabStop = False
         Me.btnimgBuscar.Zoom = 10
         '
-        'DataGridView1
+        'pnlContenido
         '
-        Me.DataGridView1.AutoGenerateColumns = False
-        Me.DataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.DataGridView1.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.CodigoMultaDataGridViewTextBoxColumn, Me.FechaMultaDataGridViewTextBoxColumn, Me.NombreTraficoDataGridViewTextBoxColumn, Me.MontoMultaDataGridViewTextBoxColumn, Me.IndPagadaDataGridViewCheckBoxColumn, Me.CedulaDataGridViewTextBoxColumn})
-        Me.DataGridView1.DataSource = Me.MultasENBindingSource
-        Me.DataGridView1.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.DataGridView1.Location = New System.Drawing.Point(0, 0)
-        Me.DataGridView1.Name = "DataGridView1"
-        Me.DataGridView1.Size = New System.Drawing.Size(810, 480)
-        Me.DataGridView1.TabIndex = 0
-        '
-        'MultasENBindingSource
-        '
-        Me.MultasENBindingSource.DataSource = GetType(_03Entidades.MultasEN)
-        '
-        'CodigoMultaDataGridViewTextBoxColumn
-        '
-        Me.CodigoMultaDataGridViewTextBoxColumn.DataPropertyName = "Codigo_Multa"
-        Me.CodigoMultaDataGridViewTextBoxColumn.HeaderText = "Codigo_Multa"
-        Me.CodigoMultaDataGridViewTextBoxColumn.Name = "CodigoMultaDataGridViewTextBoxColumn"
-        '
-        'FechaMultaDataGridViewTextBoxColumn
-        '
-        Me.FechaMultaDataGridViewTextBoxColumn.DataPropertyName = "Fecha_Multa"
-        Me.FechaMultaDataGridViewTextBoxColumn.HeaderText = "Fecha_Multa"
-        Me.FechaMultaDataGridViewTextBoxColumn.Name = "FechaMultaDataGridViewTextBoxColumn"
-        '
-        'NombreTraficoDataGridViewTextBoxColumn
-        '
-        Me.NombreTraficoDataGridViewTextBoxColumn.DataPropertyName = "Nombre_Trafico"
-        Me.NombreTraficoDataGridViewTextBoxColumn.HeaderText = "Nombre_Trafico"
-        Me.NombreTraficoDataGridViewTextBoxColumn.Name = "NombreTraficoDataGridViewTextBoxColumn"
-        '
-        'MontoMultaDataGridViewTextBoxColumn
-        '
-        Me.MontoMultaDataGridViewTextBoxColumn.DataPropertyName = "Monto_Multa"
-        Me.MontoMultaDataGridViewTextBoxColumn.HeaderText = "Monto_Multa"
-        Me.MontoMultaDataGridViewTextBoxColumn.Name = "MontoMultaDataGridViewTextBoxColumn"
-        '
-        'IndPagadaDataGridViewCheckBoxColumn
-        '
-        Me.IndPagadaDataGridViewCheckBoxColumn.DataPropertyName = "Ind_Pagada"
-        Me.IndPagadaDataGridViewCheckBoxColumn.HeaderText = "Ind_Pagada"
-        Me.IndPagadaDataGridViewCheckBoxColumn.Name = "IndPagadaDataGridViewCheckBoxColumn"
-        '
-        'CedulaDataGridViewTextBoxColumn
-        '
-        Me.CedulaDataGridViewTextBoxColumn.DataPropertyName = "Cedula"
-        Me.CedulaDataGridViewTextBoxColumn.HeaderText = "Cedula"
-        Me.CedulaDataGridViewTextBoxColumn.Name = "CedulaDataGridViewTextBoxColumn"
+        Me.pnlContenido.BackColor = System.Drawing.Color.FromArgb(CType(CType(37, Byte), Integer), CType(CType(46, Byte), Integer), CType(CType(59, Byte), Integer))
+        Me.pnlContenido.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.pnlContenido.Location = New System.Drawing.Point(0, 38)
+        Me.pnlContenido.Name = "pnlContenido"
+        Me.pnlContenido.Size = New System.Drawing.Size(810, 480)
+        Me.pnlContenido.TabIndex = 3
         '
         'Multas
         '
@@ -205,31 +147,21 @@ Partial Class Multas
         Me.Controls.Add(Me.pnlAcciones)
         Me.Name = "Multas"
         Me.Size = New System.Drawing.Size(810, 518)
-        Me.pnlContenido.ResumeLayout(False)
+        CType(Me.MultasENBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
         Me.pnlAcciones.ResumeLayout(False)
         CType(Me.BunifuImageButton3, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.BunifuImageButton2, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.BunifuImageButton1, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.btnimgBuscar, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.MultasENBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
 
     End Sub
-
-    Friend WithEvents pnlContenido As Panel
     Friend WithEvents pnlAcciones As Panel
     Friend WithEvents BunifuImageButton3 As Bunifu.Framework.UI.BunifuImageButton
     Friend WithEvents BunifuImageButton2 As Bunifu.Framework.UI.BunifuImageButton
     Friend WithEvents BunifuImageButton1 As Bunifu.Framework.UI.BunifuImageButton
     Friend WithEvents txtBuscar As Bunifu.Framework.UI.BunifuMetroTextbox
     Friend WithEvents btnimgBuscar As Bunifu.Framework.UI.BunifuImageButton
-    Friend WithEvents DataGridView1 As DataGridView
-    Friend WithEvents CodigoMultaDataGridViewTextBoxColumn As DataGridViewTextBoxColumn
-    Friend WithEvents FechaMultaDataGridViewTextBoxColumn As DataGridViewTextBoxColumn
-    Friend WithEvents NombreTraficoDataGridViewTextBoxColumn As DataGridViewTextBoxColumn
-    Friend WithEvents MontoMultaDataGridViewTextBoxColumn As DataGridViewTextBoxColumn
-    Friend WithEvents IndPagadaDataGridViewCheckBoxColumn As DataGridViewCheckBoxColumn
-    Friend WithEvents CedulaDataGridViewTextBoxColumn As DataGridViewTextBoxColumn
     Friend WithEvents MultasENBindingSource As BindingSource
+    Friend WithEvents pnlContenido As Panel
 End Class

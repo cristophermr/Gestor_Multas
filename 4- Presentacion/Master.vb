@@ -24,6 +24,7 @@ Public Class Master
     End Sub
 
     Private Sub Master_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        Example1.BringToFront()
         pnlCatalogos.Hide()
         pnlProcesos.Hide()
         bntProcesos.Location = New Point(3, 130)
@@ -95,5 +96,13 @@ Public Class Master
             SubMenus.ShowSync(pnlProcesos)
 
         End If
+    End Sub
+
+    Private Sub header_Paint(sender As Object, e As PaintEventArgs) Handles header.Paint
+
+    End Sub
+
+    Private Sub btnConductores_Click(sender As Object, e As EventArgs) Handles btnConductores.Click
+        Conductores1.BringToFront()
     End Sub
 End Class
