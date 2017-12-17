@@ -30,12 +30,14 @@ Partial Class Usuarios
         Me.btnAdd = New Bunifu.Framework.UI.BunifuImageButton()
         Me.txtBuscar = New Bunifu.Framework.UI.BunifuMetroTextbox()
         Me.btnBuscar = New Bunifu.Framework.UI.BunifuImageButton()
+        Me.btnImprimir = New Bunifu.Framework.UI.BunifuImageButton()
         Me.pnlContenido.SuspendLayout()
         Me.Panel1.SuspendLayout()
         CType(Me.btnedit, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.btndelete, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.btnAdd, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.btnBuscar, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.btnImprimir, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'pnlContenido
@@ -51,6 +53,7 @@ Partial Class Usuarios
         'Panel1
         '
         Me.Panel1.BackColor = System.Drawing.Color.FromArgb(CType(CType(37, Byte), Integer), CType(CType(46, Byte), Integer), CType(CType(59, Byte), Integer))
+        Me.Panel1.Controls.Add(Me.btnImprimir)
         Me.Panel1.Controls.Add(Me.btnedit)
         Me.Panel1.Controls.Add(Me.btndelete)
         Me.Panel1.Controls.Add(Me.btnAdd)
@@ -134,6 +137,20 @@ Partial Class Usuarios
         Me.btnBuscar.TabStop = False
         Me.btnBuscar.Zoom = 10
         '
+        'btnImprimir
+        '
+        Me.btnImprimir.BackColor = System.Drawing.Color.FromArgb(CType(CType(37, Byte), Integer), CType(CType(46, Byte), Integer), CType(CType(59, Byte), Integer))
+        Me.btnImprimir.Image = CType(resources.GetObject("btnImprimir.Image"), System.Drawing.Image)
+        Me.btnImprimir.ImageActive = Nothing
+        Me.btnImprimir.InitialImage = CType(resources.GetObject("btnImprimir.InitialImage"), System.Drawing.Image)
+        Me.btnImprimir.Location = New System.Drawing.Point(589, 7)
+        Me.btnImprimir.Name = "btnImprimir"
+        Me.btnImprimir.Size = New System.Drawing.Size(50, 29)
+        Me.btnImprimir.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
+        Me.btnImprimir.TabIndex = 6
+        Me.btnImprimir.TabStop = False
+        Me.btnImprimir.Zoom = 10
+        '
         'Usuarios
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -147,6 +164,7 @@ Partial Class Usuarios
         CType(Me.btndelete, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.btnAdd, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.btnBuscar, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.btnImprimir, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
 
     End Sub
@@ -158,4 +176,5 @@ Partial Class Usuarios
     Friend WithEvents btnAdd As Bunifu.Framework.UI.BunifuImageButton
     Friend WithEvents txtBuscar As Bunifu.Framework.UI.BunifuMetroTextbox
     Friend WithEvents btnBuscar As Bunifu.Framework.UI.BunifuImageButton
+    Friend WithEvents btnImprimir As Bunifu.Framework.UI.BunifuImageButton
 End Class

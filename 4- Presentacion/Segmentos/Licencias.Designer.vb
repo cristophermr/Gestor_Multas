@@ -24,28 +24,30 @@ Partial Class Licencias
     Private Sub InitializeComponent()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Licencias))
         Me.Panel1 = New System.Windows.Forms.Panel()
-        Me.pnlContenido = New System.Windows.Forms.Panel()
-        Me.txtBuscar = New Bunifu.Framework.UI.BunifuMetroTextbox()
-        Me.btnBuscar = New Bunifu.Framework.UI.BunifuImageButton()
-        Me.btnedit = New Bunifu.Framework.UI.BunifuImageButton()
-        Me.btndelete = New Bunifu.Framework.UI.BunifuImageButton()
-        Me.btnAdd = New Bunifu.Framework.UI.BunifuImageButton()
         Me.Panel2 = New System.Windows.Forms.Panel()
+        Me.btnImprimir = New Bunifu.Framework.UI.BunifuImageButton()
         Me.BunifuImageButton1 = New Bunifu.Framework.UI.BunifuImageButton()
         Me.BunifuImageButton2 = New Bunifu.Framework.UI.BunifuImageButton()
         Me.BunifuImageButton3 = New Bunifu.Framework.UI.BunifuImageButton()
         Me.BunifuMetroTextbox1 = New Bunifu.Framework.UI.BunifuMetroTextbox()
         Me.BunifuImageButton4 = New Bunifu.Framework.UI.BunifuImageButton()
+        Me.btnedit = New Bunifu.Framework.UI.BunifuImageButton()
+        Me.btndelete = New Bunifu.Framework.UI.BunifuImageButton()
+        Me.btnAdd = New Bunifu.Framework.UI.BunifuImageButton()
+        Me.txtBuscar = New Bunifu.Framework.UI.BunifuMetroTextbox()
+        Me.btnBuscar = New Bunifu.Framework.UI.BunifuImageButton()
+        Me.pnlContenido = New System.Windows.Forms.Panel()
         Me.Panel1.SuspendLayout()
-        CType(Me.btnBuscar, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.btnedit, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.btndelete, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.btnAdd, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Panel2.SuspendLayout()
+        CType(Me.btnImprimir, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.BunifuImageButton1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.BunifuImageButton2, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.BunifuImageButton3, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.BunifuImageButton4, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.btnedit, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.btndelete, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.btnAdd, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.btnBuscar, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'Panel1
@@ -63,90 +65,10 @@ Partial Class Licencias
         Me.Panel1.Size = New System.Drawing.Size(810, 42)
         Me.Panel1.TabIndex = 0
         '
-        'pnlContenido
-        '
-        Me.pnlContenido.BackColor = System.Drawing.Color.FromArgb(CType(CType(37, Byte), Integer), CType(CType(46, Byte), Integer), CType(CType(59, Byte), Integer))
-        Me.pnlContenido.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.pnlContenido.Location = New System.Drawing.Point(0, 42)
-        Me.pnlContenido.Name = "pnlContenido"
-        Me.pnlContenido.Size = New System.Drawing.Size(810, 476)
-        Me.pnlContenido.TabIndex = 4
-        '
-        'txtBuscar
-        '
-        Me.txtBuscar.BorderColorFocused = System.Drawing.Color.Blue
-        Me.txtBuscar.BorderColorIdle = System.Drawing.Color.WhiteSmoke
-        Me.txtBuscar.BorderColorMouseHover = System.Drawing.Color.Blue
-        Me.txtBuscar.BorderThickness = 3
-        Me.txtBuscar.Cursor = System.Windows.Forms.Cursors.IBeam
-        Me.txtBuscar.Font = New System.Drawing.Font("Century Gothic", 9.75!)
-        Me.txtBuscar.ForeColor = System.Drawing.Color.FromArgb(CType(CType(178, Byte), Integer), CType(CType(216, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.txtBuscar.isPassword = False
-        Me.txtBuscar.Location = New System.Drawing.Point(4, 0)
-        Me.txtBuscar.Margin = New System.Windows.Forms.Padding(4)
-        Me.txtBuscar.Name = "txtBuscar"
-        Me.txtBuscar.Size = New System.Drawing.Size(179, 38)
-        Me.txtBuscar.TabIndex = 3
-        Me.txtBuscar.TextAlign = System.Windows.Forms.HorizontalAlignment.Left
-        '
-        'btnBuscar
-        '
-        Me.btnBuscar.BackColor = System.Drawing.Color.FromArgb(CType(CType(37, Byte), Integer), CType(CType(46, Byte), Integer), CType(CType(59, Byte), Integer))
-        Me.btnBuscar.Image = CType(resources.GetObject("btnBuscar.Image"), System.Drawing.Image)
-        Me.btnBuscar.ImageActive = Nothing
-        Me.btnBuscar.Location = New System.Drawing.Point(179, 5)
-        Me.btnBuscar.Name = "btnBuscar"
-        Me.btnBuscar.Size = New System.Drawing.Size(50, 29)
-        Me.btnBuscar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
-        Me.btnBuscar.TabIndex = 2
-        Me.btnBuscar.TabStop = False
-        Me.btnBuscar.Zoom = 10
-        '
-        'btnedit
-        '
-        Me.btnedit.BackColor = System.Drawing.Color.FromArgb(CType(CType(37, Byte), Integer), CType(CType(46, Byte), Integer), CType(CType(59, Byte), Integer))
-        Me.btnedit.Image = CType(resources.GetObject("btnedit.Image"), System.Drawing.Image)
-        Me.btnedit.ImageActive = Nothing
-        Me.btnedit.InitialImage = CType(resources.GetObject("btnedit.InitialImage"), System.Drawing.Image)
-        Me.btnedit.Location = New System.Drawing.Point(701, 7)
-        Me.btnedit.Name = "btnedit"
-        Me.btnedit.Size = New System.Drawing.Size(50, 29)
-        Me.btnedit.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
-        Me.btnedit.TabIndex = 7
-        Me.btnedit.TabStop = False
-        Me.btnedit.Zoom = 10
-        '
-        'btndelete
-        '
-        Me.btndelete.BackColor = System.Drawing.Color.FromArgb(CType(CType(37, Byte), Integer), CType(CType(46, Byte), Integer), CType(CType(59, Byte), Integer))
-        Me.btndelete.Image = CType(resources.GetObject("btndelete.Image"), System.Drawing.Image)
-        Me.btndelete.ImageActive = Nothing
-        Me.btndelete.InitialImage = CType(resources.GetObject("btndelete.InitialImage"), System.Drawing.Image)
-        Me.btndelete.Location = New System.Drawing.Point(757, 7)
-        Me.btndelete.Name = "btndelete"
-        Me.btndelete.Size = New System.Drawing.Size(50, 29)
-        Me.btndelete.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
-        Me.btndelete.TabIndex = 6
-        Me.btndelete.TabStop = False
-        Me.btndelete.Zoom = 10
-        '
-        'btnAdd
-        '
-        Me.btnAdd.BackColor = System.Drawing.Color.FromArgb(CType(CType(37, Byte), Integer), CType(CType(46, Byte), Integer), CType(CType(59, Byte), Integer))
-        Me.btnAdd.Image = CType(resources.GetObject("btnAdd.Image"), System.Drawing.Image)
-        Me.btnAdd.ImageActive = Nothing
-        Me.btnAdd.InitialImage = CType(resources.GetObject("btnAdd.InitialImage"), System.Drawing.Image)
-        Me.btnAdd.Location = New System.Drawing.Point(645, 7)
-        Me.btnAdd.Name = "btnAdd"
-        Me.btnAdd.Size = New System.Drawing.Size(50, 29)
-        Me.btnAdd.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
-        Me.btnAdd.TabIndex = 5
-        Me.btnAdd.TabStop = False
-        Me.btnAdd.Zoom = 10
-        '
         'Panel2
         '
         Me.Panel2.BackColor = System.Drawing.Color.FromArgb(CType(CType(37, Byte), Integer), CType(CType(46, Byte), Integer), CType(CType(59, Byte), Integer))
+        Me.Panel2.Controls.Add(Me.btnImprimir)
         Me.Panel2.Controls.Add(Me.BunifuImageButton1)
         Me.Panel2.Controls.Add(Me.BunifuImageButton2)
         Me.Panel2.Controls.Add(Me.BunifuImageButton3)
@@ -157,6 +79,20 @@ Partial Class Licencias
         Me.Panel2.Name = "Panel2"
         Me.Panel2.Size = New System.Drawing.Size(810, 42)
         Me.Panel2.TabIndex = 8
+        '
+        'btnImprimir
+        '
+        Me.btnImprimir.BackColor = System.Drawing.Color.FromArgb(CType(CType(37, Byte), Integer), CType(CType(46, Byte), Integer), CType(CType(59, Byte), Integer))
+        Me.btnImprimir.Image = CType(resources.GetObject("btnImprimir.Image"), System.Drawing.Image)
+        Me.btnImprimir.ImageActive = Nothing
+        Me.btnImprimir.InitialImage = CType(resources.GetObject("btnImprimir.InitialImage"), System.Drawing.Image)
+        Me.btnImprimir.Location = New System.Drawing.Point(589, 7)
+        Me.btnImprimir.Name = "btnImprimir"
+        Me.btnImprimir.Size = New System.Drawing.Size(50, 29)
+        Me.btnImprimir.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
+        Me.btnImprimir.TabIndex = 8
+        Me.btnImprimir.TabStop = False
+        Me.btnImprimir.Zoom = 10
         '
         'BunifuImageButton1
         '
@@ -230,6 +166,87 @@ Partial Class Licencias
         Me.BunifuImageButton4.TabStop = False
         Me.BunifuImageButton4.Zoom = 10
         '
+        'btnedit
+        '
+        Me.btnedit.BackColor = System.Drawing.Color.FromArgb(CType(CType(37, Byte), Integer), CType(CType(46, Byte), Integer), CType(CType(59, Byte), Integer))
+        Me.btnedit.Image = CType(resources.GetObject("btnedit.Image"), System.Drawing.Image)
+        Me.btnedit.ImageActive = Nothing
+        Me.btnedit.InitialImage = CType(resources.GetObject("btnedit.InitialImage"), System.Drawing.Image)
+        Me.btnedit.Location = New System.Drawing.Point(701, 7)
+        Me.btnedit.Name = "btnedit"
+        Me.btnedit.Size = New System.Drawing.Size(50, 29)
+        Me.btnedit.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
+        Me.btnedit.TabIndex = 7
+        Me.btnedit.TabStop = False
+        Me.btnedit.Zoom = 10
+        '
+        'btndelete
+        '
+        Me.btndelete.BackColor = System.Drawing.Color.FromArgb(CType(CType(37, Byte), Integer), CType(CType(46, Byte), Integer), CType(CType(59, Byte), Integer))
+        Me.btndelete.Image = CType(resources.GetObject("btndelete.Image"), System.Drawing.Image)
+        Me.btndelete.ImageActive = Nothing
+        Me.btndelete.InitialImage = CType(resources.GetObject("btndelete.InitialImage"), System.Drawing.Image)
+        Me.btndelete.Location = New System.Drawing.Point(757, 7)
+        Me.btndelete.Name = "btndelete"
+        Me.btndelete.Size = New System.Drawing.Size(50, 29)
+        Me.btndelete.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
+        Me.btndelete.TabIndex = 6
+        Me.btndelete.TabStop = False
+        Me.btndelete.Zoom = 10
+        '
+        'btnAdd
+        '
+        Me.btnAdd.BackColor = System.Drawing.Color.FromArgb(CType(CType(37, Byte), Integer), CType(CType(46, Byte), Integer), CType(CType(59, Byte), Integer))
+        Me.btnAdd.Image = CType(resources.GetObject("btnAdd.Image"), System.Drawing.Image)
+        Me.btnAdd.ImageActive = Nothing
+        Me.btnAdd.InitialImage = CType(resources.GetObject("btnAdd.InitialImage"), System.Drawing.Image)
+        Me.btnAdd.Location = New System.Drawing.Point(645, 7)
+        Me.btnAdd.Name = "btnAdd"
+        Me.btnAdd.Size = New System.Drawing.Size(50, 29)
+        Me.btnAdd.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
+        Me.btnAdd.TabIndex = 5
+        Me.btnAdd.TabStop = False
+        Me.btnAdd.Zoom = 10
+        '
+        'txtBuscar
+        '
+        Me.txtBuscar.BorderColorFocused = System.Drawing.Color.Blue
+        Me.txtBuscar.BorderColorIdle = System.Drawing.Color.WhiteSmoke
+        Me.txtBuscar.BorderColorMouseHover = System.Drawing.Color.Blue
+        Me.txtBuscar.BorderThickness = 3
+        Me.txtBuscar.Cursor = System.Windows.Forms.Cursors.IBeam
+        Me.txtBuscar.Font = New System.Drawing.Font("Century Gothic", 9.75!)
+        Me.txtBuscar.ForeColor = System.Drawing.Color.FromArgb(CType(CType(178, Byte), Integer), CType(CType(216, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.txtBuscar.isPassword = False
+        Me.txtBuscar.Location = New System.Drawing.Point(4, 0)
+        Me.txtBuscar.Margin = New System.Windows.Forms.Padding(4)
+        Me.txtBuscar.Name = "txtBuscar"
+        Me.txtBuscar.Size = New System.Drawing.Size(179, 38)
+        Me.txtBuscar.TabIndex = 3
+        Me.txtBuscar.TextAlign = System.Windows.Forms.HorizontalAlignment.Left
+        '
+        'btnBuscar
+        '
+        Me.btnBuscar.BackColor = System.Drawing.Color.FromArgb(CType(CType(37, Byte), Integer), CType(CType(46, Byte), Integer), CType(CType(59, Byte), Integer))
+        Me.btnBuscar.Image = CType(resources.GetObject("btnBuscar.Image"), System.Drawing.Image)
+        Me.btnBuscar.ImageActive = Nothing
+        Me.btnBuscar.Location = New System.Drawing.Point(179, 5)
+        Me.btnBuscar.Name = "btnBuscar"
+        Me.btnBuscar.Size = New System.Drawing.Size(50, 29)
+        Me.btnBuscar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
+        Me.btnBuscar.TabIndex = 2
+        Me.btnBuscar.TabStop = False
+        Me.btnBuscar.Zoom = 10
+        '
+        'pnlContenido
+        '
+        Me.pnlContenido.BackColor = System.Drawing.Color.FromArgb(CType(CType(37, Byte), Integer), CType(CType(46, Byte), Integer), CType(CType(59, Byte), Integer))
+        Me.pnlContenido.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.pnlContenido.Location = New System.Drawing.Point(0, 42)
+        Me.pnlContenido.Name = "pnlContenido"
+        Me.pnlContenido.Size = New System.Drawing.Size(810, 476)
+        Me.pnlContenido.TabIndex = 4
+        '
         'Licencias
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -239,15 +256,16 @@ Partial Class Licencias
         Me.Name = "Licencias"
         Me.Size = New System.Drawing.Size(810, 518)
         Me.Panel1.ResumeLayout(False)
-        CType(Me.btnBuscar, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.btnedit, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.btndelete, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.btnAdd, System.ComponentModel.ISupportInitialize).EndInit()
         Me.Panel2.ResumeLayout(False)
+        CType(Me.btnImprimir, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.BunifuImageButton1, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.BunifuImageButton2, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.BunifuImageButton3, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.BunifuImageButton4, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.btnedit, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.btndelete, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.btnAdd, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.btnBuscar, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
 
     End Sub
@@ -265,4 +283,5 @@ Partial Class Licencias
     Friend WithEvents BunifuImageButton3 As Bunifu.Framework.UI.BunifuImageButton
     Friend WithEvents BunifuMetroTextbox1 As Bunifu.Framework.UI.BunifuMetroTextbox
     Friend WithEvents BunifuImageButton4 As Bunifu.Framework.UI.BunifuImageButton
+    Friend WithEvents btnImprimir As Bunifu.Framework.UI.BunifuImageButton
 End Class

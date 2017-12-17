@@ -121,6 +121,35 @@
     <value>17, 17</value>
   </metadata>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="btnImprimir.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAABGdBTUEAALGPC/xhBQAAAZhJREFUWEft
+        lk1KA0EQhaPbgOgFdOMPGiPoMUTBC+hGTyAewDOIa6PnMC7UvRcQNQS9gKCIou1X3W8CYX7SY4wgzAeP
+        UFWvqpqZQE+toqII59wWukVvqCzWc4M2Na4cNDbRBxqWd7SssfHQdOrbnTtCY0pHQ884OrYB0FI6Dhom
+        0Sv6RNNoA92jO7Quzzyy12OaVa7Ph2aQzXhBE+aJAvMeMtqKuyH0dJQ7CKFnv8B3EUK3a3EUmK9Dj9tW
+        /BhCT1c5ewId9ICSJ5Dl2wmhu7J4IBgXgt89o7py9mifkC3wryCLLB+/dWSzvpA/aCYU28j+cGfIOFFp
+        aJjVCiP9H9t2nKsUILFk1T9mUesDJBro0JdGi+1oaG2a4HFO4a+hsYPnylcdIIXK0agthcr5yJdC5WjU
+        lkLlfOQrvXAQGvvPD0B6LVQLWZW9D9WGPkDyjVBE5t2v2s8PQGoK2b1ul8qc0j3I2e1oNfNMKd2DnEdh
+        PvINNpZEY+MPMCq0Jh/5RobW5IMn+RpKaKpUGnpXwogelypVVIha7RuCiP1Yl2sc4wAAAABJRU5ErkJg
+        gg==
+</value>
+  </data>
+  <data name="btnImprimir.InitialImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAABGdBTUEAALGPC/xhBQAAAlxJREFUWEft
+        lctqFEEYhQfRqKgLIeYdkhgJoujG4MYnMEIUdOdGQQRdq7g34AUvb+BCIyiC+ghuAia6cONGF+LGG3i3
+        /E7VqYyTnp52elqy0A8OTJ06/XdPV/Vfrf9UEUIYQWfRY/Ta0u8zaMSxvwM3OIg+ojI0N+N4s1B4Gv3U
+        XeAW2oM2W1PoNhLK7PdlzUDBYfRW1eG07QLMnUqRmB22PTgUOx/LhnDXVilk7qRoOGdrcCj2JNUMU7ZK
+        IbM3RcO8rcGhWN54G2yVQmZTiob3tgaHYiv+ACu+BHkT3rNVCpn7KdrsJtyC3sWyvT9DdUjR7GcoKHgA
+        LW9E69B6pEY0h0TzjShD4SPos+5Swid02NmtaBYtojfWgr3xWLAfuEit+AWq4iXS2/geR93R3GW0xuXL
+        IbQaXUQZ/YuTaBypRessGEPH0Tz6hsQXdA3tQPnM2Imuo69IPERDvlV3CFyJ0VTwGFrlqQLM3VAQ9BYm
+        bRdgbjt6pSBctV2EyUMpE2++z3ZXmNea/0DaBxO2I4wjHkYYTiLtJy3HmO02mGtRXvOjtkshk5dp1tYS
+        9jseQGDlay7YaoM5k+ZiFyx97Rkyz2Kadba1hP1uD7ArzYQFW20wb6a5cMJWT8h9SPGw0eOeOFN+bmA+
+        T3Nh1FZPyOUDq7EH6PhHVZCrswS700xYtFUfigyyCQvX9A1FJlD+DLfZjjCOeBhhmD9DNa4/WuZKKFSn
+        ERU/wbpQbAg9imU7W7F6irS8FT9A1edBP1BQD6H2XXUYXULN3vx3KJ6P46dI+0LS73rH8T9Cq/ULQnuG
+        LgQoxI8AAAAASUVORK5CYII=
+</value>
+  </data>
   <data name="BunifuImageButton3.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAABGdBTUEAALGPC/xhBQAAAZ9JREFUWEft

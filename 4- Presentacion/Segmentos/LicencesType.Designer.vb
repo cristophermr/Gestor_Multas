@@ -1,9 +1,9 @@
-﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
-Partial Class Tipos_Licencias
+﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()>
+Partial Class LicencesTypes
     Inherits System.Windows.Forms.UserControl
 
     'UserControl reemplaza a Dispose para limpiar la lista de componentes.
-    <System.Diagnostics.DebuggerNonUserCode()> _
+    <System.Diagnostics.DebuggerNonUserCode()>
     Protected Overrides Sub Dispose(ByVal disposing As Boolean)
         Try
             If disposing AndAlso components IsNot Nothing Then
@@ -20,10 +20,17 @@ Partial Class Tipos_Licencias
     'NOTA: el Diseñador de Windows Forms necesita el siguiente procedimiento
     'Se puede modificar usando el Diseñador de Windows Forms.  
     'No lo modifique con el editor de código.
-    <System.Diagnostics.DebuggerStepThrough()> _
+    <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
-        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Tipos_Licencias))
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(LicencesTypes))
         Me.pnlContenido = New System.Windows.Forms.Panel()
+        Me.BunifuCustomLabel1 = New Bunifu.Framework.UI.BunifuCustomLabel()
+        Me.bntCod = New Bunifu.Framework.UI.BunifuImageButton()
+        Me.txtObservacion = New WindowsFormsControlLibrary1.BunifuCustomTextbox()
+        Me.BunifuCustomLabel7 = New Bunifu.Framework.UI.BunifuCustomLabel()
+        Me.txtTipo = New WindowsFormsControlLibrary1.BunifuCustomTextbox()
+        Me.BunifuCustomLabel8 = New Bunifu.Framework.UI.BunifuCustomLabel()
+        Me.txtCodLicen = New WindowsFormsControlLibrary1.BunifuCustomTextbox()
         Me.Panel1 = New System.Windows.Forms.Panel()
         Me.btnedit = New Bunifu.Framework.UI.BunifuImageButton()
         Me.btndelete = New Bunifu.Framework.UI.BunifuImageButton()
@@ -31,6 +38,7 @@ Partial Class Tipos_Licencias
         Me.txtBuscar = New Bunifu.Framework.UI.BunifuMetroTextbox()
         Me.btnBuscar = New Bunifu.Framework.UI.BunifuImageButton()
         Me.pnlContenido.SuspendLayout()
+        CType(Me.bntCod, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Panel1.SuspendLayout()
         CType(Me.btnedit, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.btndelete, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -41,12 +49,89 @@ Partial Class Tipos_Licencias
         'pnlContenido
         '
         Me.pnlContenido.BackColor = System.Drawing.Color.FromArgb(CType(CType(37, Byte), Integer), CType(CType(46, Byte), Integer), CType(CType(59, Byte), Integer))
+        Me.pnlContenido.Controls.Add(Me.BunifuCustomLabel1)
+        Me.pnlContenido.Controls.Add(Me.bntCod)
+        Me.pnlContenido.Controls.Add(Me.txtObservacion)
+        Me.pnlContenido.Controls.Add(Me.BunifuCustomLabel7)
+        Me.pnlContenido.Controls.Add(Me.txtTipo)
+        Me.pnlContenido.Controls.Add(Me.BunifuCustomLabel8)
+        Me.pnlContenido.Controls.Add(Me.txtCodLicen)
         Me.pnlContenido.Controls.Add(Me.Panel1)
         Me.pnlContenido.Dock = System.Windows.Forms.DockStyle.Fill
         Me.pnlContenido.Location = New System.Drawing.Point(0, 0)
         Me.pnlContenido.Name = "pnlContenido"
         Me.pnlContenido.Size = New System.Drawing.Size(810, 518)
         Me.pnlContenido.TabIndex = 5
+        '
+        'BunifuCustomLabel1
+        '
+        Me.BunifuCustomLabel1.AutoSize = True
+        Me.BunifuCustomLabel1.ForeColor = System.Drawing.SystemColors.ControlLightLight
+        Me.BunifuCustomLabel1.Location = New System.Drawing.Point(86, 195)
+        Me.BunifuCustomLabel1.Name = "BunifuCustomLabel1"
+        Me.BunifuCustomLabel1.Size = New System.Drawing.Size(67, 13)
+        Me.BunifuCustomLabel1.TabIndex = 14
+        Me.BunifuCustomLabel1.Text = "Observación"
+        '
+        'bntCod
+        '
+        Me.bntCod.BackColor = System.Drawing.Color.Transparent
+        Me.bntCod.ErrorImage = CType(resources.GetObject("bntCod.ErrorImage"), System.Drawing.Image)
+        Me.bntCod.Image = CType(resources.GetObject("bntCod.Image"), System.Drawing.Image)
+        Me.bntCod.ImageActive = Nothing
+        Me.bntCod.Location = New System.Drawing.Point(189, 143)
+        Me.bntCod.Name = "bntCod"
+        Me.bntCod.Size = New System.Drawing.Size(54, 23)
+        Me.bntCod.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
+        Me.bntCod.TabIndex = 13
+        Me.bntCod.TabStop = False
+        Me.bntCod.Zoom = 10
+        '
+        'txtObservacion
+        '
+        Me.txtObservacion.BorderColor = System.Drawing.Color.SeaGreen
+        Me.txtObservacion.Location = New System.Drawing.Point(89, 225)
+        Me.txtObservacion.Multiline = True
+        Me.txtObservacion.Name = "txtObservacion"
+        Me.txtObservacion.Size = New System.Drawing.Size(592, 251)
+        Me.txtObservacion.TabIndex = 12
+        '
+        'BunifuCustomLabel7
+        '
+        Me.BunifuCustomLabel7.AutoSize = True
+        Me.BunifuCustomLabel7.ForeColor = System.Drawing.SystemColors.ControlLightLight
+        Me.BunifuCustomLabel7.Location = New System.Drawing.Point(363, 118)
+        Me.BunifuCustomLabel7.Name = "BunifuCustomLabel7"
+        Me.BunifuCustomLabel7.Size = New System.Drawing.Size(82, 13)
+        Me.BunifuCustomLabel7.TabIndex = 11
+        Me.BunifuCustomLabel7.Text = "Tipo de licencia"
+        '
+        'txtTipo
+        '
+        Me.txtTipo.BorderColor = System.Drawing.Color.SeaGreen
+        Me.txtTipo.Location = New System.Drawing.Point(366, 143)
+        Me.txtTipo.Name = "txtTipo"
+        Me.txtTipo.Size = New System.Drawing.Size(97, 20)
+        Me.txtTipo.TabIndex = 10
+        '
+        'BunifuCustomLabel8
+        '
+        Me.BunifuCustomLabel8.AutoSize = True
+        Me.BunifuCustomLabel8.ForeColor = System.Drawing.SystemColors.ControlLightLight
+        Me.BunifuCustomLabel8.Location = New System.Drawing.Point(80, 118)
+        Me.BunifuCustomLabel8.Name = "BunifuCustomLabel8"
+        Me.BunifuCustomLabel8.Size = New System.Drawing.Size(40, 13)
+        Me.BunifuCustomLabel8.TabIndex = 9
+        Me.BunifuCustomLabel8.Text = "Cedula"
+        '
+        'txtCodLicen
+        '
+        Me.txtCodLicen.BorderColor = System.Drawing.Color.SeaGreen
+        Me.txtCodLicen.Enabled = False
+        Me.txtCodLicen.Location = New System.Drawing.Point(83, 146)
+        Me.txtCodLicen.Name = "txtCodLicen"
+        Me.txtCodLicen.Size = New System.Drawing.Size(100, 20)
+        Me.txtCodLicen.TabIndex = 8
         '
         'Panel1
         '
@@ -134,15 +219,17 @@ Partial Class Tipos_Licencias
         Me.btnBuscar.TabStop = False
         Me.btnBuscar.Zoom = 10
         '
-        'Tipos_Licencias
+        'LicencesTypes
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(37, Byte), Integer), CType(CType(46, Byte), Integer), CType(CType(59, Byte), Integer))
         Me.Controls.Add(Me.pnlContenido)
-        Me.Name = "Tipos_Licencias"
+        Me.Name = "LicencesTypes"
         Me.Size = New System.Drawing.Size(810, 518)
         Me.pnlContenido.ResumeLayout(False)
+        Me.pnlContenido.PerformLayout()
+        CType(Me.bntCod, System.ComponentModel.ISupportInitialize).EndInit()
         Me.Panel1.ResumeLayout(False)
         CType(Me.btnedit, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.btndelete, System.ComponentModel.ISupportInitialize).EndInit()
@@ -159,4 +246,11 @@ Partial Class Tipos_Licencias
     Friend WithEvents btnAdd As Bunifu.Framework.UI.BunifuImageButton
     Friend WithEvents txtBuscar As Bunifu.Framework.UI.BunifuMetroTextbox
     Friend WithEvents btnBuscar As Bunifu.Framework.UI.BunifuImageButton
+    Friend WithEvents txtObservacion As WindowsFormsControlLibrary1.BunifuCustomTextbox
+    Friend WithEvents BunifuCustomLabel7 As Bunifu.Framework.UI.BunifuCustomLabel
+    Friend WithEvents txtTipo As WindowsFormsControlLibrary1.BunifuCustomTextbox
+    Friend WithEvents BunifuCustomLabel8 As Bunifu.Framework.UI.BunifuCustomLabel
+    Friend WithEvents txtCodLicen As WindowsFormsControlLibrary1.BunifuCustomTextbox
+    Friend WithEvents bntCod As Bunifu.Framework.UI.BunifuImageButton
+    Friend WithEvents BunifuCustomLabel1 As Bunifu.Framework.UI.BunifuCustomLabel
 End Class

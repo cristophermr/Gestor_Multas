@@ -14,3 +14,19 @@ C:\Users\Cristopher M.R\Desktop\ProyectoLicencias\02LogicaNegocios\obj\Debug\02L
 C:\Users\Cristopher M.R\Desktop\ProyectoLicencias\02LogicaNegocios\obj\Debug\02LogicaNegocios.dll
 C:\Users\Cristopher M.R\Desktop\ProyectoLicencias\02LogicaNegocios\obj\Debug\02LogicaNegocios.xml
 C:\Users\Cristopher M.R\Desktop\ProyectoLicencias\02LogicaNegocios\obj\Debug\02LogicaNegocios.pdb
+D:\ProyectoLicencias\02LogicaNegocios\bin\Debug\02LogicaNegocios.dll
+D:\ProyectoLicencias\02LogicaNegocios\bin\Debug\02LogicaNegocios.pdb
+D:\ProyectoLicencias\02LogicaNegocios\bin\Debug\02LogicaNegocios.xml
+D:\ProyectoLicencias\02LogicaNegocios\bin\Debug\01AccesoDatos.dll
+D:\ProyectoLicencias\02LogicaNegocios\bin\Debug\03Entidades.dll
+D:\ProyectoLicencias\02LogicaNegocios\bin\Debug\01AccesoDatos.pdb
+D:\ProyectoLicencias\02LogicaNegocios\bin\Debug\01AccesoDatos.xml
+D:\ProyectoLicencias\02LogicaNegocios\bin\Debug\03Entidades.pdb
+D:\ProyectoLicencias\02LogicaNegocios\bin\Debug\03Entidades.xml
+D:\ProyectoLicencias\02LogicaNegocios\obj\Debug\02LogicaNegocios.vbprojResolveAssemblyReference.cache
+D:\ProyectoLicencias\02LogicaNegocios\obj\Debug\_02LogicaNegocios.Resources.resources
+D:\ProyectoLicencias\02LogicaNegocios\obj\Debug\02LogicaNegocios.vbproj.GenerateResource.Cache
+D:\ProyectoLicencias\02LogicaNegocios\obj\Debug\02LogicaNegocios.vbproj.CoreCompileInputs.cache
+D:\ProyectoLicencias\02LogicaNegocios\obj\Debug\02LogicaNegocios.dll
+D:\ProyectoLicencias\02LogicaNegocios\obj\Debug\02LogicaNegocios.xml
+D:\ProyectoLicencias\02LogicaNegocios\obj\Debug\02LogicaNegocios.pdb

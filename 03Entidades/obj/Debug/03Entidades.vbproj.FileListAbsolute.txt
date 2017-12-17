@@ -7,3 +7,12 @@ C:\Users\Cristopher M.R\Desktop\ProyectoLicencias\03Entidades\obj\Debug\03Entida
 C:\Users\Cristopher M.R\Desktop\ProyectoLicencias\03Entidades\obj\Debug\03Entidades.dll
 C:\Users\Cristopher M.R\Desktop\ProyectoLicencias\03Entidades\obj\Debug\03Entidades.xml
 C:\Users\Cristopher M.R\Desktop\ProyectoLicencias\03Entidades\obj\Debug\03Entidades.pdb
+D:\ProyectoLicencias\03Entidades\bin\Debug\03Entidades.dll
+D:\ProyectoLicencias\03Entidades\bin\Debug\03Entidades.pdb
+D:\ProyectoLicencias\03Entidades\bin\Debug\03Entidades.xml
+D:\ProyectoLicencias\03Entidades\obj\Debug\_03Entidades.Resources.resources
+D:\ProyectoLicencias\03Entidades\obj\Debug\03Entidades.vbproj.GenerateResource.Cache
+D:\ProyectoLicencias\03Entidades\obj\Debug\03Entidades.vbproj.CoreCompileInputs.cache
+D:\ProyectoLicencias\03Entidades\obj\Debug\03Entidades.dll
+D:\ProyectoLicencias\03Entidades\obj\Debug\03Entidades.xml
+D:\ProyectoLicencias\03Entidades\obj\Debug\03Entidades.pdb

@@ -25,7 +25,6 @@ Partial Class Conductores
         Me.components = New System.ComponentModel.Container()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Conductores))
         Me.pnlAcciones = New System.Windows.Forms.Panel()
-        Me.BunifuImageButton1 = New Bunifu.Framework.UI.BunifuImageButton()
         Me.btnedit = New Bunifu.Framework.UI.BunifuImageButton()
         Me.btndelete = New Bunifu.Framework.UI.BunifuImageButton()
         Me.btnAdd = New Bunifu.Framework.UI.BunifuImageButton()
@@ -33,6 +32,10 @@ Partial Class Conductores
         Me.btnBuscar = New Bunifu.Framework.UI.BunifuImageButton()
         Me.pnlContenido = New System.Windows.Forms.Panel()
         Me.Panel1 = New System.Windows.Forms.Panel()
+        Me.txtObser = New WindowsFormsControlLibrary1.BunifuCustomTextbox()
+        Me.txtAdress = New WindowsFormsControlLibrary1.BunifuCustomTextbox()
+        Me.grbxActivo = New System.Windows.Forms.GroupBox()
+        Me.txtEmail = New WindowsFormsControlLibrary1.BunifuCustomTextbox()
         Me.dtpNacimiento = New System.Windows.Forms.DateTimePicker()
         Me.txtObservaciones = New Bunifu.Framework.UI.BunifuCustomLabel()
         Me.txtDireccion = New Bunifu.Framework.UI.BunifuCustomLabel()
@@ -55,27 +58,20 @@ Partial Class Conductores
         Me.BunifuCustomLabel1 = New Bunifu.Framework.UI.BunifuCustomLabel()
         Me.txtCedula = New WindowsFormsControlLibrary1.BunifuCustomTextbox()
         Me.ConductoresENBindingSource = New System.Windows.Forms.BindingSource(Me.components)
-        Me.txtEmail = New WindowsFormsControlLibrary1.BunifuCustomTextbox()
-        Me.BunifuCustomTextbox4 = New WindowsFormsControlLibrary1.BunifuCustomTextbox()
-        Me.BunifuCustomTextbox5 = New WindowsFormsControlLibrary1.BunifuCustomTextbox()
-        Me.grbxActivo = New System.Windows.Forms.GroupBox()
-        Me.rdbtnSi = New System.Windows.Forms.RadioButton()
-        Me.rdbtnNo = New System.Windows.Forms.RadioButton()
+        Me.swtActivo = New Bunifu.Framework.UI.BunifuSwitch()
         Me.pnlAcciones.SuspendLayout()
-        CType(Me.BunifuImageButton1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.btnedit, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.btndelete, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.btnAdd, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.btnBuscar, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.pnlContenido.SuspendLayout()
         Me.Panel1.SuspendLayout()
-        CType(Me.ConductoresENBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.grbxActivo.SuspendLayout()
+        CType(Me.ConductoresENBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'pnlAcciones
         '
-        Me.pnlAcciones.Controls.Add(Me.BunifuImageButton1)
         Me.pnlAcciones.Controls.Add(Me.btnedit)
         Me.pnlAcciones.Controls.Add(Me.btndelete)
         Me.pnlAcciones.Controls.Add(Me.btnAdd)
@@ -86,20 +82,6 @@ Partial Class Conductores
         Me.pnlAcciones.Name = "pnlAcciones"
         Me.pnlAcciones.Size = New System.Drawing.Size(810, 38)
         Me.pnlAcciones.TabIndex = 0
-        '
-        'BunifuImageButton1
-        '
-        Me.BunifuImageButton1.BackColor = System.Drawing.Color.FromArgb(CType(CType(37, Byte), Integer), CType(CType(46, Byte), Integer), CType(CType(59, Byte), Integer))
-        Me.BunifuImageButton1.Image = CType(resources.GetObject("BunifuImageButton1.Image"), System.Drawing.Image)
-        Me.BunifuImageButton1.ImageActive = Nothing
-        Me.BunifuImageButton1.InitialImage = CType(resources.GetObject("BunifuImageButton1.InitialImage"), System.Drawing.Image)
-        Me.BunifuImageButton1.Location = New System.Drawing.Point(589, 5)
-        Me.BunifuImageButton1.Name = "BunifuImageButton1"
-        Me.BunifuImageButton1.Size = New System.Drawing.Size(50, 29)
-        Me.BunifuImageButton1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
-        Me.BunifuImageButton1.TabIndex = 5
-        Me.BunifuImageButton1.TabStop = False
-        Me.BunifuImageButton1.Zoom = 10
         '
         'btnedit
         '
@@ -192,9 +174,9 @@ Partial Class Conductores
         '
         'Panel1
         '
+        Me.Panel1.Controls.Add(Me.txtObser)
+        Me.Panel1.Controls.Add(Me.txtAdress)
         Me.Panel1.Controls.Add(Me.grbxActivo)
-        Me.Panel1.Controls.Add(Me.BunifuCustomTextbox5)
-        Me.Panel1.Controls.Add(Me.BunifuCustomTextbox4)
         Me.Panel1.Controls.Add(Me.txtEmail)
         Me.Panel1.Controls.Add(Me.dtpNacimiento)
         Me.Panel1.Controls.Add(Me.txtObservaciones)
@@ -214,6 +196,43 @@ Partial Class Conductores
         Me.Panel1.Name = "Panel1"
         Me.Panel1.Size = New System.Drawing.Size(810, 480)
         Me.Panel1.TabIndex = 8
+        '
+        'txtObser
+        '
+        Me.txtObser.BorderColor = System.Drawing.Color.SeaGreen
+        Me.txtObser.Location = New System.Drawing.Point(64, 298)
+        Me.txtObser.Multiline = True
+        Me.txtObser.Name = "txtObser"
+        Me.txtObser.Size = New System.Drawing.Size(599, 74)
+        Me.txtObser.TabIndex = 18
+        '
+        'txtAdress
+        '
+        Me.txtAdress.BorderColor = System.Drawing.Color.SeaGreen
+        Me.txtAdress.Location = New System.Drawing.Point(64, 195)
+        Me.txtAdress.Multiline = True
+        Me.txtAdress.Name = "txtAdress"
+        Me.txtAdress.Size = New System.Drawing.Size(599, 74)
+        Me.txtAdress.TabIndex = 17
+        '
+        'grbxActivo
+        '
+        Me.grbxActivo.Controls.Add(Me.swtActivo)
+        Me.grbxActivo.ForeColor = System.Drawing.Color.Snow
+        Me.grbxActivo.Location = New System.Drawing.Point(465, 103)
+        Me.grbxActivo.Name = "grbxActivo"
+        Me.grbxActivo.Size = New System.Drawing.Size(161, 67)
+        Me.grbxActivo.TabIndex = 16
+        Me.grbxActivo.TabStop = False
+        Me.grbxActivo.Text = "Se encuentra activo?"
+        '
+        'txtEmail
+        '
+        Me.txtEmail.BorderColor = System.Drawing.Color.SeaGreen
+        Me.txtEmail.Location = New System.Drawing.Point(220, 136)
+        Me.txtEmail.Name = "txtEmail"
+        Me.txtEmail.Size = New System.Drawing.Size(180, 20)
+        Me.txtEmail.TabIndex = 13
         '
         'dtpNacimiento
         '
@@ -411,65 +430,20 @@ Partial Class Conductores
         '
         Me.ConductoresENBindingSource.DataSource = GetType(_03Entidades.ConductoresEN)
         '
-        'txtEmail
+        'swtActivo
         '
-        Me.txtEmail.BorderColor = System.Drawing.Color.SeaGreen
-        Me.txtEmail.Location = New System.Drawing.Point(220, 136)
-        Me.txtEmail.Name = "txtEmail"
-        Me.txtEmail.Size = New System.Drawing.Size(180, 20)
-        Me.txtEmail.TabIndex = 13
-        '
-        'BunifuCustomTextbox4
-        '
-        Me.BunifuCustomTextbox4.BorderColor = System.Drawing.Color.SeaGreen
-        Me.BunifuCustomTextbox4.Location = New System.Drawing.Point(64, 195)
-        Me.BunifuCustomTextbox4.Multiline = True
-        Me.BunifuCustomTextbox4.Name = "BunifuCustomTextbox4"
-        Me.BunifuCustomTextbox4.Size = New System.Drawing.Size(599, 74)
-        Me.BunifuCustomTextbox4.TabIndex = 14
-        '
-        'BunifuCustomTextbox5
-        '
-        Me.BunifuCustomTextbox5.BorderColor = System.Drawing.Color.SeaGreen
-        Me.BunifuCustomTextbox5.Location = New System.Drawing.Point(64, 298)
-        Me.BunifuCustomTextbox5.Multiline = True
-        Me.BunifuCustomTextbox5.Name = "BunifuCustomTextbox5"
-        Me.BunifuCustomTextbox5.Size = New System.Drawing.Size(599, 74)
-        Me.BunifuCustomTextbox5.TabIndex = 15
-        '
-        'grbxActivo
-        '
-        Me.grbxActivo.Controls.Add(Me.rdbtnNo)
-        Me.grbxActivo.Controls.Add(Me.rdbtnSi)
-        Me.grbxActivo.ForeColor = System.Drawing.Color.Snow
-        Me.grbxActivo.Location = New System.Drawing.Point(465, 103)
-        Me.grbxActivo.Name = "grbxActivo"
-        Me.grbxActivo.Size = New System.Drawing.Size(161, 67)
-        Me.grbxActivo.TabIndex = 16
-        Me.grbxActivo.TabStop = False
-        Me.grbxActivo.Text = "Se encuentra activo?"
-        '
-        'rdbtnSi
-        '
-        Me.rdbtnSi.AutoSize = True
-        Me.rdbtnSi.Location = New System.Drawing.Point(46, 21)
-        Me.rdbtnSi.Name = "rdbtnSi"
-        Me.rdbtnSi.Size = New System.Drawing.Size(34, 17)
-        Me.rdbtnSi.TabIndex = 0
-        Me.rdbtnSi.Text = "Si"
-        Me.rdbtnSi.UseVisualStyleBackColor = True
-        '
-        'rdbtnNo
-        '
-        Me.rdbtnNo.AutoSize = True
-        Me.rdbtnNo.Checked = True
-        Me.rdbtnNo.Location = New System.Drawing.Point(46, 44)
-        Me.rdbtnNo.Name = "rdbtnNo"
-        Me.rdbtnNo.Size = New System.Drawing.Size(39, 17)
-        Me.rdbtnNo.TabIndex = 1
-        Me.rdbtnNo.TabStop = True
-        Me.rdbtnNo.Text = "No"
-        Me.rdbtnNo.UseVisualStyleBackColor = True
+        Me.swtActivo.BackColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
+        Me.swtActivo.BorderRadius = 0
+        Me.swtActivo.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.swtActivo.ForeColor = System.Drawing.Color.FromArgb(CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer))
+        Me.swtActivo.Location = New System.Drawing.Point(55, 33)
+        Me.swtActivo.Name = "swtActivo"
+        Me.swtActivo.Oncolor = System.Drawing.Color.SeaGreen
+        Me.swtActivo.Onoffcolor = System.Drawing.Color.DarkGray
+        Me.swtActivo.Size = New System.Drawing.Size(51, 19)
+        Me.swtActivo.TabIndex = 19
+        Me.swtActivo.Textcolor = System.Drawing.Color.FromArgb(CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer))
+        Me.swtActivo.Value = False
         '
         'Conductores
         '
@@ -481,7 +455,6 @@ Partial Class Conductores
         Me.Name = "Conductores"
         Me.Size = New System.Drawing.Size(810, 518)
         Me.pnlAcciones.ResumeLayout(False)
-        CType(Me.BunifuImageButton1, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.btnedit, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.btndelete, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.btnAdd, System.ComponentModel.ISupportInitialize).EndInit()
@@ -490,9 +463,8 @@ Partial Class Conductores
         Me.pnlContenido.PerformLayout()
         Me.Panel1.ResumeLayout(False)
         Me.Panel1.PerformLayout()
-        CType(Me.ConductoresENBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
         Me.grbxActivo.ResumeLayout(False)
-        Me.grbxActivo.PerformLayout()
+        CType(Me.ConductoresENBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
 
     End Sub
@@ -507,7 +479,6 @@ Partial Class Conductores
     Friend WithEvents BunifuCheckbox1 As Bunifu.Framework.UI.BunifuCheckbox
     Friend WithEvents txtCedula As WindowsFormsControlLibrary1.BunifuCustomTextbox
     Friend WithEvents BunifuCustomLabel1 As Bunifu.Framework.UI.BunifuCustomLabel
-    Friend WithEvents BunifuImageButton1 As Bunifu.Framework.UI.BunifuImageButton
     Friend WithEvents BunifuCustomLabel2 As Bunifu.Framework.UI.BunifuCustomLabel
     Friend WithEvents BunifuCustomTextbox1 As WindowsFormsControlLibrary1.BunifuCustomTextbox
     Friend WithEvents Panel1 As Panel
@@ -529,9 +500,8 @@ Partial Class Conductores
     Friend WithEvents BunifuCustomLabel3 As Bunifu.Framework.UI.BunifuCustomLabel
     Friend WithEvents BunifuCustomTextbox2 As WindowsFormsControlLibrary1.BunifuCustomTextbox
     Friend WithEvents txtEmail As WindowsFormsControlLibrary1.BunifuCustomTextbox
-    Friend WithEvents BunifuCustomTextbox4 As WindowsFormsControlLibrary1.BunifuCustomTextbox
-    Friend WithEvents BunifuCustomTextbox5 As WindowsFormsControlLibrary1.BunifuCustomTextbox
     Friend WithEvents grbxActivo As GroupBox
-    Friend WithEvents rdbtnNo As RadioButton
-    Friend WithEvents rdbtnSi As RadioButton
+    Friend WithEvents txtObser As WindowsFormsControlLibrary1.BunifuCustomTextbox
+    Friend WithEvents txtAdress As WindowsFormsControlLibrary1.BunifuCustomTextbox
+    Friend WithEvents swtActivo As Bunifu.Framework.UI.BunifuSwitch
 End Class

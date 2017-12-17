@@ -7,6 +7,8 @@ Public Class ConductoresAD
 
     End Sub
     Public Sub InsertarConductores(ByVal pConductor As ConductoresEN)
+
+
         Try
             miConexion.Open()
             Dim strInsert As String
@@ -18,11 +20,11 @@ Public Class ConductoresAD
             cmdConductor.Parameters.Add("@NombreCompleto", OleDbType.VarChar).Value = pConductor.NombreCompleto
             cmdConductor.Parameters.Add("@Tel_Celular", OleDbType.VarChar).Value = pConductor.Tel_Celular
             cmdConductor.Parameters.Add("@Tel_Casa", OleDbType.VarChar).Value = pConductor.Tel_Casa
-            cmdConductor.Parameters.Add("@Fec_Nacimiento", OleDbType.Boolean).Value = pConductor.Fecha_Nacimiento.ToShortDateString
-            cmdConductor.Parameters.Add("@E_Mail", OleDbType.Boolean).Value = pConductor.E_Mail
+            cmdConductor.Parameters.Add("@Fec_Nacimiento", OleDbType.Date).Value = pConductor.Fecha_Nacimiento.ToShortDateString
+            cmdConductor.Parameters.Add("@E_Mail", OleDbType.VarChar).Value = pConductor.E_Mail
             cmdConductor.Parameters.Add("@Dir_Completa", OleDbType.VarChar).Value = pConductor.Dir_Completa
             cmdConductor.Parameters.Add("@Observaciones", OleDbType.VarChar).Value = pConductor.Observaciones
-            cmdConductor.Parameters.Add("@Ind_Activo", OleDbType.VarChar).Value = pConductor.Ind_Activo
+            cmdConductor.Parameters.Add("@Ind_Activo", OleDbType.Boolean).Value = pConductor.Ind_Activo
             cmdConductor.ExecuteNonQuery()
 
             miConexion.Close()
@@ -89,11 +91,11 @@ Public Class ConductoresAD
             cmdConductor.Parameters.Add("@NombreCompleto", OleDbType.VarChar).Value = pConductor.NombreCompleto
             cmdConductor.Parameters.Add("@Tel_Celular", OleDbType.VarChar).Value = pConductor.Tel_Celular
             cmdConductor.Parameters.Add("@Tel_Casa", OleDbType.VarChar).Value = pConductor.Tel_Casa
-            cmdConductor.Parameters.Add("@Fec_Nacimiento", OleDbType.Boolean).Value = pConductor.Fecha_Nacimiento
-            cmdConductor.Parameters.Add("@E_Mail", OleDbType.Boolean).Value = pConductor.E_Mail
+            cmdConductor.Parameters.Add("@Fec_Nacimiento", OleDbType.Date).Value = pConductor.Fecha_Nacimiento
+            cmdConductor.Parameters.Add("@E_Mail", OleDbType.VarChar).Value = pConductor.E_Mail
             cmdConductor.Parameters.Add("@Dir_Completa", OleDbType.VarChar).Value = pConductor.Dir_Completa
             cmdConductor.Parameters.Add("@Observaciones", OleDbType.VarChar).Value = pConductor.Observaciones
-            cmdConductor.Parameters.Add("@Ind_Activo", OleDbType.VarChar).Value = pConductor.Ind_Activo
+            cmdConductor.Parameters.Add("@Ind_Activo", OleDbType.Boolean).Value = pConductor.Ind_Activo
             cmdConductor.ExecuteNonQuery()
 
             miConexion.Close()

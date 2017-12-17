@@ -27,13 +27,13 @@ Partial Class About
         Me.BunifuElipse1 = New Bunifu.Framework.UI.BunifuElipse(Me.components)
         Me.Panel1 = New System.Windows.Forms.Panel()
         Me.Panel2 = New System.Windows.Forms.Panel()
+        Me.BunifuCustomLabel4 = New Bunifu.Framework.UI.BunifuCustomLabel()
+        Me.BunifuCustomLabel3 = New Bunifu.Framework.UI.BunifuCustomLabel()
+        Me.BunifuCustomLabel2 = New Bunifu.Framework.UI.BunifuCustomLabel()
+        Me.BunifuCustomLabel1 = New Bunifu.Framework.UI.BunifuCustomLabel()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.BunifuDragControl1 = New Bunifu.Framework.UI.BunifuDragControl(Me.components)
         Me.BunifuFlatButton1 = New Bunifu.Framework.UI.BunifuFlatButton()
-        Me.BunifuCustomLabel1 = New Bunifu.Framework.UI.BunifuCustomLabel()
-        Me.BunifuCustomLabel2 = New Bunifu.Framework.UI.BunifuCustomLabel()
-        Me.BunifuCustomLabel3 = New Bunifu.Framework.UI.BunifuCustomLabel()
-        Me.BunifuCustomLabel4 = New Bunifu.Framework.UI.BunifuCustomLabel()
         Me.Panel2.SuspendLayout()
         Me.SuspendLayout()
         '
@@ -62,6 +62,46 @@ Partial Class About
         Me.Panel2.Name = "Panel2"
         Me.Panel2.Size = New System.Drawing.Size(470, 144)
         Me.Panel2.TabIndex = 1
+        '
+        'BunifuCustomLabel4
+        '
+        Me.BunifuCustomLabel4.AutoSize = True
+        Me.BunifuCustomLabel4.Font = New System.Drawing.Font("Century Gothic", 11.25!)
+        Me.BunifuCustomLabel4.Location = New System.Drawing.Point(106, 104)
+        Me.BunifuCustomLabel4.Name = "BunifuCustomLabel4"
+        Me.BunifuCustomLabel4.Size = New System.Drawing.Size(179, 20)
+        Me.BunifuCustomLabel4.TabIndex = 4
+        Me.BunifuCustomLabel4.Text = "Daniel Chaves Zeledon"
+        '
+        'BunifuCustomLabel3
+        '
+        Me.BunifuCustomLabel3.AutoSize = True
+        Me.BunifuCustomLabel3.Font = New System.Drawing.Font("Century Gothic", 11.25!)
+        Me.BunifuCustomLabel3.Location = New System.Drawing.Point(106, 78)
+        Me.BunifuCustomLabel3.Name = "BunifuCustomLabel3"
+        Me.BunifuCustomLabel3.Size = New System.Drawing.Size(160, 20)
+        Me.BunifuCustomLabel3.TabIndex = 3
+        Me.BunifuCustomLabel3.Text = "Jhoel Ramirez Murillo"
+        '
+        'BunifuCustomLabel2
+        '
+        Me.BunifuCustomLabel2.AutoSize = True
+        Me.BunifuCustomLabel2.Font = New System.Drawing.Font("Century Gothic", 11.25!)
+        Me.BunifuCustomLabel2.Location = New System.Drawing.Point(106, 54)
+        Me.BunifuCustomLabel2.Name = "BunifuCustomLabel2"
+        Me.BunifuCustomLabel2.Size = New System.Drawing.Size(116, 20)
+        Me.BunifuCustomLabel2.TabIndex = 2
+        Me.BunifuCustomLabel2.Text = "Cristopher M.R"
+        '
+        'BunifuCustomLabel1
+        '
+        Me.BunifuCustomLabel1.AutoSize = True
+        Me.BunifuCustomLabel1.Font = New System.Drawing.Font("Century Gothic", 11.25!)
+        Me.BunifuCustomLabel1.Location = New System.Drawing.Point(28, 30)
+        Me.BunifuCustomLabel1.Name = "BunifuCustomLabel1"
+        Me.BunifuCustomLabel1.Size = New System.Drawing.Size(135, 20)
+        Me.BunifuCustomLabel1.TabIndex = 1
+        Me.BunifuCustomLabel1.Text = "Desarrollado por:"
         '
         'Label1
         '
@@ -118,46 +158,6 @@ Partial Class About
         Me.BunifuFlatButton1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
         Me.BunifuFlatButton1.Textcolor = System.Drawing.Color.White
         Me.BunifuFlatButton1.TextFont = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        '
-        'BunifuCustomLabel1
-        '
-        Me.BunifuCustomLabel1.AutoSize = True
-        Me.BunifuCustomLabel1.Font = New System.Drawing.Font("Century Gothic", 11.25!)
-        Me.BunifuCustomLabel1.Location = New System.Drawing.Point(28, 30)
-        Me.BunifuCustomLabel1.Name = "BunifuCustomLabel1"
-        Me.BunifuCustomLabel1.Size = New System.Drawing.Size(135, 20)
-        Me.BunifuCustomLabel1.TabIndex = 1
-        Me.BunifuCustomLabel1.Text = "Desarrollado por:"
-        '
-        'BunifuCustomLabel2
-        '
-        Me.BunifuCustomLabel2.AutoSize = True
-        Me.BunifuCustomLabel2.Font = New System.Drawing.Font("Century Gothic", 11.25!)
-        Me.BunifuCustomLabel2.Location = New System.Drawing.Point(106, 54)
-        Me.BunifuCustomLabel2.Name = "BunifuCustomLabel2"
-        Me.BunifuCustomLabel2.Size = New System.Drawing.Size(116, 20)
-        Me.BunifuCustomLabel2.TabIndex = 2
-        Me.BunifuCustomLabel2.Text = "Cristopher M.R"
-        '
-        'BunifuCustomLabel3
-        '
-        Me.BunifuCustomLabel3.AutoSize = True
-        Me.BunifuCustomLabel3.Font = New System.Drawing.Font("Century Gothic", 11.25!)
-        Me.BunifuCustomLabel3.Location = New System.Drawing.Point(106, 78)
-        Me.BunifuCustomLabel3.Name = "BunifuCustomLabel3"
-        Me.BunifuCustomLabel3.Size = New System.Drawing.Size(52, 20)
-        Me.BunifuCustomLabel3.TabIndex = 3
-        Me.BunifuCustomLabel3.Text = "Jhoel "
-        '
-        'BunifuCustomLabel4
-        '
-        Me.BunifuCustomLabel4.AutoSize = True
-        Me.BunifuCustomLabel4.Font = New System.Drawing.Font("Century Gothic", 11.25!)
-        Me.BunifuCustomLabel4.Location = New System.Drawing.Point(106, 104)
-        Me.BunifuCustomLabel4.Name = "BunifuCustomLabel4"
-        Me.BunifuCustomLabel4.Size = New System.Drawing.Size(55, 20)
-        Me.BunifuCustomLabel4.TabIndex = 4
-        Me.BunifuCustomLabel4.Text = "Daniel"
         '
         'About
         '

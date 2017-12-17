@@ -95,9 +95,9 @@
         End Set
     End Property
     ''' <summary>
-    ''' Telefono de la casa del conductor<
+    ''' Telefono de la casa del conductor
     ''' </summary>
-    ''' <returns>Telefono de la casa del conductor<</returns>
+    ''' <returns>Telefono de la casa del conductor</returns>
     Public Property Tel_Casa As String
         Get
             Return _Tel_Casa

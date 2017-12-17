@@ -13,6 +13,7 @@
     <MyType>WindowsForms</MyType>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <TargetFrameworkProfile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -54,11 +55,18 @@
     <Reference Include="Bunifu_UI_v1.5.3">
       <HintPath>D:\Librerias\Bunifu_UI_v1.5.3.dll</HintPath>
     </Reference>
+    <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=13.0.3500.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.ReportSource, Version=13.0.3500.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="CrystalDecisions.Shared, Version=13.0.3500.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="CrystalDecisions.Windows.Forms, Version=13.0.3500.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="FlashControlV71, Version=1.0.3187.32366, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
     <Reference Include="System" />
     <Reference Include="System.Data" />
     <Reference Include="System.Deployment" />
     <Reference Include="System.Drawing" />
     <Reference Include="System.Management" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Services" />
     <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml" />
     <Reference Include="System.Core" />
@@ -99,6 +107,7 @@
     <Compile Include="Master.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="Menu.vb" />
     <Compile Include="My Project\AssemblyInfo.vb" />
     <Compile Include="My Project\Application.Designer.vb">
       <AutoGen>True</AutoGen>
@@ -138,10 +147,16 @@
     <Compile Include="Segmentos\Multas.vb">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="Segmentos\Tipos_Licencias.Designer.vb">
-      <DependentUpon>Tipos_Licencias.vb</DependentUpon>
+    <Compile Include="Segmentos\reporte_conductores.Designer.vb">
+      <DependentUpon>reporte_conductores.vb</DependentUpon>
     </Compile>
-    <Compile Include="Segmentos\Tipos_Licencias.vb">
+    <Compile Include="Segmentos\reporte_conductores.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Segmentos\LicencesType.Designer.vb">
+      <DependentUpon>LicencesType.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Segmentos\LicencesType.vb">
       <SubType>UserControl</SubType>
     </Compile>
     <Compile Include="Segmentos\Usuarios.Designer.vb">
@@ -179,8 +194,11 @@
     <EmbeddedResource Include="Segmentos\Multas.resx">
       <DependentUpon>Multas.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Segmentos\Tipos_Licencias.resx">
-      <DependentUpon>Tipos_Licencias.vb</DependentUpon>
+    <EmbeddedResource Include="Segmentos\reporte_conductores.resx">
+      <DependentUpon>reporte_conductores.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Segmentos\LicencesType.resx">
+      <DependentUpon>LicencesType.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Segmentos\Usuarios.resx">
       <DependentUpon>Usuarios.vb</DependentUpon>
@@ -202,7 +220,9 @@
       <CustomToolNamespace>My</CustomToolNamespace>
       <LastGenOutput>Settings.Designer.vb</LastGenOutput>
     </None>
-    <None Include="App.config" />
+    <None Include="App.config">
+      <SubType>Designer</SubType>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\02LogicaNegocios\02LogicaNegocios.vbproj">
@@ -216,6 +236,9 @@
   </ItemGroup>
   <ItemGroup>
     <WCFMetadata Include="Connected Services\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{C0C07587-41A7-46C8-8FBD-3F9C8EBE2DDC}" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
 </Project>
