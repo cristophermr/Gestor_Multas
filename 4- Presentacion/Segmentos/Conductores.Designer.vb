@@ -202,7 +202,6 @@ Partial Class Conductores
         '
         'txtObser
         '
-        Me.txtObser.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom), System.Windows.Forms.AnchorStyles)
         Me.txtObser.BorderColor = System.Drawing.Color.SeaGreen
         Me.txtObser.Location = New System.Drawing.Point(64, 298)
         Me.txtObser.Multiline = True
@@ -212,7 +211,6 @@ Partial Class Conductores
         '
         'txtAdress
         '
-        Me.txtAdress.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom), System.Windows.Forms.AnchorStyles)
         Me.txtAdress.BorderColor = System.Drawing.Color.SeaGreen
         Me.txtAdress.Location = New System.Drawing.Point(64, 195)
         Me.txtAdress.Multiline = True
@@ -222,7 +220,6 @@ Partial Class Conductores
         '
         'grbxActivo
         '
-        Me.grbxActivo.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom), System.Windows.Forms.AnchorStyles)
         Me.grbxActivo.Controls.Add(Me.swtActivo)
         Me.grbxActivo.ForeColor = System.Drawing.Color.Snow
         Me.grbxActivo.Location = New System.Drawing.Point(465, 103)
@@ -249,7 +246,6 @@ Partial Class Conductores
         '
         'txtEmail
         '
-        Me.txtEmail.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom), System.Windows.Forms.AnchorStyles)
         Me.txtEmail.BorderColor = System.Drawing.Color.SeaGreen
         Me.txtEmail.Location = New System.Drawing.Point(220, 136)
         Me.txtEmail.Name = "txtEmail"
@@ -258,7 +254,6 @@ Partial Class Conductores
         '
         'dtpNacimiento
         '
-        Me.dtpNacimiento.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom), System.Windows.Forms.AnchorStyles)
         Me.dtpNacimiento.Format = System.Windows.Forms.DateTimePickerFormat.[Short]
         Me.dtpNacimiento.Location = New System.Drawing.Point(64, 136)
         Me.dtpNacimiento.Name = "dtpNacimiento"
@@ -278,7 +273,6 @@ Partial Class Conductores
         '
         'txtDireccion
         '
-        Me.txtDireccion.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom), System.Windows.Forms.AnchorStyles)
         Me.txtDireccion.AutoSize = True
         Me.txtDireccion.ForeColor = System.Drawing.SystemColors.ControlLightLight
         Me.txtDireccion.Location = New System.Drawing.Point(61, 179)
@@ -289,7 +283,6 @@ Partial Class Conductores
         '
         'BunifuCustomLabel10
         '
-        Me.BunifuCustomLabel10.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom), System.Windows.Forms.AnchorStyles)
         Me.BunifuCustomLabel10.AutoSize = True
         Me.BunifuCustomLabel10.ForeColor = System.Drawing.SystemColors.ControlLightLight
         Me.BunifuCustomLabel10.Location = New System.Drawing.Point(217, 116)
@@ -300,7 +293,6 @@ Partial Class Conductores
         '
         'BunifuCustomLabel9
         '
-        Me.BunifuCustomLabel9.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom), System.Windows.Forms.AnchorStyles)
         Me.BunifuCustomLabel9.AutoSize = True
         Me.BunifuCustomLabel9.ForeColor = System.Drawing.SystemColors.ControlLightLight
         Me.BunifuCustomLabel9.Location = New System.Drawing.Point(61, 119)
@@ -311,7 +303,6 @@ Partial Class Conductores
         '
         'labeltel
         '
-        Me.labeltel.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom), System.Windows.Forms.AnchorStyles)
         Me.labeltel.AutoSize = True
         Me.labeltel.ForeColor = System.Drawing.SystemColors.ControlLightLight
         Me.labeltel.Location = New System.Drawing.Point(431, 27)
@@ -322,7 +313,6 @@ Partial Class Conductores
         '
         'txtTel_Cel
         '
-        Me.txtTel_Cel.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom), System.Windows.Forms.AnchorStyles)
         Me.txtTel_Cel.BorderColor = System.Drawing.Color.SeaGreen
         Me.txtTel_Cel.Location = New System.Drawing.Point(434, 52)
         Me.txtTel_Cel.Name = "txtTel_Cel"
@@ -331,7 +321,6 @@ Partial Class Conductores
         '
         'BunifuCustomLabel6
         '
-        Me.BunifuCustomLabel6.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom), System.Windows.Forms.AnchorStyles)
         Me.BunifuCustomLabel6.AutoSize = True
         Me.BunifuCustomLabel6.ForeColor = System.Drawing.SystemColors.ControlLightLight
         Me.BunifuCustomLabel6.Location = New System.Drawing.Point(560, 27)
@@ -342,7 +331,6 @@ Partial Class Conductores
         '
         'txtTel_Casa
         '
-        Me.txtTel_Casa.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom), System.Windows.Forms.AnchorStyles)
         Me.txtTel_Casa.BorderColor = System.Drawing.Color.SeaGreen
         Me.txtTel_Casa.Location = New System.Drawing.Point(563, 52)
         Me.txtTel_Casa.Name = "txtTel_Casa"
@@ -351,7 +339,6 @@ Partial Class Conductores
         '
         'BunifuCustomLabel7
         '
-        Me.BunifuCustomLabel7.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom), System.Windows.Forms.AnchorStyles)
         Me.BunifuCustomLabel7.AutoSize = True
         Me.BunifuCustomLabel7.ForeColor = System.Drawing.SystemColors.ControlLightLight
         Me.BunifuCustomLabel7.Location = New System.Drawing.Point(189, 27)
@@ -362,7 +349,6 @@ Partial Class Conductores
         '
         'txtNombre
         '
-        Me.txtNombre.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom), System.Windows.Forms.AnchorStyles)
         Me.txtNombre.BorderColor = System.Drawing.Color.SeaGreen
         Me.txtNombre.Location = New System.Drawing.Point(192, 52)
         Me.txtNombre.Name = "txtNombre"
@@ -371,7 +357,6 @@ Partial Class Conductores
         '
         'BunifuCustomLabel8
         '
-        Me.BunifuCustomLabel8.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom), System.Windows.Forms.AnchorStyles)
         Me.BunifuCustomLabel8.AutoSize = True
         Me.BunifuCustomLabel8.ForeColor = System.Drawing.SystemColors.ControlLightLight
         Me.BunifuCustomLabel8.Location = New System.Drawing.Point(61, 27)
@@ -382,7 +367,6 @@ Partial Class Conductores
         '
         'txtCedul
         '
-        Me.txtCedul.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom), System.Windows.Forms.AnchorStyles)
         Me.txtCedul.BorderColor = System.Drawing.Color.SeaGreen
         Me.txtCedul.Location = New System.Drawing.Point(64, 52)
         Me.txtCedul.Name = "txtCedul"

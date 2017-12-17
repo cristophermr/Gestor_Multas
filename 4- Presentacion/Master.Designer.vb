@@ -23,9 +23,9 @@ Partial Class Master
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
-        Dim Animation6 As BunifuAnimatorNS.Animation = New BunifuAnimatorNS.Animation()
-        Dim Animation5 As BunifuAnimatorNS.Animation = New BunifuAnimatorNS.Animation()
-        Dim Animation4 As BunifuAnimatorNS.Animation = New BunifuAnimatorNS.Animation()
+        Dim Animation3 As BunifuAnimatorNS.Animation = New BunifuAnimatorNS.Animation()
+        Dim Animation2 As BunifuAnimatorNS.Animation = New BunifuAnimatorNS.Animation()
+        Dim Animation1 As BunifuAnimatorNS.Animation = New BunifuAnimatorNS.Animation()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Master))
         Me.BunifuElipse1 = New Bunifu.Framework.UI.BunifuElipse(Me.components)
         Me.header = New System.Windows.Forms.Panel()
@@ -58,14 +58,14 @@ Partial Class Master
         Me.btnReportes = New Bunifu.Framework.UI.BunifuFlatButton()
         Me.bntCatalogos = New Bunifu.Framework.UI.BunifuFlatButton()
         Me.Panel2 = New System.Windows.Forms.Panel()
+        Me.LicencesTypes1 = New _04Presentacion.LicencesTypes()
+        Me.Conductores2 = New _04Presentacion.Conductores()
+        Me.Example2 = New _04Presentacion.Example()
         Me.Example1 = New _04Presentacion.Example()
         Me.Conductores1 = New _04Presentacion.Conductores()
         Me.LogoAnimation = New BunifuAnimatorNS.BunifuTransition(Me.components)
         Me.PanelAnimation = New BunifuAnimatorNS.BunifuTransition(Me.components)
         Me.SubMenus = New BunifuAnimatorNS.BunifuTransition(Me.components)
-        Me.Example2 = New _04Presentacion.Example()
-        Me.LicencesTypes1 = New _04Presentacion.LicencesTypes()
-        Me.Conductores2 = New _04Presentacion.Conductores()
         Me.header.SuspendLayout()
         CType(Me.BunifuImageButton5, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.BunifuImageButton4, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -268,7 +268,7 @@ Partial Class Master
         Me.BunifuFlatButton1.BackColor = System.Drawing.Color.FromArgb(CType(CType(26, Byte), Integer), CType(CType(32, Byte), Integer), CType(CType(40, Byte), Integer))
         Me.BunifuFlatButton1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.BunifuFlatButton1.BorderRadius = 0
-        Me.BunifuFlatButton1.ButtonText = "  &Multas"
+        Me.BunifuFlatButton1.ButtonText = "  Licencias por &Tipo"
         Me.BunifuFlatButton1.Cursor = System.Windows.Forms.Cursors.Hand
         Me.SubMenus.SetDecoration(Me.BunifuFlatButton1, BunifuAnimatorNS.DecorationType.None)
         Me.PanelAnimation.SetDecoration(Me.BunifuFlatButton1, BunifuAnimatorNS.DecorationType.None)
@@ -294,7 +294,7 @@ Partial Class Master
         Me.BunifuFlatButton1.selected = False
         Me.BunifuFlatButton1.Size = New System.Drawing.Size(186, 40)
         Me.BunifuFlatButton1.TabIndex = 15
-        Me.BunifuFlatButton1.Text = "  &Multas"
+        Me.BunifuFlatButton1.Text = "  Licencias por &Tipo"
         Me.BunifuFlatButton1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
         Me.BunifuFlatButton1.Textcolor = System.Drawing.Color.White
         Me.BunifuFlatButton1.TextFont = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
@@ -342,7 +342,7 @@ Partial Class Master
         Me.BunifuFlatButton3.BackColor = System.Drawing.Color.FromArgb(CType(CType(26, Byte), Integer), CType(CType(32, Byte), Integer), CType(CType(40, Byte), Integer))
         Me.BunifuFlatButton3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.BunifuFlatButton3.BorderRadius = 0
-        Me.BunifuFlatButton3.ButtonText = "  &Licencias"
+        Me.BunifuFlatButton3.ButtonText = "  &Licencias xconductor"
         Me.BunifuFlatButton3.Cursor = System.Windows.Forms.Cursors.Hand
         Me.SubMenus.SetDecoration(Me.BunifuFlatButton3, BunifuAnimatorNS.DecorationType.None)
         Me.PanelAnimation.SetDecoration(Me.BunifuFlatButton3, BunifuAnimatorNS.DecorationType.None)
@@ -368,7 +368,7 @@ Partial Class Master
         Me.BunifuFlatButton3.selected = False
         Me.BunifuFlatButton3.Size = New System.Drawing.Size(186, 40)
         Me.BunifuFlatButton3.TabIndex = 15
-        Me.BunifuFlatButton3.Text = "  &Licencias"
+        Me.BunifuFlatButton3.Text = "  &Licencias xconductor"
         Me.BunifuFlatButton3.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
         Me.BunifuFlatButton3.Textcolor = System.Drawing.Color.White
         Me.BunifuFlatButton3.TextFont = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
@@ -854,6 +854,42 @@ Partial Class Master
         Me.Panel2.Size = New System.Drawing.Size(1191, 629)
         Me.Panel2.TabIndex = 2
         '
+        'LicencesTypes1
+        '
+        Me.LicencesTypes1.BackColor = System.Drawing.Color.FromArgb(CType(CType(37, Byte), Integer), CType(CType(46, Byte), Integer), CType(CType(59, Byte), Integer))
+        Me.SubMenus.SetDecoration(Me.LicencesTypes1, BunifuAnimatorNS.DecorationType.None)
+        Me.PanelAnimation.SetDecoration(Me.LicencesTypes1, BunifuAnimatorNS.DecorationType.None)
+        Me.LogoAnimation.SetDecoration(Me.LicencesTypes1, BunifuAnimatorNS.DecorationType.None)
+        Me.LicencesTypes1.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.LicencesTypes1.Location = New System.Drawing.Point(258, 0)
+        Me.LicencesTypes1.Name = "LicencesTypes1"
+        Me.LicencesTypes1.Size = New System.Drawing.Size(933, 629)
+        Me.LicencesTypes1.TabIndex = 4
+        '
+        'Conductores2
+        '
+        Me.Conductores2.BackColor = System.Drawing.Color.FromArgb(CType(CType(37, Byte), Integer), CType(CType(46, Byte), Integer), CType(CType(59, Byte), Integer))
+        Me.SubMenus.SetDecoration(Me.Conductores2, BunifuAnimatorNS.DecorationType.None)
+        Me.PanelAnimation.SetDecoration(Me.Conductores2, BunifuAnimatorNS.DecorationType.None)
+        Me.LogoAnimation.SetDecoration(Me.Conductores2, BunifuAnimatorNS.DecorationType.None)
+        Me.Conductores2.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.Conductores2.Location = New System.Drawing.Point(258, 0)
+        Me.Conductores2.Name = "Conductores2"
+        Me.Conductores2.Size = New System.Drawing.Size(933, 629)
+        Me.Conductores2.TabIndex = 5
+        '
+        'Example2
+        '
+        Me.Example2.BackColor = System.Drawing.Color.FromArgb(CType(CType(37, Byte), Integer), CType(CType(46, Byte), Integer), CType(CType(59, Byte), Integer))
+        Me.SubMenus.SetDecoration(Me.Example2, BunifuAnimatorNS.DecorationType.None)
+        Me.PanelAnimation.SetDecoration(Me.Example2, BunifuAnimatorNS.DecorationType.None)
+        Me.LogoAnimation.SetDecoration(Me.Example2, BunifuAnimatorNS.DecorationType.None)
+        Me.Example2.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.Example2.Location = New System.Drawing.Point(258, 0)
+        Me.Example2.Name = "Example2"
+        Me.Example2.Size = New System.Drawing.Size(933, 629)
+        Me.Example2.TabIndex = 3
+        '
         'Example1
         '
         Me.Example1.BackColor = System.Drawing.Color.FromArgb(CType(CType(37, Byte), Integer), CType(CType(46, Byte), Integer), CType(CType(59, Byte), Integer))
@@ -882,100 +918,64 @@ Partial Class Master
         '
         Me.LogoAnimation.AnimationType = BunifuAnimatorNS.AnimationType.ScaleAndRotate
         Me.LogoAnimation.Cursor = Nothing
-        Animation6.AnimateOnlyDifferences = True
-        Animation6.BlindCoeff = CType(resources.GetObject("Animation6.BlindCoeff"), System.Drawing.PointF)
-        Animation6.LeafCoeff = 0!
-        Animation6.MaxTime = 1.0!
-        Animation6.MinTime = 0!
-        Animation6.MosaicCoeff = CType(resources.GetObject("Animation6.MosaicCoeff"), System.Drawing.PointF)
-        Animation6.MosaicShift = CType(resources.GetObject("Animation6.MosaicShift"), System.Drawing.PointF)
-        Animation6.MosaicSize = 0
-        Animation6.Padding = New System.Windows.Forms.Padding(30)
-        Animation6.RotateCoeff = 0.5!
-        Animation6.RotateLimit = 0.2!
-        Animation6.ScaleCoeff = CType(resources.GetObject("Animation6.ScaleCoeff"), System.Drawing.PointF)
-        Animation6.SlideCoeff = CType(resources.GetObject("Animation6.SlideCoeff"), System.Drawing.PointF)
-        Animation6.TimeCoeff = 0!
-        Animation6.TransparencyCoeff = 0!
-        Me.LogoAnimation.DefaultAnimation = Animation6
+        Animation3.AnimateOnlyDifferences = True
+        Animation3.BlindCoeff = CType(resources.GetObject("Animation3.BlindCoeff"), System.Drawing.PointF)
+        Animation3.LeafCoeff = 0!
+        Animation3.MaxTime = 1.0!
+        Animation3.MinTime = 0!
+        Animation3.MosaicCoeff = CType(resources.GetObject("Animation3.MosaicCoeff"), System.Drawing.PointF)
+        Animation3.MosaicShift = CType(resources.GetObject("Animation3.MosaicShift"), System.Drawing.PointF)
+        Animation3.MosaicSize = 0
+        Animation3.Padding = New System.Windows.Forms.Padding(30)
+        Animation3.RotateCoeff = 0.5!
+        Animation3.RotateLimit = 0.2!
+        Animation3.ScaleCoeff = CType(resources.GetObject("Animation3.ScaleCoeff"), System.Drawing.PointF)
+        Animation3.SlideCoeff = CType(resources.GetObject("Animation3.SlideCoeff"), System.Drawing.PointF)
+        Animation3.TimeCoeff = 0!
+        Animation3.TransparencyCoeff = 0!
+        Me.LogoAnimation.DefaultAnimation = Animation3
         '
         'PanelAnimation
         '
         Me.PanelAnimation.AnimationType = BunifuAnimatorNS.AnimationType.HorizSlide
         Me.PanelAnimation.Cursor = Nothing
-        Animation5.AnimateOnlyDifferences = True
-        Animation5.BlindCoeff = CType(resources.GetObject("Animation5.BlindCoeff"), System.Drawing.PointF)
-        Animation5.LeafCoeff = 0!
-        Animation5.MaxTime = 1.0!
-        Animation5.MinTime = 0!
-        Animation5.MosaicCoeff = CType(resources.GetObject("Animation5.MosaicCoeff"), System.Drawing.PointF)
-        Animation5.MosaicShift = CType(resources.GetObject("Animation5.MosaicShift"), System.Drawing.PointF)
-        Animation5.MosaicSize = 0
-        Animation5.Padding = New System.Windows.Forms.Padding(0)
-        Animation5.RotateCoeff = 0!
-        Animation5.RotateLimit = 0!
-        Animation5.ScaleCoeff = CType(resources.GetObject("Animation5.ScaleCoeff"), System.Drawing.PointF)
-        Animation5.SlideCoeff = CType(resources.GetObject("Animation5.SlideCoeff"), System.Drawing.PointF)
-        Animation5.TimeCoeff = 0!
-        Animation5.TransparencyCoeff = 0!
-        Me.PanelAnimation.DefaultAnimation = Animation5
+        Animation2.AnimateOnlyDifferences = True
+        Animation2.BlindCoeff = CType(resources.GetObject("Animation2.BlindCoeff"), System.Drawing.PointF)
+        Animation2.LeafCoeff = 0!
+        Animation2.MaxTime = 1.0!
+        Animation2.MinTime = 0!
+        Animation2.MosaicCoeff = CType(resources.GetObject("Animation2.MosaicCoeff"), System.Drawing.PointF)
+        Animation2.MosaicShift = CType(resources.GetObject("Animation2.MosaicShift"), System.Drawing.PointF)
+        Animation2.MosaicSize = 0
+        Animation2.Padding = New System.Windows.Forms.Padding(0)
+        Animation2.RotateCoeff = 0!
+        Animation2.RotateLimit = 0!
+        Animation2.ScaleCoeff = CType(resources.GetObject("Animation2.ScaleCoeff"), System.Drawing.PointF)
+        Animation2.SlideCoeff = CType(resources.GetObject("Animation2.SlideCoeff"), System.Drawing.PointF)
+        Animation2.TimeCoeff = 0!
+        Animation2.TransparencyCoeff = 0!
+        Me.PanelAnimation.DefaultAnimation = Animation2
         '
         'SubMenus
         '
         Me.SubMenus.AnimationType = BunifuAnimatorNS.AnimationType.HorizBlind
         Me.SubMenus.Cursor = Nothing
-        Animation4.AnimateOnlyDifferences = True
-        Animation4.BlindCoeff = CType(resources.GetObject("Animation4.BlindCoeff"), System.Drawing.PointF)
-        Animation4.LeafCoeff = 0!
-        Animation4.MaxTime = 1.0!
-        Animation4.MinTime = 0!
-        Animation4.MosaicCoeff = CType(resources.GetObject("Animation4.MosaicCoeff"), System.Drawing.PointF)
-        Animation4.MosaicShift = CType(resources.GetObject("Animation4.MosaicShift"), System.Drawing.PointF)
-        Animation4.MosaicSize = 0
-        Animation4.Padding = New System.Windows.Forms.Padding(0)
-        Animation4.RotateCoeff = 0!
-        Animation4.RotateLimit = 0!
-        Animation4.ScaleCoeff = CType(resources.GetObject("Animation4.ScaleCoeff"), System.Drawing.PointF)
-        Animation4.SlideCoeff = CType(resources.GetObject("Animation4.SlideCoeff"), System.Drawing.PointF)
-        Animation4.TimeCoeff = 0!
-        Animation4.TransparencyCoeff = 0!
-        Me.SubMenus.DefaultAnimation = Animation4
-        '
-        'Example2
-        '
-        Me.Example2.BackColor = System.Drawing.Color.FromArgb(CType(CType(37, Byte), Integer), CType(CType(46, Byte), Integer), CType(CType(59, Byte), Integer))
-        Me.SubMenus.SetDecoration(Me.Example2, BunifuAnimatorNS.DecorationType.None)
-        Me.PanelAnimation.SetDecoration(Me.Example2, BunifuAnimatorNS.DecorationType.None)
-        Me.LogoAnimation.SetDecoration(Me.Example2, BunifuAnimatorNS.DecorationType.None)
-        Me.Example2.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.Example2.Location = New System.Drawing.Point(258, 0)
-        Me.Example2.Name = "Example2"
-        Me.Example2.Size = New System.Drawing.Size(933, 629)
-        Me.Example2.TabIndex = 3
-        '
-        'LicencesTypes1
-        '
-        Me.LicencesTypes1.BackColor = System.Drawing.Color.FromArgb(CType(CType(37, Byte), Integer), CType(CType(46, Byte), Integer), CType(CType(59, Byte), Integer))
-        Me.SubMenus.SetDecoration(Me.LicencesTypes1, BunifuAnimatorNS.DecorationType.None)
-        Me.PanelAnimation.SetDecoration(Me.LicencesTypes1, BunifuAnimatorNS.DecorationType.None)
-        Me.LogoAnimation.SetDecoration(Me.LicencesTypes1, BunifuAnimatorNS.DecorationType.None)
-        Me.LicencesTypes1.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.LicencesTypes1.Location = New System.Drawing.Point(258, 0)
-        Me.LicencesTypes1.Name = "LicencesTypes1"
-        Me.LicencesTypes1.Size = New System.Drawing.Size(933, 629)
-        Me.LicencesTypes1.TabIndex = 4
-        '
-        'Conductores2
-        '
-        Me.Conductores2.BackColor = System.Drawing.Color.FromArgb(CType(CType(37, Byte), Integer), CType(CType(46, Byte), Integer), CType(CType(59, Byte), Integer))
-        Me.SubMenus.SetDecoration(Me.Conductores2, BunifuAnimatorNS.DecorationType.None)
-        Me.PanelAnimation.SetDecoration(Me.Conductores2, BunifuAnimatorNS.DecorationType.None)
-        Me.LogoAnimation.SetDecoration(Me.Conductores2, BunifuAnimatorNS.DecorationType.None)
-        Me.Conductores2.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.Conductores2.Location = New System.Drawing.Point(258, 0)
-        Me.Conductores2.Name = "Conductores2"
-        Me.Conductores2.Size = New System.Drawing.Size(933, 629)
-        Me.Conductores2.TabIndex = 5
+        Animation1.AnimateOnlyDifferences = True
+        Animation1.BlindCoeff = CType(resources.GetObject("Animation1.BlindCoeff"), System.Drawing.PointF)
+        Animation1.LeafCoeff = 0!
+        Animation1.MaxTime = 1.0!
+        Animation1.MinTime = 0!
+        Animation1.MosaicCoeff = CType(resources.GetObject("Animation1.MosaicCoeff"), System.Drawing.PointF)
+        Animation1.MosaicShift = CType(resources.GetObject("Animation1.MosaicShift"), System.Drawing.PointF)
+        Animation1.MosaicSize = 0
+        Animation1.Padding = New System.Windows.Forms.Padding(0)
+        Animation1.RotateCoeff = 0!
+        Animation1.RotateLimit = 0!
+        Animation1.ScaleCoeff = CType(resources.GetObject("Animation1.ScaleCoeff"), System.Drawing.PointF)
+        Animation1.SlideCoeff = CType(resources.GetObject("Animation1.SlideCoeff"), System.Drawing.PointF)
+        Animation1.TimeCoeff = 0!
+        Animation1.TransparencyCoeff = 0!
+        Me.SubMenus.DefaultAnimation = Animation1
         '
         'Master
         '
