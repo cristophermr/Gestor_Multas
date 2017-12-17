@@ -8,7 +8,11 @@
 
     End Sub
 
-    Private Sub BunifuTextbox2_OnTextChange(sender As Object, e As EventArgs) Handles BunifuTextbox2.OnTextChange
+    Private Sub BunifuTextbox2_OnTextChange(sender As Object, e As EventArgs) Handles txtPassword.OnTextChange
 
+    End Sub
+
+    Private Sub Login_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        txtPassword._TextBox.PasswordChar = "*"
     End Sub
 End Class

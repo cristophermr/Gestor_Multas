@@ -3,7 +3,7 @@ Imports _03Entidades
 
 Public Class LicencesTypes
     Private Sub BunifuImageButton1_Click(sender As Object, e As EventArgs) Handles bntCod.Click
-        txtCodLicen.Text = CInt(Math.Ceiling(Rnd() * 1500000)) + 1
+        txtCodLicen.Text = CInt(Math.Ceiling(Rnd() * 999)) + 1
     End Sub
 
     Private Sub pnlContenido_Paint(sender As Object, e As PaintEventArgs) Handles pnlContenido.Paint
@@ -35,6 +35,7 @@ Public Class LicencesTypes
         Try
             Dim myDriver As New Tipos_LicenciasEN()
             bntCod.Enabled = False
+            myDriver.Codigo_Tipo_Licencia = txtCodLicen.Text
             myDriver.Nombre_Tipo = txtTipo.Text
             myDriver.Observaciones = txtObservacion.Text
 

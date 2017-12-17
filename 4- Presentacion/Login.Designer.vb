@@ -27,15 +27,15 @@ Partial Class Login
         Me.BunifuElipse1 = New Bunifu.Framework.UI.BunifuElipse(Me.components)
         Me.BunifuDragControl1 = New Bunifu.Framework.UI.BunifuDragControl(Me.components)
         Me.header = New System.Windows.Forms.Panel()
+        Me.BunifuImageButton1 = New Bunifu.Framework.UI.BunifuImageButton()
         Me.PictureBox2 = New System.Windows.Forms.PictureBox()
         Me.BunifuCustomLabel1 = New Bunifu.Framework.UI.BunifuCustomLabel()
-        Me.BunifuFlatButton1 = New Bunifu.Framework.UI.BunifuFlatButton()
-        Me.BunifuImageButton1 = New Bunifu.Framework.UI.BunifuImageButton()
-        Me.BunifuTextbox1 = New Bunifu.Framework.UI.BunifuTextbox()
-        Me.BunifuTextbox2 = New Bunifu.Framework.UI.BunifuTextbox()
+        Me.btnLogin = New Bunifu.Framework.UI.BunifuFlatButton()
+        Me.txtUsuario = New Bunifu.Framework.UI.BunifuTextbox()
+        Me.txtPassword = New Bunifu.Framework.UI.BunifuTextbox()
         Me.header.SuspendLayout()
-        CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.BunifuImageButton1, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'BunifuElipse1
@@ -62,6 +62,19 @@ Partial Class Login
         Me.header.Size = New System.Drawing.Size(664, 43)
         Me.header.TabIndex = 0
         '
+        'BunifuImageButton1
+        '
+        Me.BunifuImageButton1.BackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(102, Byte), Integer), CType(CType(204, Byte), Integer))
+        Me.BunifuImageButton1.Image = CType(resources.GetObject("BunifuImageButton1.Image"), System.Drawing.Image)
+        Me.BunifuImageButton1.ImageActive = Nothing
+        Me.BunifuImageButton1.Location = New System.Drawing.Point(623, 9)
+        Me.BunifuImageButton1.Name = "BunifuImageButton1"
+        Me.BunifuImageButton1.Size = New System.Drawing.Size(29, 23)
+        Me.BunifuImageButton1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
+        Me.BunifuImageButton1.TabIndex = 4
+        Me.BunifuImageButton1.TabStop = False
+        Me.BunifuImageButton1.Zoom = 10
+        '
         'PictureBox2
         '
         Me.PictureBox2.Image = CType(resources.GetObject("PictureBox2.Image"), System.Drawing.Image)
@@ -83,79 +96,66 @@ Partial Class Login
         Me.BunifuCustomLabel1.TabIndex = 2
         Me.BunifuCustomLabel1.Text = "Iniciar Sesión"
         '
-        'BunifuFlatButton1
+        'btnLogin
         '
-        Me.BunifuFlatButton1.Activecolor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(102, Byte), Integer), CType(CType(204, Byte), Integer))
-        Me.BunifuFlatButton1.BackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(102, Byte), Integer), CType(CType(204, Byte), Integer))
-        Me.BunifuFlatButton1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.BunifuFlatButton1.BorderRadius = 0
-        Me.BunifuFlatButton1.ButtonText = "BunifuFlatButton1"
-        Me.BunifuFlatButton1.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.BunifuFlatButton1.DisabledColor = System.Drawing.Color.Gray
-        Me.BunifuFlatButton1.Iconcolor = System.Drawing.Color.Transparent
-        Me.BunifuFlatButton1.Iconimage = CType(resources.GetObject("BunifuFlatButton1.Iconimage"), System.Drawing.Image)
-        Me.BunifuFlatButton1.Iconimage_right = Nothing
-        Me.BunifuFlatButton1.Iconimage_right_Selected = Nothing
-        Me.BunifuFlatButton1.Iconimage_Selected = Nothing
-        Me.BunifuFlatButton1.IconMarginLeft = 0
-        Me.BunifuFlatButton1.IconMarginRight = 0
-        Me.BunifuFlatButton1.IconRightVisible = True
-        Me.BunifuFlatButton1.IconRightZoom = 0R
-        Me.BunifuFlatButton1.IconVisible = True
-        Me.BunifuFlatButton1.IconZoom = 90.0R
-        Me.BunifuFlatButton1.IsTab = False
-        Me.BunifuFlatButton1.Location = New System.Drawing.Point(252, 233)
-        Me.BunifuFlatButton1.Name = "BunifuFlatButton1"
-        Me.BunifuFlatButton1.Normalcolor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(102, Byte), Integer), CType(CType(204, Byte), Integer))
-        Me.BunifuFlatButton1.OnHovercolor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(102, Byte), Integer), CType(CType(180, Byte), Integer))
-        Me.BunifuFlatButton1.OnHoverTextColor = System.Drawing.Color.White
-        Me.BunifuFlatButton1.selected = False
-        Me.BunifuFlatButton1.Size = New System.Drawing.Size(173, 48)
-        Me.BunifuFlatButton1.TabIndex = 5
-        Me.BunifuFlatButton1.Text = "BunifuFlatButton1"
-        Me.BunifuFlatButton1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.BunifuFlatButton1.Textcolor = System.Drawing.Color.White
-        Me.BunifuFlatButton1.TextFont = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnLogin.Activecolor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(102, Byte), Integer), CType(CType(204, Byte), Integer))
+        Me.btnLogin.BackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(102, Byte), Integer), CType(CType(204, Byte), Integer))
+        Me.btnLogin.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.btnLogin.BorderRadius = 0
+        Me.btnLogin.ButtonText = "Ingresar"
+        Me.btnLogin.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.btnLogin.DisabledColor = System.Drawing.Color.Gray
+        Me.btnLogin.Iconcolor = System.Drawing.Color.Transparent
+        Me.btnLogin.Iconimage = CType(resources.GetObject("btnLogin.Iconimage"), System.Drawing.Image)
+        Me.btnLogin.Iconimage_right = Nothing
+        Me.btnLogin.Iconimage_right_Selected = Nothing
+        Me.btnLogin.Iconimage_Selected = Nothing
+        Me.btnLogin.IconMarginLeft = 0
+        Me.btnLogin.IconMarginRight = 0
+        Me.btnLogin.IconRightVisible = True
+        Me.btnLogin.IconRightZoom = 0R
+        Me.btnLogin.IconVisible = True
+        Me.btnLogin.IconZoom = 90.0R
+        Me.btnLogin.IsTab = False
+        Me.btnLogin.Location = New System.Drawing.Point(259, 234)
+        Me.btnLogin.Name = "btnLogin"
+        Me.btnLogin.Normalcolor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(102, Byte), Integer), CType(CType(204, Byte), Integer))
+        Me.btnLogin.OnHovercolor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(102, Byte), Integer), CType(CType(180, Byte), Integer))
+        Me.btnLogin.OnHoverTextColor = System.Drawing.Color.White
+        Me.btnLogin.selected = False
+        Me.btnLogin.Size = New System.Drawing.Size(117, 48)
+        Me.btnLogin.TabIndex = 5
+        Me.btnLogin.Text = "Ingresar"
+        Me.btnLogin.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.btnLogin.Textcolor = System.Drawing.Color.White
+        Me.btnLogin.TextFont = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         '
-        'BunifuImageButton1
+        'txtUsuario
         '
-        Me.BunifuImageButton1.BackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(102, Byte), Integer), CType(CType(204, Byte), Integer))
-        Me.BunifuImageButton1.Image = CType(resources.GetObject("BunifuImageButton1.Image"), System.Drawing.Image)
-        Me.BunifuImageButton1.ImageActive = Nothing
-        Me.BunifuImageButton1.Location = New System.Drawing.Point(623, 9)
-        Me.BunifuImageButton1.Name = "BunifuImageButton1"
-        Me.BunifuImageButton1.Size = New System.Drawing.Size(29, 23)
-        Me.BunifuImageButton1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
-        Me.BunifuImageButton1.TabIndex = 4
-        Me.BunifuImageButton1.TabStop = False
-        Me.BunifuImageButton1.Zoom = 10
+        Me.txtUsuario.BackColor = System.Drawing.Color.Silver
+        Me.txtUsuario.BackgroundImage = CType(resources.GetObject("txtUsuario.BackgroundImage"), System.Drawing.Image)
+        Me.txtUsuario.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.txtUsuario.ForeColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(102, Byte), Integer), CType(CType(204, Byte), Integer))
+        Me.txtUsuario.Icon = CType(resources.GetObject("txtUsuario.Icon"), System.Drawing.Image)
+        Me.txtUsuario.Location = New System.Drawing.Point(180, 129)
+        Me.txtUsuario.Name = "txtUsuario"
+        Me.txtUsuario.Size = New System.Drawing.Size(307, 36)
+        Me.txtUsuario.TabIndex = 8
+        Me.txtUsuario.text = ""
         '
-        'BunifuTextbox1
+        'txtPassword
         '
-        Me.BunifuTextbox1.BackColor = System.Drawing.Color.Silver
-        Me.BunifuTextbox1.BackgroundImage = CType(resources.GetObject("BunifuTextbox1.BackgroundImage"), System.Drawing.Image)
-        Me.BunifuTextbox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.BunifuTextbox1.ForeColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(102, Byte), Integer), CType(CType(204, Byte), Integer))
-        Me.BunifuTextbox1.Icon = CType(resources.GetObject("BunifuTextbox1.Icon"), System.Drawing.Image)
-        Me.BunifuTextbox1.Location = New System.Drawing.Point(180, 129)
-        Me.BunifuTextbox1.Name = "BunifuTextbox1"
-        Me.BunifuTextbox1.Size = New System.Drawing.Size(307, 36)
-        Me.BunifuTextbox1.TabIndex = 8
-        Me.BunifuTextbox1.text = ""
-        '
-        'BunifuTextbox2
-        '
-        Me.BunifuTextbox2.BackColor = System.Drawing.Color.Silver
-        Me.BunifuTextbox2.BackgroundImage = CType(resources.GetObject("BunifuTextbox2.BackgroundImage"), System.Drawing.Image)
-        Me.BunifuTextbox2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.BunifuTextbox2.ForeColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(102, Byte), Integer), CType(CType(204, Byte), Integer))
-        Me.BunifuTextbox2.Icon = CType(resources.GetObject("BunifuTextbox2.Icon"), System.Drawing.Image)
-        Me.BunifuTextbox2.Location = New System.Drawing.Point(180, 171)
-        Me.BunifuTextbox2.Name = "BunifuTextbox2"
-        Me.BunifuTextbox2.Size = New System.Drawing.Size(307, 36)
-        Me.BunifuTextbox2.TabIndex = 9
-        Me.BunifuTextbox2.Tag = ""
-        Me.BunifuTextbox2.text = ""
+        Me.txtPassword.BackColor = System.Drawing.Color.Silver
+        Me.txtPassword.BackgroundImage = CType(resources.GetObject("txtPassword.BackgroundImage"), System.Drawing.Image)
+        Me.txtPassword.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.txtPassword.ForeColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(102, Byte), Integer), CType(CType(204, Byte), Integer))
+        Me.txtPassword.Icon = CType(resources.GetObject("txtPassword.Icon"), System.Drawing.Image)
+        Me.txtPassword.Location = New System.Drawing.Point(180, 171)
+        Me.txtPassword.Name = "txtPassword"
+        Me.txtPassword.Size = New System.Drawing.Size(307, 36)
+        Me.txtPassword.TabIndex = 9
+        Me.txtPassword.Tag = ""
+        Me.txtPassword.text = ""
         '
         'Login
         '
@@ -163,9 +163,9 @@ Partial Class Login
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(37, Byte), Integer), CType(CType(46, Byte), Integer), CType(CType(59, Byte), Integer))
         Me.ClientSize = New System.Drawing.Size(664, 321)
-        Me.Controls.Add(Me.BunifuTextbox2)
-        Me.Controls.Add(Me.BunifuTextbox1)
-        Me.Controls.Add(Me.BunifuFlatButton1)
+        Me.Controls.Add(Me.txtPassword)
+        Me.Controls.Add(Me.txtUsuario)
+        Me.Controls.Add(Me.btnLogin)
         Me.Controls.Add(Me.header)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
@@ -174,8 +174,8 @@ Partial Class Login
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.header.ResumeLayout(False)
         Me.header.PerformLayout()
-        CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.BunifuImageButton1, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
 
     End Sub
@@ -185,8 +185,8 @@ Partial Class Login
     Friend WithEvents header As Panel
     Friend WithEvents PictureBox2 As PictureBox
     Friend WithEvents BunifuCustomLabel1 As Bunifu.Framework.UI.BunifuCustomLabel
-    Friend WithEvents BunifuFlatButton1 As Bunifu.Framework.UI.BunifuFlatButton
+    Friend WithEvents btnLogin As Bunifu.Framework.UI.BunifuFlatButton
     Friend WithEvents BunifuImageButton1 As Bunifu.Framework.UI.BunifuImageButton
-    Friend WithEvents BunifuTextbox2 As Bunifu.Framework.UI.BunifuTextbox
-    Friend WithEvents BunifuTextbox1 As Bunifu.Framework.UI.BunifuTextbox
+    Friend WithEvents txtPassword As Bunifu.Framework.UI.BunifuTextbox
+    Friend WithEvents txtUsuario As Bunifu.Framework.UI.BunifuTextbox
 End Class

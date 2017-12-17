@@ -139,4 +139,13 @@ Public Class Master
 
         End If
     End Sub
+
+    Private Sub btnConductores_Click_1(sender As Object, e As EventArgs) Handles btnConductores.Click
+        Conductores1.BringToFront()
+    End Sub
+
+    Private Sub bntTiposLic_Click(sender As Object, e As EventArgs) Handles bntTiposLic.Click
+        LicencesTypes1.BringToFront()
+
+    End Sub
 End Class

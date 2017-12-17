@@ -1,9 +1,9 @@
-﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
+﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()>
 Partial Class Licencias
     Inherits System.Windows.Forms.UserControl
 
     'UserControl reemplaza a Dispose para limpiar la lista de componentes.
-    <System.Diagnostics.DebuggerNonUserCode()> _
+    <System.Diagnostics.DebuggerNonUserCode()>
     Protected Overrides Sub Dispose(ByVal disposing As Boolean)
         Try
             If disposing AndAlso components IsNot Nothing Then
@@ -20,12 +20,11 @@ Partial Class Licencias
     'NOTA: el Diseñador de Windows Forms necesita el siguiente procedimiento
     'Se puede modificar usando el Diseñador de Windows Forms.  
     'No lo modifique con el editor de código.
-    <System.Diagnostics.DebuggerStepThrough()> _
+    <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Licencias))
         Me.Panel1 = New System.Windows.Forms.Panel()
         Me.Panel2 = New System.Windows.Forms.Panel()
-        Me.btnImprimir = New Bunifu.Framework.UI.BunifuImageButton()
         Me.BunifuImageButton1 = New Bunifu.Framework.UI.BunifuImageButton()
         Me.BunifuImageButton2 = New Bunifu.Framework.UI.BunifuImageButton()
         Me.BunifuImageButton3 = New Bunifu.Framework.UI.BunifuImageButton()
@@ -39,7 +38,6 @@ Partial Class Licencias
         Me.pnlContenido = New System.Windows.Forms.Panel()
         Me.Panel1.SuspendLayout()
         Me.Panel2.SuspendLayout()
-        CType(Me.btnImprimir, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.BunifuImageButton1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.BunifuImageButton2, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.BunifuImageButton3, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -68,7 +66,6 @@ Partial Class Licencias
         'Panel2
         '
         Me.Panel2.BackColor = System.Drawing.Color.FromArgb(CType(CType(37, Byte), Integer), CType(CType(46, Byte), Integer), CType(CType(59, Byte), Integer))
-        Me.Panel2.Controls.Add(Me.btnImprimir)
         Me.Panel2.Controls.Add(Me.BunifuImageButton1)
         Me.Panel2.Controls.Add(Me.BunifuImageButton2)
         Me.Panel2.Controls.Add(Me.BunifuImageButton3)
@@ -79,20 +76,6 @@ Partial Class Licencias
         Me.Panel2.Name = "Panel2"
         Me.Panel2.Size = New System.Drawing.Size(810, 42)
         Me.Panel2.TabIndex = 8
-        '
-        'btnImprimir
-        '
-        Me.btnImprimir.BackColor = System.Drawing.Color.FromArgb(CType(CType(37, Byte), Integer), CType(CType(46, Byte), Integer), CType(CType(59, Byte), Integer))
-        Me.btnImprimir.Image = CType(resources.GetObject("btnImprimir.Image"), System.Drawing.Image)
-        Me.btnImprimir.ImageActive = Nothing
-        Me.btnImprimir.InitialImage = CType(resources.GetObject("btnImprimir.InitialImage"), System.Drawing.Image)
-        Me.btnImprimir.Location = New System.Drawing.Point(589, 7)
-        Me.btnImprimir.Name = "btnImprimir"
-        Me.btnImprimir.Size = New System.Drawing.Size(50, 29)
-        Me.btnImprimir.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
-        Me.btnImprimir.TabIndex = 8
-        Me.btnImprimir.TabStop = False
-        Me.btnImprimir.Zoom = 10
         '
         'BunifuImageButton1
         '
@@ -257,7 +240,6 @@ Partial Class Licencias
         Me.Size = New System.Drawing.Size(810, 518)
         Me.Panel1.ResumeLayout(False)
         Me.Panel2.ResumeLayout(False)
-        CType(Me.btnImprimir, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.BunifuImageButton1, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.BunifuImageButton2, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.BunifuImageButton3, System.ComponentModel.ISupportInitialize).EndInit()
@@ -283,5 +265,4 @@ Partial Class Licencias
     Friend WithEvents BunifuImageButton3 As Bunifu.Framework.UI.BunifuImageButton
     Friend WithEvents BunifuMetroTextbox1 As Bunifu.Framework.UI.BunifuMetroTextbox
     Friend WithEvents BunifuImageButton4 As Bunifu.Framework.UI.BunifuImageButton
-    Friend WithEvents btnImprimir As Bunifu.Framework.UI.BunifuImageButton
 End Class

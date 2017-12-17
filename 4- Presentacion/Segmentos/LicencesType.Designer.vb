@@ -57,7 +57,6 @@ Partial Class LicencesTypes
         Me.pnlContenido.Controls.Add(Me.BunifuCustomLabel8)
         Me.pnlContenido.Controls.Add(Me.txtCodLicen)
         Me.pnlContenido.Controls.Add(Me.Panel1)
-        Me.pnlContenido.Dock = System.Windows.Forms.DockStyle.Fill
         Me.pnlContenido.Location = New System.Drawing.Point(0, 0)
         Me.pnlContenido.Name = "pnlContenido"
         Me.pnlContenido.Size = New System.Drawing.Size(810, 518)

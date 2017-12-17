@@ -30,19 +30,33 @@ Partial Class Usuarios
         Me.btnAdd = New Bunifu.Framework.UI.BunifuImageButton()
         Me.txtBuscar = New Bunifu.Framework.UI.BunifuMetroTextbox()
         Me.btnBuscar = New Bunifu.Framework.UI.BunifuImageButton()
-        Me.btnImprimir = New Bunifu.Framework.UI.BunifuImageButton()
+        Me.grbxActivo = New System.Windows.Forms.GroupBox()
+        Me.swtActivo = New Bunifu.Framework.UI.BunifuSwitch()
+        Me.BunifuCustomLabel7 = New Bunifu.Framework.UI.BunifuCustomLabel()
+        Me.txtNombre = New WindowsFormsControlLibrary1.BunifuCustomTextbox()
+        Me.BunifuCustomLabel8 = New Bunifu.Framework.UI.BunifuCustomLabel()
+        Me.txtCedul = New WindowsFormsControlLibrary1.BunifuCustomTextbox()
+        Me.BunifuCustomLabel1 = New Bunifu.Framework.UI.BunifuCustomLabel()
+        Me.BunifuCustomTextbox1 = New WindowsFormsControlLibrary1.BunifuCustomTextbox()
         Me.pnlContenido.SuspendLayout()
         Me.Panel1.SuspendLayout()
         CType(Me.btnedit, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.btndelete, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.btnAdd, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.btnBuscar, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.btnImprimir, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.grbxActivo.SuspendLayout()
         Me.SuspendLayout()
         '
         'pnlContenido
         '
         Me.pnlContenido.BackColor = System.Drawing.Color.FromArgb(CType(CType(37, Byte), Integer), CType(CType(46, Byte), Integer), CType(CType(59, Byte), Integer))
+        Me.pnlContenido.Controls.Add(Me.BunifuCustomLabel1)
+        Me.pnlContenido.Controls.Add(Me.BunifuCustomTextbox1)
+        Me.pnlContenido.Controls.Add(Me.grbxActivo)
+        Me.pnlContenido.Controls.Add(Me.BunifuCustomLabel7)
+        Me.pnlContenido.Controls.Add(Me.txtNombre)
+        Me.pnlContenido.Controls.Add(Me.BunifuCustomLabel8)
+        Me.pnlContenido.Controls.Add(Me.txtCedul)
         Me.pnlContenido.Controls.Add(Me.Panel1)
         Me.pnlContenido.Dock = System.Windows.Forms.DockStyle.Fill
         Me.pnlContenido.Location = New System.Drawing.Point(0, 0)
@@ -53,7 +67,6 @@ Partial Class Usuarios
         'Panel1
         '
         Me.Panel1.BackColor = System.Drawing.Color.FromArgb(CType(CType(37, Byte), Integer), CType(CType(46, Byte), Integer), CType(CType(59, Byte), Integer))
-        Me.Panel1.Controls.Add(Me.btnImprimir)
         Me.Panel1.Controls.Add(Me.btnedit)
         Me.Panel1.Controls.Add(Me.btndelete)
         Me.Panel1.Controls.Add(Me.btnAdd)
@@ -137,19 +150,106 @@ Partial Class Usuarios
         Me.btnBuscar.TabStop = False
         Me.btnBuscar.Zoom = 10
         '
-        'btnImprimir
+        'grbxActivo
         '
-        Me.btnImprimir.BackColor = System.Drawing.Color.FromArgb(CType(CType(37, Byte), Integer), CType(CType(46, Byte), Integer), CType(CType(59, Byte), Integer))
-        Me.btnImprimir.Image = CType(resources.GetObject("btnImprimir.Image"), System.Drawing.Image)
-        Me.btnImprimir.ImageActive = Nothing
-        Me.btnImprimir.InitialImage = CType(resources.GetObject("btnImprimir.InitialImage"), System.Drawing.Image)
-        Me.btnImprimir.Location = New System.Drawing.Point(589, 7)
-        Me.btnImprimir.Name = "btnImprimir"
-        Me.btnImprimir.Size = New System.Drawing.Size(50, 29)
-        Me.btnImprimir.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
-        Me.btnImprimir.TabIndex = 6
-        Me.btnImprimir.TabStop = False
-        Me.btnImprimir.Zoom = 10
+        Me.grbxActivo.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
+            Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.grbxActivo.Controls.Add(Me.swtActivo)
+        Me.grbxActivo.ForeColor = System.Drawing.Color.Snow
+        Me.grbxActivo.Location = New System.Drawing.Point(547, 237)
+        Me.grbxActivo.Name = "grbxActivo"
+        Me.grbxActivo.Size = New System.Drawing.Size(161, 67)
+        Me.grbxActivo.TabIndex = 33
+        Me.grbxActivo.TabStop = False
+        Me.grbxActivo.Text = "Roles"
+        '
+        'swtActivo
+        '
+        Me.swtActivo.BackColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
+        Me.swtActivo.BorderRadius = 0
+        Me.swtActivo.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.swtActivo.ForeColor = System.Drawing.Color.FromArgb(CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer))
+        Me.swtActivo.Location = New System.Drawing.Point(55, 33)
+        Me.swtActivo.Name = "swtActivo"
+        Me.swtActivo.Oncolor = System.Drawing.Color.SeaGreen
+        Me.swtActivo.Onoffcolor = System.Drawing.Color.DarkGray
+        Me.swtActivo.Size = New System.Drawing.Size(51, 19)
+        Me.swtActivo.TabIndex = 19
+        Me.swtActivo.Textcolor = System.Drawing.Color.FromArgb(CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer))
+        Me.swtActivo.Value = False
+        '
+        'BunifuCustomLabel7
+        '
+        Me.BunifuCustomLabel7.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
+            Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.BunifuCustomLabel7.AutoSize = True
+        Me.BunifuCustomLabel7.ForeColor = System.Drawing.SystemColors.ControlLightLight
+        Me.BunifuCustomLabel7.Location = New System.Drawing.Point(90, 175)
+        Me.BunifuCustomLabel7.Name = "BunifuCustomLabel7"
+        Me.BunifuCustomLabel7.Size = New System.Drawing.Size(113, 13)
+        Me.BunifuCustomLabel7.TabIndex = 22
+        Me.BunifuCustomLabel7.Text = "Nombre del Conductor"
+        '
+        'txtNombre
+        '
+        Me.txtNombre.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
+            Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.txtNombre.BorderColor = System.Drawing.Color.SeaGreen
+        Me.txtNombre.Location = New System.Drawing.Point(93, 200)
+        Me.txtNombre.Name = "txtNombre"
+        Me.txtNombre.Size = New System.Drawing.Size(208, 20)
+        Me.txtNombre.TabIndex = 21
+        '
+        'BunifuCustomLabel8
+        '
+        Me.BunifuCustomLabel8.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
+            Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.BunifuCustomLabel8.AutoSize = True
+        Me.BunifuCustomLabel8.ForeColor = System.Drawing.SystemColors.ControlLightLight
+        Me.BunifuCustomLabel8.Location = New System.Drawing.Point(90, 248)
+        Me.BunifuCustomLabel8.Name = "BunifuCustomLabel8"
+        Me.BunifuCustomLabel8.Size = New System.Drawing.Size(43, 13)
+        Me.BunifuCustomLabel8.TabIndex = 20
+        Me.BunifuCustomLabel8.Text = "Usuario"
+        '
+        'txtCedul
+        '
+        Me.txtCedul.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
+            Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.txtCedul.BorderColor = System.Drawing.Color.SeaGreen
+        Me.txtCedul.Location = New System.Drawing.Point(93, 273)
+        Me.txtCedul.Name = "txtCedul"
+        Me.txtCedul.Size = New System.Drawing.Size(100, 20)
+        Me.txtCedul.TabIndex = 19
+        '
+        'BunifuCustomLabel1
+        '
+        Me.BunifuCustomLabel1.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
+            Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.BunifuCustomLabel1.AutoSize = True
+        Me.BunifuCustomLabel1.ForeColor = System.Drawing.SystemColors.ControlLightLight
+        Me.BunifuCustomLabel1.Location = New System.Drawing.Point(320, 248)
+        Me.BunifuCustomLabel1.Name = "BunifuCustomLabel1"
+        Me.BunifuCustomLabel1.Size = New System.Drawing.Size(61, 13)
+        Me.BunifuCustomLabel1.TabIndex = 35
+        Me.BunifuCustomLabel1.Text = "Contraseña"
+        '
+        'BunifuCustomTextbox1
+        '
+        Me.BunifuCustomTextbox1.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
+            Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.BunifuCustomTextbox1.BorderColor = System.Drawing.Color.SeaGreen
+        Me.BunifuCustomTextbox1.Location = New System.Drawing.Point(323, 273)
+        Me.BunifuCustomTextbox1.Name = "BunifuCustomTextbox1"
+        Me.BunifuCustomTextbox1.Size = New System.Drawing.Size(100, 20)
+        Me.BunifuCustomTextbox1.TabIndex = 34
         '
         'Usuarios
         '
@@ -159,12 +259,13 @@ Partial Class Usuarios
         Me.Name = "Usuarios"
         Me.Size = New System.Drawing.Size(810, 518)
         Me.pnlContenido.ResumeLayout(False)
+        Me.pnlContenido.PerformLayout()
         Me.Panel1.ResumeLayout(False)
         CType(Me.btnedit, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.btndelete, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.btnAdd, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.btnBuscar, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.btnImprimir, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.grbxActivo.ResumeLayout(False)
         Me.ResumeLayout(False)
 
     End Sub
@@ -176,5 +277,12 @@ Partial Class Usuarios
     Friend WithEvents btnAdd As Bunifu.Framework.UI.BunifuImageButton
     Friend WithEvents txtBuscar As Bunifu.Framework.UI.BunifuMetroTextbox
     Friend WithEvents btnBuscar As Bunifu.Framework.UI.BunifuImageButton
-    Friend WithEvents btnImprimir As Bunifu.Framework.UI.BunifuImageButton
+    Friend WithEvents BunifuCustomLabel1 As Bunifu.Framework.UI.BunifuCustomLabel
+    Friend WithEvents BunifuCustomTextbox1 As WindowsFormsControlLibrary1.BunifuCustomTextbox
+    Friend WithEvents grbxActivo As GroupBox
+    Friend WithEvents swtActivo As Bunifu.Framework.UI.BunifuSwitch
+    Friend WithEvents BunifuCustomLabel7 As Bunifu.Framework.UI.BunifuCustomLabel
+    Friend WithEvents txtNombre As WindowsFormsControlLibrary1.BunifuCustomTextbox
+    Friend WithEvents BunifuCustomLabel8 As Bunifu.Framework.UI.BunifuCustomLabel
+    Friend WithEvents txtCedul As WindowsFormsControlLibrary1.BunifuCustomTextbox
 End Class

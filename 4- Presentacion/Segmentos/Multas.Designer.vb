@@ -1,9 +1,9 @@
-﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
+﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()>
 Partial Class Multas
     Inherits System.Windows.Forms.UserControl
 
     'UserControl reemplaza a Dispose para limpiar la lista de componentes.
-    <System.Diagnostics.DebuggerNonUserCode()> _
+    <System.Diagnostics.DebuggerNonUserCode()>
     Protected Overrides Sub Dispose(ByVal disposing As Boolean)
         Try
             If disposing AndAlso components IsNot Nothing Then
@@ -20,7 +20,7 @@ Partial Class Multas
     'NOTA: el Diseñador de Windows Forms necesita el siguiente procedimiento
     'Se puede modificar usando el Diseñador de Windows Forms.  
     'No lo modifique con el editor de código.
-    <System.Diagnostics.DebuggerStepThrough()> _
+    <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Multas))
@@ -32,14 +32,12 @@ Partial Class Multas
         Me.txtBuscar = New Bunifu.Framework.UI.BunifuMetroTextbox()
         Me.btnimgBuscar = New Bunifu.Framework.UI.BunifuImageButton()
         Me.pnlContenido = New System.Windows.Forms.Panel()
-        Me.btnImprimir = New Bunifu.Framework.UI.BunifuImageButton()
         CType(Me.MultasENBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.pnlAcciones.SuspendLayout()
         CType(Me.BunifuImageButton3, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.BunifuImageButton2, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.BunifuImageButton1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.btnimgBuscar, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.btnImprimir, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'MultasENBindingSource
@@ -49,7 +47,6 @@ Partial Class Multas
         'pnlAcciones
         '
         Me.pnlAcciones.BackColor = System.Drawing.Color.FromArgb(CType(CType(37, Byte), Integer), CType(CType(46, Byte), Integer), CType(CType(59, Byte), Integer))
-        Me.pnlAcciones.Controls.Add(Me.btnImprimir)
         Me.pnlAcciones.Controls.Add(Me.BunifuImageButton3)
         Me.pnlAcciones.Controls.Add(Me.BunifuImageButton2)
         Me.pnlAcciones.Controls.Add(Me.BunifuImageButton1)
@@ -142,20 +139,6 @@ Partial Class Multas
         Me.pnlContenido.Size = New System.Drawing.Size(810, 480)
         Me.pnlContenido.TabIndex = 3
         '
-        'btnImprimir
-        '
-        Me.btnImprimir.BackColor = System.Drawing.Color.FromArgb(CType(CType(37, Byte), Integer), CType(CType(46, Byte), Integer), CType(CType(59, Byte), Integer))
-        Me.btnImprimir.Image = CType(resources.GetObject("btnImprimir.Image"), System.Drawing.Image)
-        Me.btnImprimir.ImageActive = Nothing
-        Me.btnImprimir.InitialImage = CType(resources.GetObject("btnImprimir.InitialImage"), System.Drawing.Image)
-        Me.btnImprimir.Location = New System.Drawing.Point(589, 3)
-        Me.btnImprimir.Name = "btnImprimir"
-        Me.btnImprimir.Size = New System.Drawing.Size(50, 29)
-        Me.btnImprimir.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
-        Me.btnImprimir.TabIndex = 6
-        Me.btnImprimir.TabStop = False
-        Me.btnImprimir.Zoom = 10
-        '
         'Multas
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -170,7 +153,6 @@ Partial Class Multas
         CType(Me.BunifuImageButton2, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.BunifuImageButton1, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.btnimgBuscar, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.btnImprimir, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
 
     End Sub
@@ -182,5 +164,4 @@ Partial Class Multas
     Friend WithEvents btnimgBuscar As Bunifu.Framework.UI.BunifuImageButton
     Friend WithEvents MultasENBindingSource As BindingSource
     Friend WithEvents pnlContenido As Panel
-    Friend WithEvents btnImprimir As Bunifu.Framework.UI.BunifuImageButton
 End Class
